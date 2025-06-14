@@ -28,10 +28,10 @@ const Education = () => {
       type: "Degree",
       certificates: [
         {
-          title: "Certificate of Appreciation - CSR Project",
+          title: "Bachelor's Degree Certificate",
           company: "Iqra University",
-          image: "/lovable-uploads/fd88f9f4-3111-4dde-b4fa-e842ef0b345d.png",
-          description: "Proudly presented to Faiqa Malik in appreciation for Corporate Social Responsibility Project"
+          image: "/lovable-uploads/a9284465-5eca-45d5-a9a0-dd582140eefc.png",
+          description: "Bachelor's degree in Fashion Design with honors"
         },
         {
           title: "Corporate Social Responsibility Certificate",
@@ -53,12 +53,6 @@ const Education = () => {
       ],
       type: "Diploma",
       certificates: [
-        {
-          title: "Fashion Design Certificate",
-          company: "National Textile Institute",
-          image: "/lovable-uploads/9154ec23-6fd6-4a88-b6e2-33d7f03b04ea.png",
-          description: "Specialized course in textile and fashion designing"
-        },
         {
           title: "Financial Literacy Certificate",
           company: "National Textile Institute",
