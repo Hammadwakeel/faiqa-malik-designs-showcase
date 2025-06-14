@@ -1,3 +1,4 @@
+
 import { Download, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -13,17 +14,17 @@ const About = () => {
   };
 
   return (
-    <div className="min-h-screen py-20">
+    <div className="min-h-screen py-20 bg-gradient-to-br from-lavender-bg via-white to-dusty-lavender/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl font-playfair font-bold text-midnight-navy">
+              <h1 className="text-5xl md:text-6xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
                 About Me
               </h1>
               <p className="text-xl text-dusty-lavender font-inter font-medium">
-                Fashion Designer & Creative Leader
+                Fashion Designer
               </p>
             </div>
             
@@ -44,14 +45,14 @@ const About = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
                 onClick={handleDownloadCV}
-                className="inline-flex items-center px-6 py-3 bg-midnight-navy text-white font-inter font-medium rounded-lg hover:bg-midnight-navy/90 transition-colors duration-200"
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-midnight-navy to-dusty-lavender text-white font-inter font-medium rounded-lg hover:from-midnight-navy/90 hover:to-dusty-lavender/90 transition-all duration-200 shadow-lg"
               >
                 <Download className="mr-2 h-4 w-4" />
                 Download CV
               </button>
               <Link
                 to="/portfolio"
-                className="inline-flex items-center px-6 py-3 border-2 border-dusty-lavender text-midnight-navy font-inter font-medium rounded-lg hover:bg-dusty-lavender hover:text-white transition-colors duration-200 group"
+                className="inline-flex items-center px-6 py-3 border-2 border-dusty-lavender text-midnight-navy font-inter font-medium rounded-lg hover:bg-gradient-to-r hover:from-dusty-lavender hover:to-peach-accent hover:text-white hover:border-transparent transition-all duration-200 group"
               >
                 View My Work
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-200" />
@@ -66,15 +67,15 @@ const About = () => {
                 alt="Faiqa Malik at work"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-midnight-navy/10 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-midnight-navy/20 via-dusty-lavender/10 to-transparent"></div>
             </div>
           </div>
         </div>
 
         {/* Vision Section */}
-        <div className="bg-lavender-bg rounded-2xl p-8 md:p-12 mb-20">
+        <div className="bg-gradient-to-br from-dusty-lavender/10 via-lavender-bg to-peach-accent/5 rounded-2xl p-8 md:p-12 mb-20 border border-dusty-lavender/20">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl md:text-5xl font-playfair font-bold text-midnight-navy">
+            <h2 className="text-4xl md:text-5xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
               My Vision
             </h2>
             <p className="text-xl text-slate-gray font-inter leading-relaxed">
@@ -84,10 +85,10 @@ const About = () => {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
               <div className="text-center space-y-4">
-                <div className="w-16 h-16 bg-dusty-lavender rounded-full flex items-center justify-center mx-auto">
+                <div className="w-16 h-16 bg-gradient-to-r from-dusty-lavender to-peach-accent rounded-full flex items-center justify-center mx-auto shadow-lg">
                   <span className="text-2xl font-playfair font-bold text-white">01</span>
                 </div>
-                <h3 className="text-xl font-playfair font-semibold text-midnight-navy">
+                <h3 className="text-xl font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
                   Innovation
                 </h3>
                 <p className="text-slate-gray font-inter">
@@ -95,10 +96,10 @@ const About = () => {
                 </p>
               </div>
               <div className="text-center space-y-4">
-                <div className="w-16 h-16 bg-peach-accent rounded-full flex items-center justify-center mx-auto">
+                <div className="w-16 h-16 bg-gradient-to-r from-peach-accent to-dusty-lavender rounded-full flex items-center justify-center mx-auto shadow-lg">
                   <span className="text-2xl font-playfair font-bold text-white">02</span>
                 </div>
-                <h3 className="text-xl font-playfair font-semibold text-midnight-navy">
+                <h3 className="text-xl font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
                   Quality
                 </h3>
                 <p className="text-slate-gray font-inter">
@@ -106,10 +107,10 @@ const About = () => {
                 </p>
               </div>
               <div className="text-center space-y-4">
-                <div className="w-16 h-16 bg-midnight-navy rounded-full flex items-center justify-center mx-auto">
+                <div className="w-16 h-16 bg-gradient-to-r from-midnight-navy to-dusty-lavender rounded-full flex items-center justify-center mx-auto shadow-lg">
                   <span className="text-2xl font-playfair font-bold text-white">03</span>
                 </div>
-                <h3 className="text-xl font-playfair font-semibold text-midnight-navy">
+                <h3 className="text-xl font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
                   Empowerment
                 </h3>
                 <p className="text-slate-gray font-inter">
@@ -123,7 +124,7 @@ const About = () => {
         {/* Journey Timeline */}
         <div className="space-y-12">
           <div className="text-center space-y-4">
-            <h2 className="text-4xl md:text-5xl font-playfair font-bold text-midnight-navy">
+            <h2 className="text-4xl md:text-5xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
               My Journey
             </h2>
             <p className="text-xl text-slate-gray font-inter max-w-2xl mx-auto">
@@ -160,9 +161,9 @@ const About = () => {
                     {item.year}
                   </span>
                 </div>
-                <div className="flex-shrink-0 w-4 h-4 bg-dusty-lavender rounded-full mt-2"></div>
+                <div className="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-dusty-lavender to-peach-accent rounded-full mt-2 shadow-sm"></div>
                 <div className="flex-1 space-y-2">
-                  <h3 className="text-xl font-playfair font-semibold text-midnight-navy">
+                  <h3 className="text-xl font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
                     {item.title}
                   </h3>
                   <p className="text-slate-gray font-inter leading-relaxed">
