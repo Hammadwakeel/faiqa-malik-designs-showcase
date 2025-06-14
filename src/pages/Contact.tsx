@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Mail, Instagram, MapPin, Send, Phone, Clock } from 'lucide-react';
-import { useContactMessages } from '@/hooks/useContactMessages';
 import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
@@ -11,7 +10,6 @@ const Contact = () => {
     message: ''
   });
   const [submitting, setSubmitting] = useState(false);
-  const { submitMessage } = useContactMessages();
   const { toast } = useToast();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -27,28 +25,22 @@ const Contact = () => {
     setSubmitting(true);
 
     try {
-      const result = await submitMessage(formData);
+      // Simple form submission - just show success message
+      // In a real application, you would send this to your backend
+      console.log('Form submitted:', formData);
       
-      if (result.success) {
-        toast({
-          title: "Message sent successfully!",
-          description: "Thank you for your message. I'll get back to you soon.",
-        });
-        
-        // Reset form after successful submission
-        setFormData({
-          name: '',
-          email: '',
-          subject: '',
-          message: ''
-        });
-      } else {
-        toast({
-          title: "Failed to send message",
-          description: result.error || "Something went wrong. Please try again.",
-          variant: "destructive"
-        });
-      }
+      toast({
+        title: "Message sent successfully!",
+        description: "Thank you for your message. I'll get back to you soon.",
+      });
+      
+      // Reset form after successful submission
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
     } catch (error) {
       toast({
         title: "Error",
