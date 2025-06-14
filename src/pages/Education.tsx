@@ -563,14 +563,13 @@ const Education = () => {
                 className="relative group inline-flex items-center px-8 py-3 overflow-hidden font-inter font-medium rounded-lg"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-dusty-lavender to-peach-accent transition-all duration-300 group-hover:from-peach-accent group-hover:to-dusty-lavender"></div>
-                <span className="relative text-white">See My Work</span>
+                <span className="relative text-white font-semibold">See My Work</span>
               </a>
               <a
                 href="/contact"
-                className="relative group inline-flex items-center px-8 py-3 overflow-hidden font-inter font-medium rounded-lg border-2 border-transparent bg-gradient-to-r from-white to-peach-accent bg-clip-border"
+                className="relative group inline-flex items-center px-8 py-3 overflow-hidden font-inter font-medium rounded-lg border-2 border-white bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white/10 transition-all duration-300 group-hover:from-white/10 group-hover:to-transparent"></div>
-                <span className="relative bg-gradient-to-r from-white to-peach-accent bg-clip-text text-transparent">Get In Touch</span>
+                <span className="relative text-white font-semibold">Get In Touch</span>
               </a>
             </div>
           </div>
