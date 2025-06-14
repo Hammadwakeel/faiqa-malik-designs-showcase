@@ -1,4 +1,3 @@
-
 export interface Project {
   id: number;
   title: string;
@@ -332,15 +331,6 @@ export const portfolioProjects: Project[] = [
     description: "Complete home and away football kit design for university team. Features white home kit and navy away kit with consistent branding elements.",
     image: "/lovable-uploads/9efe8ed5-edf8-47e9-ab91-c9b3c45a5bd3.png",
     tools: ["Kit Design", "Team Branding", "Athletic Uniform"],
-    year: "2024"
-  },
-  {
-    id: 37,
-    title: "Professional Football Kit Collection",
-    category: "Sports",
-    description: "Professional-grade football kit design featuring home and away variations with university branding and player numbering system.",
-    image: "/lovable-uploads/5704c48d-e227-489b-b339-315996b3924c.png",
-    tools: ["Professional Sports Design", "Kit Engineering", "Team Uniform"],
     year: "2024"
   }
 ];
