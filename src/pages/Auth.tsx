@@ -6,15 +6,14 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Mail, Lock, User } from 'lucide-react';
+import { Mail, Lock } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const Auth = () => {
-  const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
-  const { signIn, signUp, user } = useAuth();
+  const { signIn, user } = useAuth();
   const navigate = useNavigate();
   const { toast } = useToast();
 
@@ -37,24 +36,29 @@ const Auth = () => {
 
     setLoading(true);
     try {
-      const { error } = isLogin 
-        ? await signIn(email, password)
-        : await signUp(email, password);
+      const { error } = await signIn(email, password);
 
       if (error) {
+        let errorMessage = error.message;
+        
+        // Handle specific error cases
+        if (error.message.includes('Email not confirmed')) {
+          errorMessage = "Please check your email and click the confirmation link before signing in.";
+        } else if (error.message.includes('Invalid login credentials')) {
+          errorMessage = "Invalid email or password. Please check your credentials.";
+        }
+        
         toast({
-          title: "Error",
-          description: error.message,
+          title: "Sign In Failed",
+          description: errorMessage,
           variant: "destructive"
         });
       } else {
         toast({
           title: "Success",
-          description: isLogin ? "Logged in successfully!" : "Account created successfully!",
+          description: "Logged in successfully!",
         });
-        if (isLogin) {
-          navigate('/admin');
-        }
+        navigate('/admin');
       }
     } catch (err) {
       toast({
@@ -72,10 +76,10 @@ const Auth = () => {
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
           <CardTitle className="text-2xl font-playfair bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
-            {isLogin ? 'Admin Login' : 'Create Account'}
+            Admin Login
           </CardTitle>
           <CardDescription>
-            {isLogin ? 'Sign in to access the admin portal' : 'Create an admin account'}
+            Sign in to access the admin portal
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -115,18 +119,9 @@ const Auth = () => {
               className="w-full bg-gradient-to-r from-midnight-navy to-dusty-lavender hover:from-dusty-lavender hover:to-midnight-navy"
               disabled={loading}
             >
-              {loading ? 'Please wait...' : (isLogin ? 'Sign In' : 'Sign Up')}
+              {loading ? 'Signing in...' : 'Sign In'}
             </Button>
           </form>
-          <div className="mt-4 text-center">
-            <button
-              type="button"
-              onClick={() => setIsLogin(!isLogin)}
-              className="text-sm text-dusty-lavender hover:underline"
-            >
-              {isLogin ? "Need an account? Sign up" : "Already have an account? Sign in"}
-            </button>
-          </div>
         </CardContent>
       </Card>
     </div>
