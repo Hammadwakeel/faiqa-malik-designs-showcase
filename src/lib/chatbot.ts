@@ -10,7 +10,6 @@ const faiqaData = {
       "Driven visionary Fashion Designer with over four years of hands‑on experience turning bold concepts into runway‑ready collections. Passionate about fusing art and innovation, I excel at trend forecasting, team leadership, and delivering standout designs that captivate both clients and markets. With a sharp eye for detail and a flair for collaborative problem‑solving, I lead projects from initial sketch to final stitch—always pushing the boundaries of style."
   },
   contact: {
-    address: "Street #2 Malik House, Farooq-e-azam Colony, Attock City",
     email: "designerfaiqamalik7@gmail.com",
     social: { instagram: "@designer_faiqamalik" }
   },
@@ -30,7 +29,7 @@ const faiqaData = {
   skills: [
     "Sewing","Pattern Making","Illustration","Draping","Garment Construction",
     "Textile Sourcing","Trend Forecasting","Technical Drawing",
-    "Adobe Photoshop","Adobe Illustrator","CAD for Fashion (AutoCAD)",
+    "Adobe Photoshop","Adobe Illustrator",
     "Fabric Knowledge"
   ],
   softSkills: [

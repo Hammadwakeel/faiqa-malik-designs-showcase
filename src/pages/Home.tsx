@@ -128,19 +128,21 @@ const Home = () => {
 
           {/* Infinite Sliding Animation Container */}
           <div className="relative overflow-hidden">
-            <style jsx>{`
-              @keyframes slide-right-to-left {
-                0% {
-                  transform: translateX(100%);
+            <style>
+              {`
+                @keyframes slide-right-to-left {
+                  0% {
+                    transform: translateX(100%);
+                  }
+                  100% {
+                    transform: translateX(-100%);
+                  }
                 }
-                100% {
-                  transform: translateX(-100%);
+                .slide-infinite {
+                  animation: slide-right-to-left 30s linear infinite;
                 }
-              }
-              .slide-infinite {
-                animation: slide-right-to-left 30s linear infinite;
-              }
-            `}</style>
+              `}
+            </style>
             
             <div className="flex space-x-8 slide-infinite">
               {/* First set of projects */}

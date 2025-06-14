@@ -12,7 +12,6 @@ const Skills = () => {
     { name: "Technical Drawing", level: 90, icon: PenTool },
     { name: "Adobe Photoshop", level: 85, icon: Palette },
     { name: "Adobe Illustrator", level: 88, icon: Palette },
-    { name: "CAD for Fashion (AutoCAD)", level: 75, icon: Layers },
     { name: "Fabric Knowledge", level: 90, icon: Target },
     { name: "Textile Design", level: 85, icon: Layers },
     { name: "Technical Specification", level: 88, icon: PenTool },
