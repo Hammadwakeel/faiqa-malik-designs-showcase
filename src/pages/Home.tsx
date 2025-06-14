@@ -115,10 +115,10 @@ const Home = () => {
       </section>
 
       {/* Featured Work Preview */}
-      <section className="py-20 bg-lavender-bg overflow-hidden">
+      <section className="py-20 bg-gradient-to-br from-dusty-lavender/20 via-lavender-bg to-peach-accent/10 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8 mb-16">
-            <h2 className="text-4xl md:text-5xl font-playfair font-bold text-midnight-navy">
+            <h2 className="text-4xl md:text-5xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
               Featured Work
             </h2>
             <p className="text-xl text-slate-gray font-inter max-w-2xl mx-auto">
@@ -128,18 +128,19 @@ const Home = () => {
 
           {/* Sliding Animation Container */}
           <div className="relative">
-            <div className="flex animate-slide-left space-x-8">
+            <div className="flex space-x-8" style={{ animation: 'slide-left 15s linear infinite' }}>
               {/* First set of projects */}
               {featuredProjects.map((project) => (
                 <div key={project.id} className="flex-shrink-0 w-80 group cursor-pointer">
-                  <div className="relative h-64 rounded-lg overflow-hidden mb-4">
+                  <div className="relative h-64 rounded-lg overflow-hidden mb-4 bg-gradient-to-br from-white via-lavender-bg to-dusty-lavender/10 p-2">
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-contain bg-gradient-to-br from-gray-50 to-white group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-contain rounded group-hover:scale-105 transition-transform duration-300"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-midnight-navy/10 via-transparent to-dusty-lavender/5 rounded-lg"></div>
                   </div>
-                  <h3 className="text-xl font-playfair font-semibold text-midnight-navy mb-2">
+                  <h3 className="text-xl font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent mb-2">
                     {project.title}
                   </h3>
                   <p className="text-slate-gray font-inter text-sm">
@@ -150,14 +151,15 @@ const Home = () => {
               {/* Duplicate set for infinite scroll */}
               {featuredProjects.map((project) => (
                 <div key={`duplicate-${project.id}`} className="flex-shrink-0 w-80 group cursor-pointer">
-                  <div className="relative h-64 rounded-lg overflow-hidden mb-4">
+                  <div className="relative h-64 rounded-lg overflow-hidden mb-4 bg-gradient-to-br from-white via-lavender-bg to-dusty-lavender/10 p-2">
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-contain bg-gradient-to-br from-gray-50 to-white group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-contain rounded group-hover:scale-105 transition-transform duration-300"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-midnight-navy/10 via-transparent to-dusty-lavender/5 rounded-lg"></div>
                   </div>
-                  <h3 className="text-xl font-playfair font-semibold text-midnight-navy mb-2">
+                  <h3 className="text-xl font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent mb-2">
                     {project.title}
                   </h3>
                   <p className="text-slate-gray font-inter text-sm">
@@ -171,7 +173,7 @@ const Home = () => {
           <div className="text-center mt-12">
             <Link
               to="/portfolio"
-              className="inline-flex items-center px-8 py-3 bg-dusty-lavender text-white font-inter font-medium rounded-lg hover:bg-dusty-lavender/90 transition-colors duration-200 group"
+              className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-dusty-lavender to-peach-accent text-white font-inter font-medium rounded-lg hover:from-dusty-lavender/90 hover:to-peach-accent/90 transition-all duration-200 group shadow-lg"
             >
               View Full Portfolio
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-200" />
