@@ -45,10 +45,10 @@ const Experience = () => {
       ],
       certificates: [
         {
-          title: "Designer Assistant Certificate",
+          title: "Certificate of Internship",
           company: "Elevenstore",
-          image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=600&fit=crop",
-          description: "Certificate of completion for designer assistant role"
+          image: "/lovable-uploads/669f9703-acb4-4ba3-8593-99f3277ddc61.png",
+          description: "Completed internship program with distinction"
         }
       ]
     },
