@@ -1,4 +1,3 @@
-
 import { Calendar, MapPin, Building, Award, ZoomIn } from 'lucide-react';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 
@@ -44,7 +43,14 @@ const Experience = () => {
         "Assisted in fabric sourcing and vendor negotiations",
         "Participated in fashion show preparation and styling"
       ],
-      certificates: []
+      certificates: [
+        {
+          title: "Designer Assistant Certificate",
+          company: "Elevenstore",
+          image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=600&fit=crop",
+          description: "Certificate of completion for designer assistant role"
+        }
+      ]
     },
     {
       role: "Internship",
