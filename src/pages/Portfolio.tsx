@@ -6,7 +6,7 @@ import { ExternalLink, Eye } from 'lucide-react';
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   
-  const categories = ['All', 'Contemporary', 'Minimalist', 'Formal', 'Streetwear'];
+  const categories = ['All', 'Contemporary', 'Minimalist', 'Formal', 'Streetwear', 'Technical'];
   
   const projects = [
     {
@@ -152,6 +152,96 @@ const Portfolio = () => {
       image: "/lovable-uploads/1d478f13-7cd4-44a0-8700-3a93779fdc25.png",
       tools: ["Brand Development", "Streetwear Design", "Urban Styling"],
       year: "2024"
+    },
+    {
+      id: 17,
+      title: "Burgundy Technical Shirt Design",
+      category: "Technical",
+      description: "Technical fashion drawing showcasing patch pocket construction and spread collar design. Features detailed stitching and U-tag placement.",
+      image: "/lovable-uploads/152d74ae-0b8c-408c-ba56-a83c1803db40.png",
+      tools: ["Technical Drawing", "CAD Design", "Pattern Construction"],
+      year: "2024"
+    },
+    {
+      id: 18,
+      title: "Barrymore Cropped Jacket Technical",
+      category: "Technical",
+      description: "Detailed technical specification for cropped jacket featuring Barrymore collar, bishop sleeves, and dart construction.",
+      image: "/lovable-uploads/3ff6183a-a2b1-408e-a472-30d677553fb5.png",
+      tools: ["Technical Specification", "Pattern Making", "Detail Engineering"],
+      year: "2024"
+    },
+    {
+      id: 19,
+      title: "Swallow-Tailed Shirt Technical",
+      category: "Technical",
+      description: "Technical drawing of swallow-tailed shirt with top-stitched square patch and fabric texture details. Professional construction specs.",
+      image: "/lovable-uploads/4959c0a1-39b1-41ad-9b3f-4965c72d9507.png",
+      tools: ["Technical Drawing", "Construction Details", "Pattern Engineering"],
+      year: "2024"
+    },
+    {
+      id: 20,
+      title: "Navy Dress Shirt Technical",
+      category: "Technical",
+      description: "Technical specification for navy dress shirt with spread collar and three-button cuff construction. Detailed hem specifications.",
+      image: "/lovable-uploads/68d555f0-027d-47d8-ab39-ed770c31a3df.png",
+      tools: ["Technical Drawing", "Dress Shirt Construction", "Detail Work"],
+      year: "2024"
+    },
+    {
+      id: 21,
+      title: "Knotted Barrymore Shirt",
+      category: "Technical",
+      description: "Technical drawing featuring Barrymore collar with knotted detail and bishop sleeves. Innovative construction with functional styling.",
+      image: "/lovable-uploads/f0ba815d-6d7e-45a7-a24c-6a539c4e82c5.png",
+      tools: ["Technical Specification", "Innovative Construction", "Detail Engineering"],
+      year: "2024"
+    },
+    {
+      id: 22,
+      title: "Oversized T-Shirt Technical",
+      category: "Technical",
+      description: "Technical drawing of oversized t-shirt with spread collar, zipper detail, and mini cargo pocket. Modern streetwear construction.",
+      image: "/lovable-uploads/b664106d-981d-494f-9c66-d548c6037857.png",
+      tools: ["Streetwear Technical", "Oversized Construction", "Detail Work"],
+      year: "2024"
+    },
+    {
+      id: 23,
+      title: "Cropped Shirt with Box Pleats",
+      category: "Technical",
+      description: "Technical specification for cropped shirt featuring box pleats and single-button cuff construction. Detailed engineering drawing.",
+      image: "/lovable-uploads/9ad16900-0407-457f-8d07-a2c72ea91937.png",
+      tools: ["Technical Drawing", "Pleat Construction", "Cropped Design"],
+      year: "2024"
+    },
+    {
+      id: 24,
+      title: "Navy Center Back Technical",
+      category: "Technical",
+      description: "Technical drawing showcasing center back cut construction with two-button cuff and dress shirt hem details.",
+      image: "/lovable-uploads/3300a1d8-1744-405d-be0e-917aea3f2360.png",
+      tools: ["Technical Specification", "Back Construction", "Detail Engineering"],
+      year: "2024"
+    },
+    {
+      id: 25,
+      title: "Sailor Cargo Pants Technical",
+      category: "Technical",
+      description: "Technical drawing of wide-leg sailor pants with long cargo pockets, flap details, and elastic waistband construction.",
+      image: "/lovable-uploads/c91c9204-e5f3-4543-985d-4183777231d1.png",
+      tools: ["Technical Drawing", "Cargo Construction", "Wide-leg Pattern"],
+      year: "2024"
+    },
+    {
+      id: 26,
+      title: "Sweetheart Crop Camisol Technical",
+      category: "Technical",
+      description: "Technical specification for cropped camisole with sweetheart neckline and long armhole construction. Detailed pattern engineering.",
+      image: "/lovable-uploads/3750e28c-6a75-4a7d-acac-8c14127feb13.png",
+      tools: ["Technical Drawing", "Camisole Construction", "Neckline Engineering"],
+      year: "2024"
     }
   ];
 
@@ -160,11 +250,11 @@ const Portfolio = () => {
     : projects.filter(project => project.category === selectedCategory);
 
   return (
-    <div className="min-h-screen py-20 bg-gradient-to-br from-lavender-bg via-white to-dusty-lavender/10">
+    <div className="min-h-screen py-20 bg-gradient-tertiary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center space-y-8 mb-16">
-          <h1 className="text-5xl md:text-6xl font-playfair font-bold bg-gradient-to-r from-midnight-navy via-dusty-lavender to-midnight-navy bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl font-playfair font-bold text-gradient-primary animate-gradient-shift">
             Portfolio
           </h1>
           <p className="text-xl text-slate-gray font-inter max-w-3xl mx-auto">
@@ -181,7 +271,7 @@ const Portfolio = () => {
               onClick={() => setSelectedCategory(category)}
               className={`px-6 py-3 rounded-full font-inter font-medium transition-all duration-300 ${
                 selectedCategory === category
-                  ? 'bg-gradient-to-r from-dusty-lavender to-midnight-navy text-white shadow-lg transform scale-105'
+                  ? 'bg-gradient-primary text-white shadow-lg transform scale-105 animate-gradient-shift'
                   : 'bg-white text-slate-gray border-2 border-dusty-lavender hover:bg-gradient-to-r hover:from-dusty-lavender/20 hover:to-midnight-navy/20 hover:text-midnight-navy hover:shadow-md'
               }`}
             >
@@ -193,7 +283,7 @@ const Portfolio = () => {
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
-            <div key={project.id} className="group bg-gradient-to-br from-white to-dusty-lavender/5 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:transform hover:scale-105">
+            <div key={project.id} className="group bg-gradient-to-br from-white/80 to-dusty-lavender/10 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:transform hover:scale-105 border border-dusty-lavender/20">
               <div className="relative h-64 overflow-hidden">
                 <img
                   src={project.image}
@@ -201,11 +291,11 @@ const Portfolio = () => {
                   className="w-full h-full object-contain bg-gradient-to-br from-gray-50 to-white group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-midnight-navy/0 via-transparent to-transparent group-hover:from-midnight-navy/30 transition-all duration-300"></div>
-                <div className="absolute top-4 right-4 bg-gradient-to-r from-dusty-lavender to-peach-accent text-white px-3 py-1 rounded-full text-sm font-inter font-medium shadow-lg">
+                <div className="absolute top-4 right-4 bg-gradient-secondary text-white px-3 py-1 rounded-full text-sm font-inter font-medium shadow-lg">
                   {project.year}
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <button className="bg-gradient-to-r from-white to-dusty-lavender/10 text-midnight-navy p-3 rounded-full shadow-xl hover:from-dusty-lavender hover:to-peach-accent hover:text-white transition-all duration-300 transform hover:scale-110">
+                  <button className="bg-gradient-to-r from-white/90 to-dusty-lavender/20 backdrop-blur-sm text-midnight-navy p-3 rounded-full shadow-xl hover:bg-gradient-primary hover:text-white transition-all duration-300 transform hover:scale-110">
                     <Eye size={20} />
                   </button>
                 </div>
@@ -214,7 +304,7 @@ const Portfolio = () => {
               <div className="p-6 space-y-4">
                 <div className="space-y-2">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-xl font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
+                    <h3 className="text-xl font-playfair font-semibold text-gradient-primary">
                       {project.title}
                     </h3>
                     <span className="text-sm text-dusty-lavender font-inter font-medium bg-gradient-to-r from-dusty-lavender/10 to-peach-accent/10 px-2 py-1 rounded border border-dusty-lavender/20">
@@ -227,7 +317,7 @@ const Portfolio = () => {
                 </div>
                 
                 <div className="space-y-2">
-                  <p className="text-sm font-inter font-medium bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
+                  <p className="text-sm font-inter font-medium text-gradient-primary">
                     Tools & Techniques:
                   </p>
                   <div className="flex flex-wrap gap-2">
@@ -247,8 +337,8 @@ const Portfolio = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-20 bg-gradient-to-br from-lavender-bg via-dusty-lavender/5 to-peach-accent/5 rounded-2xl p-8 md:p-12 border border-dusty-lavender/10">
-          <h2 className="text-3xl md:text-4xl font-playfair font-bold bg-gradient-to-r from-midnight-navy via-dusty-lavender to-midnight-navy bg-clip-text text-transparent mb-4">
+        <div className="text-center mt-20 bg-gradient-to-br from-lavender-bg/80 via-dusty-lavender/10 to-peach-accent/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-dusty-lavender/20 shadow-lg">
+          <h2 className="text-3xl md:text-4xl font-playfair font-bold text-gradient-primary animate-gradient-shift mb-4">
             Let's Create Something Beautiful Together
           </h2>
           <p className="text-lg text-slate-gray font-inter mb-8 max-w-2xl mx-auto">
@@ -257,7 +347,7 @@ const Portfolio = () => {
           </p>
           <Link
             to="/contact"
-            className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-midnight-navy to-dusty-lavender text-white font-inter font-medium rounded-lg hover:from-dusty-lavender hover:to-midnight-navy transition-all duration-300 group shadow-lg hover:shadow-xl transform hover:scale-105"
+            className="inline-flex items-center px-8 py-3 bg-gradient-primary text-white font-inter font-medium rounded-lg hover:bg-gradient-secondary transition-all duration-300 group shadow-lg hover:shadow-xl transform hover:scale-105 animate-gradient-shift"
           >
             Start a Project
             <ExternalLink className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-200" />
