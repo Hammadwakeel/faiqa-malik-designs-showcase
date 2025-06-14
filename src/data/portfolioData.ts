@@ -5,6 +5,7 @@ import { technicalProjects } from './categories/technical';
 import { textileProjects } from './categories/textile';
 import { dressMakingProjects } from './categories/dressMaking';
 import { techpacksProjects } from './categories/techpacks';
+import { fashionDevelopmentProjects } from './categories/fashionDevelopment';
 
 export type { Project };
 
@@ -13,7 +14,8 @@ export const portfolioProjects: Project[] = [
   ...technicalProjects,
   ...textileProjects,
   ...dressMakingProjects,
-  ...techpacksProjects
+  ...techpacksProjects,
+  ...fashionDevelopmentProjects
 ];
 
-export const portfolioCategories = ['All Work', 'Work', 'Technical', 'Textile', 'Dress making ( pattern+ draping)', 'Techpacks'];
+export const portfolioCategories = ['All Work', 'Work', 'Technical', 'Textile', 'Dress making ( pattern+ draping)', 'Techpacks', 'Fashion Development'];
