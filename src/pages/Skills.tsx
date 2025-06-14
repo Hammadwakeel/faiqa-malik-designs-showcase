@@ -37,9 +37,7 @@ const Skills = () => {
   const softwareTools = [
     { name: "Adobe Photoshop", description: "Photo editing and digital illustration", level: "Advanced" },
     { name: "Adobe Illustrator", description: "Vector graphics and fashion illustrations", level: "Advanced" },
-    { name: "AutoCAD", description: "Technical drawings and pattern making", level: "Intermediate" },
-    { name: "CLO 3D", description: "3D fashion design and visualization", level: "Intermediate" },
-    { name: "CorelDRAW", description: "Graphics design and layouts", level: "Intermediate" }
+    { name: "Canva", description: "Graphic design and visual content creation", level: "Advanced" }
   ];
 
   const languages = [
