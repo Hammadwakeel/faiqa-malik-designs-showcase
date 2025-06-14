@@ -1,73 +1,73 @@
-# Welcome to your Lovable project
+Here's your updated README file with all references to **Lovable** removed and rewritten in a clean, professional tone:
 
-## Project info
+---
 
-**URL**: https://lovable.dev/projects/794f4445-8ce2-4d7e-b71c-927290cf4651
+# Faiqa Malik Designs Showcase
 
-## How can I edit this code?
+## Project Info
 
-There are several ways of editing your application.
+**GitHub Repository**: [https://github.com/Hammadwakeel/faiqa-malik-designs-showcase](https://github.com/Hammadwakeel/faiqa-malik-designs-showcase)
 
-**Use Lovable**
+## Getting Started
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/794f4445-8ce2-4d7e-b71c-927290cf4651) and start prompting.
+You can edit and run this project using your preferred development tools. Below are the steps to set it up locally.
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🧑‍💻 Local Development Setup
 
-**Use your preferred IDE**
+Ensure you have **Node.js** and **npm** installed. You can install Node.js easily using [nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+#### Steps:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Step 1: Clone the repository
+git clone https://github.com/Hammadwakeel/faiqa-malik-designs-showcase.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Step 2: Navigate to the project directory
+cd faiqa-malik-designs-showcase
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Step 3: Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Run the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### 💻 Edit Directly on GitHub
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+* Navigate to the file you want to edit
+* Click the **Edit** (pencil) icon
+* Make your changes and commit
 
-**Use GitHub Codespaces**
+### 🌐 Use GitHub Codespaces (Optional)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+* Open your repo on GitHub
+* Click the **Code** button, then the **Codespaces** tab
+* Create a new Codespace and start editing in the cloud
 
-## What technologies are used for this project?
+## 🛠️ Tech Stack
 
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+* **Vite**
+* **React**
+* **TypeScript**
+* **shadcn-ui**
+* **Tailwind CSS**
 
-## How can I deploy this project?
+## 🚀 Deployment
 
-Simply open [Lovable](https://lovable.dev/projects/794f4445-8ce2-4d7e-b71c-927290cf4651) and click on Share -> Publish.
+You can deploy this project to any preferred platform such as:
 
-## Can I connect a custom domain to my Lovable project?
+* **Vercel**
+* **Netlify**
+* **GitHub Pages**
 
-Yes, you can!
+Follow platform-specific instructions to link your repository and deploy.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🌍 Custom Domain
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+To connect a custom domain, refer to your deployment platform’s domain settings. Make sure your domain points to the correct hosting records.
+
+---
+
+Let me know if you'd like to include a license, contributor section, or usage instructions.
