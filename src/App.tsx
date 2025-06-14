@@ -16,8 +16,6 @@ import Education from "./pages/Education";
 import Contact from "./pages/Contact";
 import Testimonials from "./pages/Testimonials";
 import Chat from "./pages/Chat";
-import Auth from "./pages/Auth";
-import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -42,8 +40,6 @@ const App = () => (
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/testimonials" element={<Testimonials />} />
                 <Route path="/chat" element={<Chat />} />
-                <Route path="/auth" element={<Auth />} />
-                <Route path="/admin" element={<Admin />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>
