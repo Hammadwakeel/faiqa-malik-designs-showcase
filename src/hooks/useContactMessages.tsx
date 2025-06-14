@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { supabase } from '@/integrations/supabase/client';
+import type { Tables } from "@/integrations/supabase/types";
 
 interface ContactMessage {
   id: string;
@@ -21,12 +22,26 @@ export const useContactMessages = () => {
     try {
       setLoading(true);
       const { data, error } = await supabase
-        .from<any>('contact_messages')
+        .from('contact_messages')
         .select('*')
         .order('created_at', { ascending: false });
 
       if (error) throw error;
-      setMessages(data || []);
+      if (data) {
+        setMessages(
+          data.map((msg: Tables<'contact_messages'>) => ({
+            id: msg.id,
+            name: msg.name,
+            email: msg.email,
+            subject: msg.subject,
+            message: msg.message,
+            created_at: msg.created_at,
+            is_read: msg.is_read,
+          }))
+        );
+      } else {
+        setMessages([]);
+      }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'An error occurred');
     } finally {
@@ -37,15 +52,14 @@ export const useContactMessages = () => {
   const markAsRead = async (id: string) => {
     try {
       const { error } = await supabase
-        .from<any>('contact_messages')
+        .from('contact_messages')
         .update({ is_read: true })
         .eq('id', id);
 
       if (error) throw error;
-      
-      // Update local state
-      setMessages(prev => 
-        prev.map(msg => 
+
+      setMessages(prev =>
+        prev.map(msg =>
           msg.id === id ? { ...msg, is_read: true } : msg
         )
       );
@@ -62,8 +76,15 @@ export const useContactMessages = () => {
   }) => {
     try {
       const { error } = await supabase
-        .from<any>('contact_messages')
-        .insert([formData]);
+        .from('contact_messages')
+        .insert([
+          {
+            name: formData.name,
+            email: formData.email,
+            subject: formData.subject,
+            message: formData.message,
+          } as Tables<"contact_messages">,
+        ]);
 
       if (error) throw error;
       return { success: true };
