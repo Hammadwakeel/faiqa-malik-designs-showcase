@@ -42,10 +42,10 @@ const Skills = () => {
   ];
 
   const getLevelColor = (level: number) => {
-    if (level >= 90) return 'bg-midnight-navy';
-    if (level >= 80) return 'bg-dusty-lavender';
-    if (level >= 70) return 'bg-peach-accent';
-    return 'bg-slate-gray';
+    if (level >= 90) return 'bg-gradient-to-r from-midnight-navy to-dusty-lavender';
+    if (level >= 80) return 'bg-gradient-to-r from-dusty-lavender to-peach-accent';
+    if (level >= 70) return 'bg-gradient-to-r from-peach-accent to-dusty-lavender';
+    return 'bg-gradient-to-r from-slate-gray to-dusty-lavender';
   };
 
   const getLevelText = (level: number) => {
@@ -56,11 +56,11 @@ const Skills = () => {
   };
 
   return (
-    <div className="min-h-screen py-20">
+    <div className="min-h-screen py-20 bg-gradient-to-br from-lavender-bg via-white to-dusty-lavender/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center space-y-8 mb-16 animate-fade-in">
-          <h1 className="text-5xl md:text-6xl font-playfair font-bold text-midnight-navy">
+          <h1 className="text-5xl md:text-6xl font-playfair font-bold bg-gradient-to-r from-midnight-navy via-dusty-lavender to-peach-accent bg-clip-text text-transparent">
             Skills & Expertise
           </h1>
           <p className="text-xl text-slate-gray font-inter max-w-3xl mx-auto">
@@ -72,7 +72,7 @@ const Skills = () => {
         {/* Technical Skills */}
         <div className="mb-20">
           <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-4xl font-playfair font-bold text-midnight-navy mb-4">
+            <h2 className="text-4xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent mb-4">
               Technical Skills
             </h2>
             <p className="text-lg text-slate-gray font-inter max-w-2xl mx-auto">
@@ -86,15 +86,15 @@ const Skills = () => {
               return (
                 <div 
                   key={index} 
-                  className="bg-white rounded-xl shadow-lg p-6 border border-dusty-lavender/10 hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-fade-in"
+                  className="bg-gradient-to-br from-white via-lavender-bg to-dusty-lavender/20 rounded-xl shadow-lg p-6 border border-dusty-lavender/20 hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-fade-in backdrop-blur-sm"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-12 h-12 bg-dusty-lavender/10 rounded-lg flex items-center justify-center transform transition-transform duration-300 group-hover:rotate-6">
-                      <IconComponent className="w-6 h-6 text-dusty-lavender" />
+                    <div className="w-12 h-12 bg-gradient-to-r from-dusty-lavender to-peach-accent rounded-lg flex items-center justify-center transform transition-transform duration-300 group-hover:rotate-6 shadow-md">
+                      <IconComponent className="w-6 h-6 text-white" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="font-playfair font-semibold text-midnight-navy text-lg">
+                      <h3 className="font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent text-lg">
                         {skill.name}
                       </h3>
                       <p className="text-sm text-slate-gray font-inter">
@@ -102,7 +102,7 @@ const Skills = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
+                  <div className="w-full bg-gradient-to-r from-gray-200 to-gray-300 rounded-full h-2 overflow-hidden">
                     <div
                       className={`h-2 rounded-full transition-all duration-1000 ease-out ${getLevelColor(skill.level)}`}
                       style={{ 
@@ -120,7 +120,7 @@ const Skills = () => {
         {/* Soft Skills */}
         <div className="mb-20">
           <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-4xl font-playfair font-bold text-midnight-navy mb-4">
+            <h2 className="text-4xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent mb-4">
               Soft Skills
             </h2>
             <p className="text-lg text-slate-gray font-inter max-w-2xl mx-auto">
@@ -134,18 +134,18 @@ const Skills = () => {
               return (
                 <div 
                   key={index} 
-                  className="bg-lavender-bg rounded-xl p-6 text-center hover:bg-white hover:shadow-lg transition-all duration-300 border border-dusty-lavender/20 transform hover:scale-105 animate-fade-in"
+                  className="bg-gradient-to-br from-dusty-lavender/20 via-lavender-bg to-peach-accent/20 rounded-xl p-6 text-center hover:bg-gradient-to-br hover:from-white hover:via-lavender-bg hover:to-dusty-lavender/30 hover:shadow-lg transition-all duration-300 border border-dusty-lavender/30 transform hover:scale-105 animate-fade-in backdrop-blur-sm"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="w-16 h-16 bg-dusty-lavender rounded-full flex items-center justify-center mx-auto mb-4 transform transition-transform duration-300 hover:rotate-12">
+                  <div className="w-16 h-16 bg-gradient-to-r from-dusty-lavender to-peach-accent rounded-full flex items-center justify-center mx-auto mb-4 transform transition-transform duration-300 hover:rotate-12 shadow-lg">
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="font-playfair font-semibold text-midnight-navy mb-2 text-lg">
+                  <h3 className="font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent mb-2 text-lg">
                     {skill.name}
                   </h3>
-                  <div className="w-full bg-white rounded-full h-2 mb-2 overflow-hidden">
+                  <div className="w-full bg-gradient-to-r from-white to-gray-100 rounded-full h-2 mb-2 overflow-hidden">
                     <div
-                      className="h-2 bg-dusty-lavender rounded-full transition-all duration-1000 ease-out"
+                      className="h-2 bg-gradient-to-r from-dusty-lavender to-peach-accent rounded-full transition-all duration-1000 ease-out"
                       style={{ 
                         width: `${skill.level}%`,
                         animationDelay: `${index * 0.1 + 0.5}s`
@@ -164,7 +164,7 @@ const Skills = () => {
         {/* Software & Tools */}
         <div className="mb-20">
           <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-4xl font-playfair font-bold text-midnight-navy mb-4">
+            <h2 className="text-4xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent mb-4">
               Software & Tools
             </h2>
             <p className="text-lg text-slate-gray font-inter max-w-2xl mx-auto">
@@ -176,18 +176,18 @@ const Skills = () => {
             {softwareTools.map((tool, index) => (
               <div 
                 key={index} 
-                className="bg-white rounded-xl shadow-lg p-6 border border-dusty-lavender/10 hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-fade-in"
+                className="bg-gradient-to-br from-white via-lavender-bg to-dusty-lavender/20 rounded-xl shadow-lg p-6 border border-dusty-lavender/20 hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-fade-in backdrop-blur-sm"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-xl font-playfair font-semibold text-midnight-navy">
+                    <h3 className="text-xl font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
                       {tool.name}
                     </h3>
                     <span className={`px-3 py-1 rounded-full text-xs font-inter font-medium transform transition-transform duration-300 hover:scale-110 ${
-                      tool.level === 'Advanced' ? 'bg-midnight-navy text-white' :
-                      tool.level === 'Intermediate' ? 'bg-dusty-lavender text-white' :
-                      'bg-peach-accent text-white'
+                      tool.level === 'Advanced' ? 'bg-gradient-to-r from-midnight-navy to-dusty-lavender text-white' :
+                      tool.level === 'Intermediate' ? 'bg-gradient-to-r from-dusty-lavender to-peach-accent text-white' :
+                      'bg-gradient-to-r from-peach-accent to-dusty-lavender text-white'
                     }`}>
                       {tool.level}
                     </span>
@@ -204,7 +204,7 @@ const Skills = () => {
         {/* Languages */}
         <div className="mb-20">
           <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-4xl font-playfair font-bold text-midnight-navy mb-4">
+            <h2 className="text-4xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent mb-4">
               Languages
             </h2>
             <p className="text-lg text-slate-gray font-inter max-w-2xl mx-auto">
@@ -216,13 +216,13 @@ const Skills = () => {
             {languages.map((lang, index) => (
               <div 
                 key={index} 
-                className="bg-white rounded-xl shadow-lg p-8 text-center border border-dusty-lavender/10 hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-fade-in"
+                className="bg-gradient-to-br from-white via-lavender-bg to-dusty-lavender/30 rounded-xl shadow-lg p-8 text-center border border-dusty-lavender/20 hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-fade-in backdrop-blur-sm"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <h3 className="text-2xl font-playfair font-bold text-midnight-navy mb-2">
+                <h3 className="text-2xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent mb-2">
                   {lang.name}
                 </h3>
-                <p className="text-dusty-lavender font-inter font-medium text-lg">
+                <p className="text-lg font-inter font-medium bg-gradient-to-r from-dusty-lavender to-peach-accent bg-clip-text text-transparent">
                   {lang.level}
                 </p>
               </div>
@@ -231,8 +231,8 @@ const Skills = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center bg-midnight-navy rounded-2xl p-8 md:p-12 text-white animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-4">
+        <div className="text-center bg-gradient-to-br from-midnight-navy via-dusty-lavender/20 to-midnight-navy rounded-2xl p-8 md:p-12 text-white animate-fade-in border border-dusty-lavender/30 shadow-2xl backdrop-blur-sm">
+          <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-4 bg-gradient-to-r from-white to-dusty-lavender/90 bg-clip-text text-transparent">
             Let's Collaborate
           </h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
@@ -242,13 +242,13 @@ const Skills = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:designerfaiqamalik7@gmail.com"
-              className="inline-flex items-center px-8 py-3 bg-dusty-lavender text-white font-inter font-medium rounded-lg hover:bg-dusty-lavender/90 transition-all duration-200 transform hover:scale-105"
+              className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-dusty-lavender to-peach-accent text-white font-inter font-medium rounded-lg hover:from-dusty-lavender/90 hover:to-peach-accent/90 transition-all duration-200 transform hover:scale-105 shadow-lg"
             >
               Start a Conversation
             </a>
             <a
               href="/portfolio"
-              className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-inter font-medium rounded-lg hover:bg-white hover:text-midnight-navy transition-all duration-200 transform hover:scale-105"
+              className="inline-flex items-center px-8 py-3 border-2 border-gradient-to-r border-dusty-lavender text-white font-inter font-medium rounded-lg bg-gradient-to-r from-transparent to-dusty-lavender/20 hover:from-dusty-lavender/20 hover:to-peach-accent/20 hover:border-peach-accent transition-all duration-200 transform hover:scale-105"
             >
               View My Work
             </a>
