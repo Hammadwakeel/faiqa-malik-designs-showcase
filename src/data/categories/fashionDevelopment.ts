@@ -1,4 +1,3 @@
-
 import { Project } from '../types';
 
 export const fashionDevelopmentProjects: Project[] = [
@@ -180,6 +179,51 @@ export const fashionDevelopmentProjects: Project[] = [
     description: "Experimental fashion development illustration featuring creative design elements with innovative textile treatments. Shows detailed exploration of fashion design development with artistic mixed media integration.",
     image: "/lovable-uploads/aa6f35a6-af40-426f-b5ef-d8ab6ee1f589.png",
     tools: ["Creative Design", "Innovative Textiles", "Artistic Integration"],
+    year: "2024"
+  },
+  {
+    id: 1021,
+    title: "Conceptual Fashion Development with Mixed Media",
+    category: "Fashion Development",
+    description: "Advanced fashion development sketches featuring conceptual design elements with mixed media collage applications. Shows innovative approach to fashion illustration combining artistic elements with technical fashion drawing.",
+    image: "/lovable-uploads/06c22bfb-ab45-4c31-b49b-b692bc900702.png",
+    tools: ["Conceptual Design", "Mixed Media Collage", "Technical Drawing"],
+    year: "2024"
+  },
+  {
+    id: 1022,
+    title: "Artistic Fashion Illustration Series",
+    category: "Fashion Development",
+    description: "Fashion development illustration showcasing artistic mixed media elements with contemporary fashion sketching. Features detailed croquis work combined with creative artistic applications and design development process.",
+    image: "/lovable-uploads/8ddb5487-1c59-4c1e-8d78-656a68a30570.png",
+    tools: ["Artistic Illustration", "Mixed Media Art", "Contemporary Sketching"],
+    year: "2024"
+  },
+  {
+    id: 1023,
+    title: "Problem-Solution Fashion Development",
+    category: "Fashion Development",
+    description: "Innovative fashion development sketch exploring problem-solving approaches in design with conceptual puzzle elements. Shows creative thinking process in fashion development with mixed media artistic integration.",
+    image: "/lovable-uploads/9fdb6949-c547-4805-8d7d-c1d057007bef.png",
+    tools: ["Problem Solving", "Conceptual Design", "Creative Development"],
+    year: "2024"
+  },
+  {
+    id: 1024,
+    title: "Contemporary Fashion Development with Cultural Elements",
+    category: "Fashion Development",
+    description: "Fashion development illustration featuring contemporary designs with cultural motifs and mixed media applications. Demonstrates fusion of traditional elements with modern fashion development techniques.",
+    image: "/lovable-uploads/ef12212c-3ca7-4b18-8bcd-5b18aeeaf2eb.png",
+    tools: ["Cultural Fusion", "Contemporary Design", "Mixed Media"],
+    year: "2024"
+  },
+  {
+    id: 1025,
+    title: "Structured Fashion Development with Architectural Elements",
+    category: "Fashion Development",
+    description: "Advanced fashion development sketch exploring structured garment construction with architectural design principles. Features detailed technical drawing combined with creative mixed media artistic elements.",
+    image: "/lovable-uploads/484074cc-5373-41d0-bf84-cee25f4d7406.png",
+    tools: ["Architectural Design", "Structured Construction", "Technical Drawing"],
     year: "2024"
   }
 ];
