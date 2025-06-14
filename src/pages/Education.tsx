@@ -1,6 +1,7 @@
 
 import { GraduationCap, Award, Calendar, MapPin, ZoomIn } from 'lucide-react';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { ScrollArea } from '@/components/ui/scroll-area';
 
 const Education = () => {
   const education = [
@@ -296,7 +297,7 @@ const Education = () => {
                                 <Award size={16} />
                                 Related Certificates:
                               </h4>
-                              <div className="flex flex-wrap gap-4 overflow-x-auto">
+                              <div className="flex flex-wrap gap-4">
                                 {edu.certificates.map((cert, certIndex) => (
                                   <Dialog key={certIndex}>
                                     <DialogTrigger asChild>
@@ -327,13 +328,13 @@ const Education = () => {
                                       </div>
                                     </DialogTrigger>
                                     <DialogContent className="max-w-4xl w-full max-h-[90vh] p-0 overflow-hidden">
-                                      <div className="relative overflow-auto max-h-[90vh]">
+                                      <ScrollArea className="h-[90vh] w-full">
                                         <img 
                                           src={cert.image} 
                                           alt={cert.title} 
                                           className="w-full h-auto object-contain"
                                         />
-                                      </div>
+                                      </ScrollArea>
                                     </DialogContent>
                                   </Dialog>
                                 ))}
@@ -443,13 +444,13 @@ const Education = () => {
                                 </div>
                               </DialogTrigger>
                               <DialogContent className="max-w-4xl w-full max-h-[90vh] p-0 overflow-hidden">
-                                <div className="relative overflow-auto max-h-[90vh]">
+                                <ScrollArea className="h-[90vh] w-full">
                                   <img 
                                     src={certificate.image} 
                                     alt={certificate.title} 
                                     className="w-full h-auto object-contain"
                                   />
-                                </div>
+                                </ScrollArea>
                               </DialogContent>
                             </Dialog>
                           ))}
