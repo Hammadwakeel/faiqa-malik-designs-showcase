@@ -73,5 +73,77 @@ export const illustrationProjects: Project[] = [
     image: "/lovable-uploads/1fa2327a-a7d4-443a-8844-a54bb949f995.png",
     tools: ["Ethereal Design", "Flowing Fabrics", "Artistic Portrait"],
     year: "2024"
+  },
+  {
+    id: 2009,
+    title: "Vintage Madrid Evening Gown",
+    category: "Illustration",
+    description: "Elegant fashion illustration featuring a burgundy evening gown with dramatic slit against European street backdrop. Captures the essence of romantic European fashion with detailed architectural elements and sophisticated styling.",
+    image: "/lovable-uploads/3e9b661f-a1fb-469a-80a5-c9274cda269e.png",
+    tools: ["Evening Wear", "European Style", "Romantic Illustration"],
+    year: "2024"
+  },
+  {
+    id: 2010,
+    title: "Nude Dress Fashion Illustration",
+    category: "Illustration",
+    description: "Fashion illustration showcasing nude dress design with flowing ribbons and contemporary styling. Features mixed media elements with artistic typography and flowing design composition.",
+    image: "/lovable-uploads/3bd283b1-b793-4e94-b564-6c0c7d566a6d.png",
+    tools: ["Nude Fashion", "Mixed Media", "Typography Design"],
+    year: "2024"
+  },
+  {
+    id: 2011,
+    title: "Asian-Inspired Fashion Illustration",
+    category: "Illustration",
+    description: "Fashion illustration featuring Asian-inspired designs with cultural motifs and contemporary fashion elements. Showcases two distinctive looks with traditional patterns and modern silhouettes.",
+    image: "/lovable-uploads/101f52f9-d1ae-4884-a15a-34db9c6eab07.png",
+    tools: ["Cultural Fashion", "Asian Motifs", "Contemporary Design"],
+    year: "2024"
+  },
+  {
+    id: 2012,
+    title: "Vintage Madrid Dress Collection",
+    category: "Illustration",
+    description: "Vintage-inspired fashion illustration portfolio featuring Madrid dress collection with artistic presentation. Combines traditional fashion illustration with modern graphic design elements and vintage aesthetics.",
+    image: "/lovable-uploads/f96da31d-a9cd-42d4-b52b-6b7810a86283.png",
+    tools: ["Vintage Fashion", "Madrid Style", "Portfolio Design"],
+    year: "2024"
+  },
+  {
+    id: 2013,
+    title: "Neon Blaze Illustration",
+    category: "Illustration",
+    description: "Contemporary fashion illustration featuring neon blaze theme with dramatic red dress design. Combines modern digital illustration techniques with fashion styling and vibrant color palette.",
+    image: "/lovable-uploads/5c6fe043-91a7-4150-86c1-5c94d5b70f20.png",
+    tools: ["Neon Fashion", "Digital Illustration", "Contemporary Style"],
+    year: "2024"
+  },
+  {
+    id: 2014,
+    title: "Avant-Garde Orange Ensemble",
+    category: "Illustration",
+    description: "Fashion illustration featuring avant-garde orange ensemble with structural elements and artistic mask details. Showcases experimental fashion design with technical flat drawings and creative styling.",
+    image: "/lovable-uploads/86bd76d9-96bc-4017-8569-e3b8087335c3.png",
+    tools: ["Avant-garde Fashion", "Structural Design", "Technical Flats"],
+    year: "2024"
+  },
+  {
+    id: 2015,
+    title: "Dramatic Orange Circle Skirt",
+    category: "Illustration",
+    description: "Fashion illustration showcasing dramatic orange circle skirt design with artistic mask elements and technical sketches. Features bold color blocking and experimental fashion styling with structured silhouettes.",
+    image: "/lovable-uploads/b767a1e0-0436-4a94-9962-0343370366ff.png",
+    tools: ["Circle Skirt", "Bold Colors", "Experimental Design"],
+    year: "2024"
+  },
+  {
+    id: 2016,
+    title: "Red Ruffle Drama Collection",
+    category: "Illustration",
+    description: "Fashion illustration featuring red ruffle drama collection with avant-garde mask styling and technical development sketches. Combines dramatic ruffles with contemporary fashion illustration techniques.",
+    image: "/lovable-uploads/75c5aa57-2673-45fd-9b41-07a788fcd20a.png",
+    tools: ["Ruffle Design", "Drama Fashion", "Technical Development"],
+    year: "2024"
   }
 ];
