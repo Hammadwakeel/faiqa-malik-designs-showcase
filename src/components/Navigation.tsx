@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Instagram, Mail } from 'lucide-react';
@@ -21,12 +22,17 @@ const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="bg-white/90 backdrop-blur-md shadow-lg sticky top-0 z-50">
+    <nav className="bg-gradient-to-r from-dusty-lavender/20 via-white to-peach-accent/20 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-dusty-lavender/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-playfair font-bold text-midnight-navy">
+          <Link to="/" className="flex items-center space-x-3">
+            <img
+              src="/lovable-uploads/669f9703-acb4-4ba3-8593-99f3277ddc61.png"
+              alt="Faiqa Malik"
+              className="h-10 w-auto"
+            />
+            <span className="text-2xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
               Faiqa Malik
             </span>
           </Link>
@@ -48,7 +54,7 @@ const Navigation = () => {
             ))}
             
             {/* Social Icons */}
-            <div className="flex items-center space-x-4 ml-6 pl-6 border-l border-gray-200">
+            <div className="flex items-center space-x-4 ml-6 pl-6 border-l border-dusty-lavender/30">
               <a
                 href="https://instagram.com/designer_faiqamalik"
                 target="_blank"
@@ -79,7 +85,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden bg-white border-t border-gray-200">
+          <div className="md:hidden bg-white/90 backdrop-blur-md border-t border-dusty-lavender/20">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navItems.map((item) => (
                 <Link
@@ -97,7 +103,7 @@ const Navigation = () => {
               ))}
               
               {/* Mobile Social Icons */}
-              <div className="flex items-center space-x-4 px-3 py-2 border-t border-gray-200 mt-4">
+              <div className="flex items-center space-x-4 px-3 py-2 border-t border-dusty-lavender/20 mt-4">
                 <a
                   href="https://instagram.com/designer_faiqamalik"
                   target="_blank"
