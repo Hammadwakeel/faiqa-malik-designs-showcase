@@ -91,5 +91,95 @@ export const fashionDevelopmentProjects: Project[] = [
     image: "/lovable-uploads/6788e30d-1c08-4e76-846f-d6f3db1d5eae.png",
     tools: ["Fluid Design", "Fabric Treatment", "Contemporary Styling"],
     year: "2024"
+  },
+  {
+    id: 1011,
+    title: "Draped Silhouette Fashion Development",
+    category: "Fashion Development",
+    description: "Fashion development sketches showcasing draped silhouettes with mixed textile applications. Features detailed progression from basic croquis to fully rendered fashion designs with fabric samples.",
+    image: "/lovable-uploads/0d9089db-614b-4cf1-a8cb-db59f90da799.png",
+    tools: ["Draping Techniques", "Mixed Textiles", "Fashion Sketching"],
+    year: "2024"
+  },
+  {
+    id: 1012,
+    title: "Contemporary Fashion Illustration Series",
+    category: "Fashion Development",
+    description: "Fashion development illustrations featuring contemporary off-shoulder designs with flowing fabrics. Demonstrates design evolution from sketch to detailed garment construction with textile integration.",
+    image: "/lovable-uploads/1ec2707f-d503-4011-bce3-b25a17427930.png",
+    tools: ["Contemporary Design", "Off-shoulder Construction", "Fabric Integration"],
+    year: "2024"
+  },
+  {
+    id: 1013,
+    title: "Evening Wear Development Study",
+    category: "Fashion Development",
+    description: "Advanced fashion development sketch exploring evening wear silhouettes with dramatic fabric treatments. Shows detailed design process from concept to final garment with mixed media applications.",
+    image: "/lovable-uploads/23e08b1e-d46d-45f1-bf2f-6db6be40bb08.png",
+    tools: ["Evening Wear", "Dramatic Silhouettes", "Mixed Media"],
+    year: "2024"
+  },
+  {
+    id: 1014,
+    title: "Bohemian Fashion Development",
+    category: "Fashion Development",
+    description: "Fashion development illustration featuring bohemian-inspired designs with flowing fabrics and cultural elements. Demonstrates progressive design development with detailed construction notes.",
+    image: "/lovable-uploads/90e6f6d3-8e8b-4953-8d39-169617cbc5d3.png",
+    tools: ["Bohemian Style", "Cultural Elements", "Progressive Design"],
+    year: "2024"
+  },
+  {
+    id: 1015,
+    title: "Conceptual Fashion Design Development",
+    category: "Fashion Development",
+    description: "Experimental fashion development sketches exploring conceptual design elements with mixed media collage techniques. Features innovative approach to fashion illustration and design development process.",
+    image: "/lovable-uploads/4fb5ff36-12e5-4364-bcc6-e1add8914676.png",
+    tools: ["Conceptual Design", "Mixed Media Collage", "Experimental Techniques"],
+    year: "2024"
+  },
+  {
+    id: 1016,
+    title: "Structured Fashion Development Study",
+    category: "Fashion Development",
+    description: "Fashion development illustration showcasing structured garment designs with detailed construction techniques. Features progressive sketching from basic forms to complex structured silhouettes.",
+    image: "/lovable-uploads/c742a81d-d2cd-40c3-8e98-8246d1cb2088.png",
+    tools: ["Structured Design", "Construction Techniques", "Progressive Sketching"],
+    year: "2024"
+  },
+  {
+    id: 1017,
+    title: "Artistic Fashion Development Collection",
+    category: "Fashion Development",
+    description: "Advanced fashion development sketches featuring artistic elements with cultural motifs and innovative construction. Shows detailed design development process with mixed media artistic applications.",
+    image: "/lovable-uploads/a864e196-9a63-4e38-9bee-28391e11b62c.png",
+    tools: ["Artistic Elements", "Cultural Motifs", "Mixed Media Art"],
+    year: "2024"
+  },
+  {
+    id: 1018,
+    title: "Flowing Fashion Design Development",
+    category: "Fashion Development",
+    description: "Fashion development illustration exploring flowing design concepts with dramatic fabric manipulation and innovative styling. Features detailed progression from concept to final design development.",
+    image: "/lovable-uploads/674f6bef-0dd1-4851-ba66-832f83a59822.png",
+    tools: ["Flowing Design", "Fabric Manipulation", "Innovative Styling"],
+    year: "2024"
+  },
+  {
+    id: 1019,
+    title: "Tailored Fashion Development Series",
+    category: "Fashion Development",
+    description: "Fashion development sketches showcasing tailored garment construction with detailed structural elements. Demonstrates advanced fashion development techniques and progressive design evolution.",
+    image: "/lovable-uploads/56865d4b-c7e3-4d19-b197-bf342f818d62.png",
+    tools: ["Tailored Construction", "Structural Elements", "Advanced Techniques"],
+    year: "2024"
+  },
+  {
+    id: 1020,
+    title: "Creative Fashion Development Concept",
+    category: "Fashion Development",
+    description: "Experimental fashion development illustration featuring creative design elements with innovative textile treatments. Shows detailed exploration of fashion design development with artistic mixed media integration.",
+    image: "/lovable-uploads/aa6f35a6-af40-426f-b5ef-d8ab6ee1f589.png",
+    tools: ["Creative Design", "Innovative Textiles", "Artistic Integration"],
+    year: "2024"
   }
 ];
