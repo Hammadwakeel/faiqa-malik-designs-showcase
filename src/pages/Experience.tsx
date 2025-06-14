@@ -110,15 +110,6 @@ const Experience = () => {
     }
   ];
 
-  const additionalCertificates = [
-    {
-      title: "Youth Development Certificate",
-      company: "Helping Hand Organization",
-      image: "/lovable-uploads/10ad8a63-3f6f-4179-bf15-b90548ed98f4.png",
-      description: "Recognition for youth development and humanitarian efforts"
-    }
-  ];
-
   const getTypeColor = (type: string) => {
     switch (type) {
       case 'Freelance':
@@ -305,68 +296,6 @@ const Experience = () => {
           </div>
         </div>
 
-        {/* Additional Professional Certificates Section */}
-        <div className="mb-20">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent mb-4">
-              Additional Professional Certificates
-            </h2>
-            <p className="text-lg text-slate-gray font-inter max-w-2xl mx-auto">
-              Additional training and development certifications
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {additionalCertificates.map((cert, index) => (
-              <Dialog key={index}>
-                <DialogTrigger asChild>
-                  <div className="relative group cursor-pointer">
-                    <div className="absolute -inset-1 bg-gradient-to-r from-dusty-lavender via-peach-accent to-midnight-navy rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
-                    <div className="relative bg-gradient-to-br from-white to-lavender-bg rounded-xl shadow-lg p-6 border border-dusty-lavender/20 hover:shadow-xl transition-shadow duration-300">
-                      <div className="space-y-4">
-                        <div className="relative overflow-hidden rounded-lg">
-                          <img 
-                            src={cert.image} 
-                            alt={cert.title} 
-                            className="w-full h-40 object-cover transition-transform duration-300 group-hover:scale-105"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-midnight-navy/20 to-transparent"></div>
-                          <div className="absolute top-2 right-2">
-                            <ZoomIn className="w-5 h-5 text-white bg-midnight-navy/50 rounded-full p-1" />
-                          </div>
-                        </div>
-                        <div className="space-y-2">
-                          <div className="flex items-center space-x-2">
-                            <Award className="w-4 h-4 text-dusty-lavender" />
-                            <h3 className="text-sm font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
-                              {cert.title}
-                            </h3>
-                          </div>
-                          <p className="text-slate-gray font-inter font-medium text-xs">
-                            {cert.company}
-                          </p>
-                          <p className="text-slate-gray font-inter text-xs">
-                            {cert.description}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </DialogTrigger>
-                <DialogContent className="max-w-4xl w-full max-h-[90vh] p-0">
-                  <div className="relative">
-                    <img 
-                      src={cert.image} 
-                      alt={cert.title} 
-                      className="w-full h-auto object-contain"
-                    />
-                  </div>
-                </DialogContent>
-              </Dialog>
-            ))}
-          </div>
-        </div>
-
         {/* CTA Section */}
         <div className="text-center bg-gradient-to-br from-dusty-lavender/10 via-lavender-bg to-peach-accent/5 rounded-2xl p-8 md:p-12 border border-dusty-lavender/20">
           <h2 className="text-3xl md:text-4xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent mb-4">
@@ -388,7 +317,7 @@ const Experience = () => {
               className="inline-flex items-center px-8 py-3 border-2 border-dusty-lavender bg-gradient-to-r from-transparent to-dusty-lavender/5 text-midnight-navy font-inter font-medium rounded-lg hover:bg-gradient-to-r hover:from-dusty-lavender hover:to-peach-accent hover:text-white hover:border-transparent transition-all duration-200"
             >
               Download Resume
-            </a>
+            </button>
           </div>
         </div>
       </div>
