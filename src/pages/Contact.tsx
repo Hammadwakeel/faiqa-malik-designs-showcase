@@ -76,13 +76,6 @@ const Contact = () => {
       link: "https://instagram.com/designer_faiqamalik"
     },
     {
-      icon: MapPin,
-      title: "Location",
-      details: "Attock City, Pakistan",
-      description: "Street #2 Malik House, Farooq-e-azam Colony",
-      link: null
-    },
-    {
       icon: Clock,
       title: "Response Time",
       details: "24-48 hours",

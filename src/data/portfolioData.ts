@@ -13,15 +13,15 @@ import { boardsProjects } from './categories/boards';
 export type { Project };
 
 export const portfolioProjects: Project[] = [
-  ...workProjects,
-  ...technicalProjects,
-  ...textileProjects,
   ...dressMakingProjects,
+  ...textileProjects,
+  ...technicalProjects,
   ...patternMakingProjects,
   ...techpacksProjects,
   ...fashionDevelopmentProjects,
   ...illustrationProjects,
-  ...boardsProjects
+  ...boardsProjects,
+  ...workProjects
 ];
 
-export const portfolioCategories = ['All Work', 'Work', 'Technical', 'Textile', 'Dress making ( pattern+ draping)', 'Pattern Making', 'Techpacks', 'Fashion Development', 'Illustration', 'Boards'];
+export const portfolioCategories = ['All Work', 'Dress making ( pattern+ draping)', 'Textile', 'Technical', 'Pattern Making', 'Techpacks', 'Fashion Development', 'Illustration', 'Boards', 'Work'];
