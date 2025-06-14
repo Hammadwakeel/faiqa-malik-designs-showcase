@@ -56,21 +56,19 @@ export async function askFaiqa(question: string, apiKey: string): Promise<string
     // Initialize the LLM client
     const llm = new ChatGroq({
       apiKey: apiKey,
-      model: "meta-llama/llama-4-scout-17b-16e-instruct",
+      model: "meta-llama/llama-3.1-70b-versatile",
       temperature: 0,
       maxRetries: 2
     });
+
+    // Convert data to string to avoid template parsing issues
+    const dataString = JSON.stringify(faiqaData, null, 2);
 
     // Build a prompt that loads Faiqa's data and scopes the assistant
     const prompt = ChatPromptTemplate.fromMessages([
       [
         "system",
-        `You are Faiqa Malik's personal fashion‑design assistant. Use ONLY the following JSON data to answer questions about Faiqa's background, skills, education, experience, and contact details.`
-      ],
-      ["system", JSON.stringify(faiqaData, null, 2)],
-      [
-        "system",
-        `If the user's question is outside the scope of this data, respond exactly with: "I don't know".`
+        "You are Faiqa Malik's personal fashion‑design assistant. Use ONLY the following data to answer questions about Faiqa's background, skills, education, experience, and contact details:\n\n" + dataString + "\n\nIf the user's question is outside the scope of this data, respond exactly with: \"I don't know\"."
       ],
       ["user", "{user_question}"]
     ]);
