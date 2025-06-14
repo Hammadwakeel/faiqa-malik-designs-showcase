@@ -596,15 +596,6 @@ export const portfolioProjects: Project[] = [
   },
   {
     id: 66,
-    title: "Pleated Dress Technical Drawing",
-    category: "Technical",
-    description: "Comprehensive technical flat of pleated dress with puff sleeves and belt detail. Front and back construction specifications included.",
-    image: "/lovable-uploads/9d9cab76-f6e7-4a5d-b836-3bb8c52641f4.png",
-    tools: ["Pleating Technique", "Technical Drawing", "Construction Details"],
-    year: "2024"
-  },
-  {
-    id: 67,
     title: "Ruffle Top Technical Specification",
     category: "Technical",
     description: "Technical flat of dramatic ruffle top with bow details and sleeve construction. Shows front and back pattern specifications.",
@@ -613,43 +604,7 @@ export const portfolioProjects: Project[] = [
     year: "2024"
   },
   {
-    id: 68,
-    title: "Cargo Dress Technical Drawing",
-    category: "Technical",
-    description: "Technical flat featuring cargo-style dress with pocket details and fitted construction. Includes front and back technical specifications.",
-    image: "/lovable-uploads/1fa40fe5-f3ba-497d-a63c-1e0eabd716e6.png",
-    tools: ["Cargo Design", "Technical Drawing", "Pocket Construction"],
-    year: "2024"
-  },
-  {
-    id: 69,
-    title: "Utility Dress Technical Flat",
-    category: "Technical",
-    description: "Detailed technical drawing of utility-inspired dress with functional pockets and streamlined construction details.",
-    image: "/lovable-uploads/602eb18c-bb49-434b-b8f2-3e246ad9b01f.png",
-    tools: ["Utility Design", "Technical Specification", "Functional Details"],
-    year: "2024"
-  },
-  {
-    id: 70,
-    title: "Modern Utility Dress Technical",
-    category: "Technical",
-    description: "Contemporary utility dress technical flat with cargo elements and modern construction details. Front and back specifications included.",
-    image: "/lovable-uploads/fbbbdff7-94aa-498a-b4f7-e5bc3b9a7325.png",
-    tools: ["Modern Design", "Technical Drawing", "Utility Construction"],
-    year: "2024"
-  },
-  {
-    id: 71,
-    title: "Structured Cargo Dress Technical",
-    category: "Technical",
-    description: "Technical flat of structured cargo dress with detailed pocket construction and fitted silhouette specifications.",
-    image: "/lovable-uploads/6187b221-21cb-4593-b364-dd61a9933c92.png",
-    tools: ["Structured Design", "Cargo Construction", "Technical Specification"],
-    year: "2024"
-  },
-  {
-    id: 72,
+    id: 67,
     title: "Off-Shoulder Maxi Dress Technical",
     category: "Technical",
     description: "Technical flat drawing of off-shoulder maxi dress with flowing construction and detailed neckline specifications. Front and back views included.",
@@ -658,7 +613,7 @@ export const portfolioProjects: Project[] = [
     year: "2024"
   },
   {
-    id: 73,
+    id: 68,
     title: "Ruffle Asymmetrical Dress Technical",
     category: "Technical",
     description: "Technical flat drawing of ruffle dress with asymmetrical hemline and dramatic sleeve construction. Features front and back construction details.",
@@ -667,7 +622,7 @@ export const portfolioProjects: Project[] = [
     year: "2024"
   },
   {
-    id: 74,
+    id: 69,
     title: "Three-Piece Suit Technical Drawing",
     category: "Technical",
     description: "Complete technical flat of three-piece suit including blazer, vest, and trousers. Shows front and back construction details for each piece.",
@@ -676,7 +631,7 @@ export const portfolioProjects: Project[] = [
     year: "2024"
   },
   {
-    id: 75,
+    id: 70,
     title: "Mixed Separates Technical Collection",
     category: "Technical",
     description: "Technical flat collection featuring turtleneck, vest, and skirt separates. Shows construction details for versatile wardrobe pieces.",
@@ -685,7 +640,7 @@ export const portfolioProjects: Project[] = [
     year: "2024"
   },
   {
-    id: 76,
+    id: 71,
     title: "Asymmetrical Vest and Skirt Set",
     category: "Technical",
     description: "Technical specification for asymmetrical vest with matching skirt featuring pleated details. Modern construction with contemporary silhouettes.",
@@ -694,7 +649,7 @@ export const portfolioProjects: Project[] = [
     year: "2024"
   },
   {
-    id: 77,
+    id: 72,
     title: "Classic Trench Coat Technical",
     category: "Technical",
     description: "Detailed technical flat of classic trench coat with belt, collar, and button details. Professional construction specifications for outerwear.",
@@ -703,7 +658,7 @@ export const portfolioProjects: Project[] = [
     year: "2024"
   },
   {
-    id: 78,
+    id: 73,
     title: "Puff Sleeve Dress Technical",
     category: "Technical",
     description: "Technical drawing of dress with dramatic puff sleeves and fitted bodice construction. Shows front and back pattern specifications.",
@@ -712,7 +667,7 @@ export const portfolioProjects: Project[] = [
     year: "2024"
   },
   {
-    id: 79,
+    id: 74,
     title: "Coordinated Separates Technical",
     category: "Technical",
     description: "Technical flat collection of coordinated separates including turtleneck, vest, and various bottom options. Shows construction details for mix-and-match pieces.",
@@ -721,7 +676,7 @@ export const portfolioProjects: Project[] = [
     year: "2024"
   },
   {
-    id: 80,
+    id: 75,
     title: "Casual Tracksuit Technical",
     category: "Technical",
     description: "Technical flat of casual tracksuit with ribbed details and coordinated construction. Shows front and back views with comfort-focused design.",
@@ -730,7 +685,7 @@ export const portfolioProjects: Project[] = [
     year: "2024"
   },
   {
-    id: 81,
+    id: 76,
     title: "Layered Set Technical Drawing",
     category: "Technical",
     description: "Technical specification for layered outfit featuring turtleneck, vest, and skirt with side lacing details. Modern construction with styling versatility.",
@@ -739,7 +694,7 @@ export const portfolioProjects: Project[] = [
     year: "2024"
   },
   {
-    id: 82,
+    id: 77,
     title: "Multi-Piece Ensemble Technical",
     category: "Technical",
     description: "Comprehensive technical flat of multi-piece ensemble including jacket, vest, top, and various skirt options. Shows construction details for complete wardrobe system.",
