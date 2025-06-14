@@ -332,7 +332,70 @@ export const portfolioProjects: Project[] = [
     image: "/lovable-uploads/9efe8ed5-edf8-47e9-ab91-c9b3c45a5bd3.png",
     tools: ["Kit Design", "Team Branding", "Athletic Uniform"],
     year: "2024"
+  },
+  {
+    id: 37,
+    title: "Appliqué Quilt Art",
+    category: "Textile",
+    description: "Intricate appliqué work featuring organic shapes and mixed fabric techniques. Showcases advanced quilting skills with decorative stitching and layered textures.",
+    image: "/lovable-uploads/529e2518-1d1a-4681-958a-ceceef4963ed.png",
+    tools: ["Appliqué Technique", "Hand Quilting", "Mixed Media Textiles"],
+    year: "2024"
+  },
+  {
+    id: 38,
+    title: "African Silhouette Textile Art",
+    category: "Textile",
+    description: "Artistic textile piece featuring African safari silhouettes with acacia tree and wildlife motifs. Created using natural fabric tones and appliqué techniques.",
+    image: "/lovable-uploads/191a8fb5-5b76-4372-ab62-fd9e466c3320.png",
+    tools: ["Silhouette Design", "Natural Fiber Work", "Cultural Art"],
+    year: "2024"
+  },
+  {
+    id: 39,
+    title: "Navy Ornamental Dress Design",
+    category: "Textile",
+    description: "Traditional dress design featuring intricate ornamental patterns and decorative borders. Front, back, and sleeve technical specifications with matching fabric swatches.",
+    image: "/lovable-uploads/39dc89fd-e7b4-4c7f-8422-07c96d715f4d.png",
+    tools: ["Traditional Pattern Design", "Ornamental Work", "Technical Specification"],
+    year: "2024"
+  },
+  {
+    id: 40,
+    title: "Pink Floral Dress Collection",
+    category: "Textile",
+    description: "Elegant dress design in soft pink tones with floral motifs and decorative trim. Complete technical drawing with front, back, and pattern details.",
+    image: "/lovable-uploads/c4be11cc-de3d-4d23-a72f-833772412385.png",
+    tools: ["Floral Design", "Pattern Development", "Color Coordination"],
+    year: "2024"
+  },
+  {
+    id: 41,
+    title: "Day of the Dead Floral Pattern",
+    category: "Textile",
+    description: "Bold repeating pattern featuring Day of the Dead skull motifs surrounded by vibrant red and pink hibiscus flowers. Cultural textile design with contemporary appeal.",
+    image: "/lovable-uploads/5de01113-478b-4c11-a286-25ecacf18487.png",
+    tools: ["Repeat Pattern Design", "Cultural Motifs", "Digital Textile Printing"],
+    year: "2024"
+  },
+  {
+    id: 42,
+    title: "Experimental Patchwork Collection",
+    category: "Textile",
+    description: "Contemporary patchwork design combining geometric shapes with varied textile techniques. Features experimental approach to color blocking and fabric manipulation.",
+    image: "/lovable-uploads/429d31cf-ac15-4d92-a9a4-33e7a91c9a69.png",
+    tools: ["Patchwork Technique", "Color Theory", "Experimental Textiles"],
+    year: "2024"
+  },
+  {
+    id: 43,
+    title: "Mixed Media Textile Collage",
+    category: "Textile",
+    description: "Artistic textile collage combining various fabric textures, patterns, and decorative stitching techniques. Abstract composition with bold color palette.",
+    image: "/lovable-uploads/fe25186d-39ef-4da8-b54a-ef0a4bcfa04e.png",
+    tools: ["Mixed Media", "Textile Collage", "Decorative Stitching"],
+    year: "2024"
   }
 ];
 
-export const portfolioCategories = ['All Work', 'Jacket Designs', 'Boujee Collection', 'Sports', 'Technical'];
+export const portfolioCategories = ['All Work', 'Jacket Designs', 'Boujee Collection', 'Sports', 'Technical', 'Textile'];
