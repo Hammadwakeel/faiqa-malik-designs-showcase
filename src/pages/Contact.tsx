@@ -299,30 +299,30 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* CTA Section */}
-        <div className="text-center bg-gradient-to-br from-midnight-navy via-dusty-lavender/20 to-midnight-navy rounded-2xl p-8 md:p-12 text-white border border-gradient-to-r from-dusty-lavender/30 to-peach-accent/30">
-          <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-4 bg-gradient-to-r from-white via-peach-accent to-white bg-clip-text text-transparent">
+        {/* CTA Section - Enhanced visibility */}
+        <div className="text-center bg-gradient-to-br from-midnight-navy to-dusty-lavender rounded-2xl p-8 md:p-12 text-white shadow-2xl border border-dusty-lavender/30">
+          <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-6 text-white">
             Ready to Start Your Project?
           </h2>
-          <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
+          <p className="text-lg mb-8 max-w-2xl mx-auto text-gray-100">
             Whether you have a clear vision or just an idea, I'm here to help bring 
             your fashion dreams to reality. Let's create something beautiful together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:designerfaiqamalik7@gmail.com"
-              className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-dusty-lavender to-peach-accent text-white font-inter font-medium rounded-lg hover:from-peach-accent hover:to-dusty-lavender transition-all duration-300 shadow-lg"
+              className="inline-flex items-center px-8 py-4 bg-white text-midnight-navy font-inter font-medium rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
-              <Mail className="mr-2 h-4 w-4" />
+              <Mail className="mr-2 h-5 w-5" />
               Email Me Now
             </a>
             <a
               href="https://instagram.com/designer_faiqamalik"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-8 py-3 border-2 border-gradient-to-r from-white to-peach-accent bg-gradient-to-r from-white/10 to-peach-accent/10 backdrop-blur-sm text-white font-inter font-medium rounded-lg hover:from-white/20 hover:to-peach-accent/20 transition-all duration-300"
+              className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-inter font-medium rounded-lg hover:bg-white hover:text-midnight-navy transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1"
             >
-              <Instagram className="mr-2 h-4 w-4" />
+              <Instagram className="mr-2 h-5 w-5" />
               Follow on Instagram
             </a>
           </div>
