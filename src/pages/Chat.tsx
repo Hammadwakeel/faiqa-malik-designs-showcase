@@ -1,6 +1,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, Bot, User } from 'lucide-react';
+import { Send, Bot, User, RotateCcw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useToast } from '@/hooks/use-toast';
@@ -14,14 +14,14 @@ interface Message {
 }
 
 const Chat = () => {
-  const [messages, setMessages] = useState<Message[]>([
-    {
-      id: '1',
-      content: "Hello! I'm Faiqa's AI assistant. I can answer questions about her fashion design background, skills, experience, and contact information. How can I help you today?",
-      isUser: false,
-      timestamp: new Date()
-    }
-  ]);
+  const initialMessage: Message = {
+    id: '1',
+    content: "Hello! I'm Faiqa's AI assistant. I can answer questions about her fashion design background, skills, experience, and contact information. How can I help you today?",
+    isUser: false,
+    timestamp: new Date()
+  };
+
+  const [messages, setMessages] = useState<Message[]>([initialMessage]);
   const [inputMessage, setInputMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -34,6 +34,15 @@ const Chat = () => {
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
+
+  const resetChat = () => {
+    setMessages([initialMessage]);
+    setInputMessage('');
+    toast({
+      title: "Chat Reset",
+      description: "The conversation has been cleared.",
+    });
+  };
 
   const sendMessage = async () => {
     if (!inputMessage.trim() || isLoading) return;
@@ -85,6 +94,22 @@ const Chat = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Chat Container */}
         <div className="bg-white rounded-2xl shadow-lg border border-dusty-lavender/20 overflow-hidden animate-fade-in">
+          {/* Chat Header with Reset Button */}
+          <div className="border-b border-dusty-lavender/20 p-4 flex justify-between items-center">
+            <h2 className="text-lg font-playfair font-semibold text-midnight-navy">
+              Chat Assistant
+            </h2>
+            <Button
+              onClick={resetChat}
+              variant="outline"
+              size="sm"
+              className="text-slate-gray hover:text-midnight-navy border-dusty-lavender/30 hover:border-dusty-lavender"
+            >
+              <RotateCcw size={16} className="mr-2" />
+              Reset Chat
+            </Button>
+          </div>
+
           {/* Messages */}
           <div className="h-96 overflow-y-auto p-6 space-y-4">
             {messages.map((message) => (
