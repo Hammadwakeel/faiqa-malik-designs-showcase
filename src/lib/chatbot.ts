@@ -56,7 +56,7 @@ export async function askFaiqa(question: string, apiKey: string): Promise<string
     // Initialize the LLM client
     const llm = new ChatGroq({
       apiKey: apiKey,
-      model: "meta-llama/llama-3.1-70b-versatile",
+      model: "meta-llama/llama-4-scout-17b-16e-instruct",
       temperature: 0,
       maxRetries: 2
     });
