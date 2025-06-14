@@ -7,9 +7,9 @@ import CallToAction from '../components/portfolio/CallToAction';
 import { portfolioProjects, portfolioCategories } from '../data/portfolioData';
 
 const Portfolio = () => {
-  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedCategory, setSelectedCategory] = useState('All Work');
 
-  const filteredProjects = selectedCategory === 'All' 
+  const filteredProjects = selectedCategory === 'All Work' 
     ? portfolioProjects 
     : portfolioProjects.filter(project => project.category === selectedCategory);
 
