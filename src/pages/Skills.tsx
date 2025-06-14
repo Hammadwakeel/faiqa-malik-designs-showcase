@@ -1,11 +1,10 @@
-
 import { Palette, Scissors, PenTool, Layers, Users, Clock, Target, Lightbulb } from 'lucide-react';
 
 const Skills = () => {
   const technicalSkills = [
     { name: "Sewing", level: 95, icon: Scissors },
     { name: "Pattern Making", level: 90, icon: PenTool },
-    { name: "Illustration", level: 85, icon: Palette },
+    { name: "Fashion Illustration", level: 88, icon: Palette },
     { name: "Draping", level: 88, icon: Layers },
     { name: "Garment Construction", level: 92, icon: Scissors },
     { name: "Textile Sourcing", level: 80, icon: Target },
@@ -14,7 +13,14 @@ const Skills = () => {
     { name: "Adobe Photoshop", level: 85, icon: Palette },
     { name: "Adobe Illustrator", level: 88, icon: Palette },
     { name: "CAD for Fashion (AutoCAD)", level: 75, icon: Layers },
-    { name: "Fabric Knowledge", level: 90, icon: Target }
+    { name: "Fabric Knowledge", level: 90, icon: Target },
+    { name: "Textile Design", level: 85, icon: Layers },
+    { name: "Technical Specification", level: 88, icon: PenTool },
+    { name: "Techpack Development", level: 82, icon: Target },
+    { name: "Research Boards", level: 87, icon: Lightbulb },
+    { name: "Digital Dress Making", level: 80, icon: Layers },
+    { name: "Digital Bedding", level: 78, icon: Layers },
+    { name: "Digital Pattern", level: 83, icon: PenTool }
   ];
 
   const softSkills = [
