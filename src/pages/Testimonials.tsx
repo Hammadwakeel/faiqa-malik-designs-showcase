@@ -123,18 +123,6 @@ const Testimonials = () => {
       reviewImage: "/lovable-uploads/002121ff-ce8b-4166-acea-9240bde09f16.png"
     },
     {
-      name: "Rebeccataylo368",
-      role: "Client",
-      location: "Fiverr Platform",
-      rating: 5,
-      date: "Recent",
-      testimonial: "Great job Designer Faiqa! The order was completed successfully and I earned $4 for this order. Excellent communication throughout.",
-      project: "Design Illustrations & Drawings",
-      amount: "$5",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b76c?w=150&h=150&fit=crop&crop=face",
-      reviewImage: "/lovable-uploads/df38bf94-e61a-4394-b237-a15790228517.png"
-    },
-    {
       name: "Samira G (smgree17)",
       role: "Client",
       location: "Fiverr Platform",
