@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Instagram, Mail } from 'lucide-react';
@@ -16,6 +15,7 @@ const Navigation = () => {
     { name: 'Education', path: '/education' },
     { name: 'Contact', path: '/contact' },
     { name: 'Testimonials', path: '/testimonials' },
+    { name: 'Chat', path: '/chat' },
   ];
 
   const isActive = (path: string) => location.pathname === path;

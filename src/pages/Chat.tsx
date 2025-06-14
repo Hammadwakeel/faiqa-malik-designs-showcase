@@ -83,16 +83,6 @@ const Chat = () => {
   return (
     <div className="min-h-screen py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center space-y-8 mb-8 animate-fade-in">
-          <h1 className="text-5xl md:text-6xl font-playfair font-bold text-midnight-navy">
-            Chat with Faiqa's AI Assistant
-          </h1>
-          <p className="text-xl text-slate-gray font-inter max-w-3xl mx-auto">
-            Ask me anything about Faiqa's fashion design background, skills, experience, and more!
-          </p>
-        </div>
-
         {/* Chat Container */}
         <div className="bg-white rounded-2xl shadow-lg border border-dusty-lavender/20 overflow-hidden animate-fade-in">
           {/* Messages */}
@@ -145,8 +135,28 @@ const Chat = () => {
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Input */}
+          {/* Dummy Questions in 2x2 Grid */}
           <div className="border-t border-dusty-lavender/20 p-4">
+            <div className="grid grid-cols-2 gap-2 mb-4">
+              {[
+                "What is Faiqa's educational background?",
+                "What are her key skills?",
+                "Tell me about her work experience",
+                "How can I contact Faiqa?"
+              ].map((question, index) => (
+                <Button
+                  key={index}
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setInputMessage(question)}
+                  className="text-sm border-dusty-lavender text-midnight-navy hover:bg-dusty-lavender hover:text-white transition-all duration-200 text-left justify-start h-auto py-2 px-3"
+                >
+                  {question}
+                </Button>
+              ))}
+            </div>
+
+            {/* Input */}
             <div className="flex space-x-2">
               <Input
                 value={inputMessage}
@@ -164,31 +174,6 @@ const Chat = () => {
                 <Send size={18} />
               </Button>
             </div>
-          </div>
-        </div>
-
-        {/* Sample Questions */}
-        <div className="mt-8 text-center animate-fade-in">
-          <h3 className="text-lg font-playfair font-semibold text-midnight-navy mb-4">
-            Try asking:
-          </h3>
-          <div className="flex flex-wrap justify-center gap-2">
-            {[
-              "What is Faiqa's educational background?",
-              "What are her key skills?",
-              "Tell me about her work experience",
-              "How can I contact Faiqa?"
-            ].map((question, index) => (
-              <Button
-                key={index}
-                variant="outline"
-                size="sm"
-                onClick={() => setInputMessage(question)}
-                className="text-sm border-dusty-lavender text-midnight-navy hover:bg-dusty-lavender hover:text-white transition-all duration-200"
-              >
-                {question}
-              </Button>
-            ))}
           </div>
         </div>
       </div>
