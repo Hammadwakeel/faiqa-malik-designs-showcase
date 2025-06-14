@@ -1,10 +1,11 @@
+
 import { Project } from '../types';
 
 export const dressMakingProjects: Project[] = [
   {
     id: 101,
     title: "Street Art Collection",
-    category: "Dress Making",
+    category: "Dress making ( pattern+ draping)",
     description: "Urban-inspired pink dress design featuring dramatic ruffles and contemporary styling. Shot against a brick wall backdrop to emphasize the street art aesthetic.",
     image: "/lovable-uploads/16cf4543-a6f4-423f-9b04-b2722a964315.png",
     tools: ["Street Fashion", "Contemporary Design", "Ruffle Construction"],
@@ -13,7 +14,7 @@ export const dressMakingProjects: Project[] = [
   {
     id: 102,
     title: "Dreams Collection",
-    category: "Dress Making",
+    category: "Dress making ( pattern+ draping)",
     description: "Elegant pink dress design with flowing silhouette captured in multiple urban settings. Features dramatic sleeves and sophisticated draping techniques.",
     image: "/lovable-uploads/bb841e0e-9dc5-4d03-b855-4d3ed2c8dcd2.png",
     tools: ["Draping", "Urban Photography", "Contemporary Fashion"],
@@ -22,7 +23,7 @@ export const dressMakingProjects: Project[] = [
   {
     id: 103,
     title: "Stress & Emotions Collection",
-    category: "Dress Making",
+    category: "Dress making ( pattern+ draping)",
     description: "Conceptual dress design exploring themes of urban life and emotional expression. Pink dress styled to represent resilience and strength in challenging environments.",
     image: "/lovable-uploads/0bc90a8c-c6c4-4a1c-bd92-ac3f3467f35b.png",
     tools: ["Conceptual Design", "Emotional Fashion", "Urban Styling"],
@@ -31,7 +32,7 @@ export const dressMakingProjects: Project[] = [
   {
     id: 104,
     title: "Real Struggles Collection",
-    category: "Dress Making",
+    category: "Dress making ( pattern+ draping)",
     description: "Powerful fashion statement piece in pink featuring dramatic proportions and urban context. Designed to represent strength and determination in everyday struggles.",
     image: "/lovable-uploads/88bfa84f-3104-4a13-ba33-2915a141b76e.png",
     tools: ["Statement Design", "Urban Fashion", "Dramatic Proportions"],
@@ -40,7 +41,7 @@ export const dressMakingProjects: Project[] = [
   {
     id: 105,
     title: "Trend Soul Korean Fashion",
-    category: "Dress Making",
+    category: "Dress making ( pattern+ draping)",
     description: "Korean-inspired fashion design featuring modern streetwear elements. Design guide showcasing Hongdae street style with contemporary fashion influences.",
     image: "/lovable-uploads/f6dc48bb-0b40-456f-a236-3140e458b435.png",
     tools: ["Korean Fashion", "Streetwear Design", "Cultural Fashion"],
@@ -49,7 +50,7 @@ export const dressMakingProjects: Project[] = [
   {
     id: 106,
     title: "Find Your Inspiration Collection",
-    category: "Dress Making",
+    category: "Dress making ( pattern+ draping)",
     description: "Korean street fashion collection featuring versatile designs for modern youth. Combines traditional elements with contemporary streetwear aesthetics.",
     image: "/lovable-uploads/57c6fe14-2f7c-466d-874f-d954d2a51cb5.png",
     tools: ["Korean Streetwear", "Youth Fashion", "Cultural Fusion"],
@@ -58,7 +59,7 @@ export const dressMakingProjects: Project[] = [
   {
     id: 107,
     title: "Inspiring Art Collection",
-    category: "Dress Making",
+    category: "Dress making ( pattern+ draping)",
     description: "Korean fashion design guide featuring architectural lines and strategic interfacing. Focus on self-assurance and boldness in fashion statement pieces.",
     image: "/lovable-uploads/6df7b14a-607a-453b-a3a4-8dc7b2154cc9.png",
     tools: ["Architectural Fashion", "Korean Design", "Fashion Theory"],
@@ -67,7 +68,7 @@ export const dressMakingProjects: Project[] = [
   {
     id: 108,
     title: "Magic Dress Collection",
-    category: "Dress Making",
+    category: "Dress making ( pattern+ draping)",
     description: "Whimsical white dress design captured at an amusement park setting. Features intricate detailing and romantic styling perfect for special occasions.",
     image: "/lovable-uploads/5f54b05a-d647-4dc2-9334-808e2a4b1699.png",
     tools: ["Romantic Design", "Special Occasion", "Intricate Detailing"],
@@ -76,7 +77,7 @@ export const dressMakingProjects: Project[] = [
   {
     id: 109,
     title: "Magic Meadows Collection",
-    category: "Dress Making",
+    category: "Dress making ( pattern+ draping)",
     description: "Enchanting white dress design with carnival backdrop. Features flowing sleeves and elegant construction perfect for magical moments and celebrations.",
     image: "/lovable-uploads/84ba07d7-820c-42be-8351-c3d346e07627.png",
     tools: ["Celebration Wear", "Flowing Design", "Magical Aesthetics"],
@@ -85,7 +86,7 @@ export const dressMakingProjects: Project[] = [
   {
     id: 110,
     title: "Retro Vibes Collection",
-    category: "Dress Making",
+    category: "Dress making ( pattern+ draping)",
     description: "Vintage-inspired dress design with modern neon aesthetics. Features classic silhouette with contemporary styling in vibrant urban setting.",
     image: "/lovable-uploads/dd89acb0-8ce0-409f-8bb4-ce5591910a07.png",
     tools: ["Vintage Revival", "Neon Aesthetics", "Urban Photography"],
@@ -94,7 +95,7 @@ export const dressMakingProjects: Project[] = [
   {
     id: 111,
     title: "Coke Studio Lights Collection",
-    category: "Dress Making",
+    category: "Dress making ( pattern+ draping)",
     description: "Modern studio dress featuring dramatic lighting effects and contemporary urban aesthetics. Purple dress design with sleek silhouette and artistic photography.",
     image: "/lovable-uploads/a5375f35-0d8c-414c-90a8-f250adc41a94.png",
     tools: ["Studio Photography", "Dramatic Lighting", "Contemporary Design"],
@@ -103,7 +104,7 @@ export const dressMakingProjects: Project[] = [
   {
     id: 112,
     title: "Coke Studio Nights Collection",
-    category: "Dress Making",
+    category: "Dress making ( pattern+ draping)",
     description: "Urban nightlife dress design featuring street art backdrop and neon aesthetics. Purple dress styled for evening wear with modern architectural elements.",
     image: "/lovable-uploads/9e5faf98-f565-4071-8c34-c2c2743ddc2c.png",
     tools: ["Night Photography", "Street Art", "Urban Fashion"],
@@ -112,7 +113,7 @@ export const dressMakingProjects: Project[] = [
   {
     id: 113,
     title: "Tulle Garden Dreams",
-    category: "Dress Making",
+    category: "Dress making ( pattern+ draping)",
     description: "Ethereal tulle dress design captured in natural garden setting. Features delicate blue and white tones with dramatic flowing fabric and artistic positioning.",
     image: "/lovable-uploads/a3120485-52a0-4b69-85a3-06380b6fe3a8.png",
     tools: ["Tulle Construction", "Garden Photography", "Ethereal Design"],
@@ -121,7 +122,7 @@ export const dressMakingProjects: Project[] = [
   {
     id: 114,
     title: "Tulle Reflection Collection",
-    category: "Dress Making",
+    category: "Dress making ( pattern+ draping)",
     description: "Romantic tulle dress design featuring water reflections and natural garden setting. Incorporates delicate floral motifs and hardware details for contrast.",
     image: "/lovable-uploads/0e0996f5-5f82-4aa7-8ec5-343c611af44e.png",
     tools: ["Romantic Design", "Water Photography", "Mixed Materials"],
@@ -130,7 +131,7 @@ export const dressMakingProjects: Project[] = [
   {
     id: 115,
     title: "Tulle Elegance Collection",
-    category: "Dress Making",
+    category: "Dress making ( pattern+ draping)",
     description: "Editorial tulle dress design with sophisticated styling and natural backdrop. Features flowing silhouette and artistic composition with floral elements.",
     image: "/lovable-uploads/7165c693-c92a-45f3-959c-df917c371a2d.png",
     tools: ["Editorial Fashion", "Sophisticated Styling", "Natural Elements"],
@@ -139,7 +140,7 @@ export const dressMakingProjects: Project[] = [
   {
     id: 116,
     title: "Surreal Art Madrid Collection",
-    category: "Dress Making",
+    category: "Dress making ( pattern+ draping)",
     description: "Contemporary surreal art inspired dress design featuring avant-garde styling. Black and white dress with artistic draping and modern architectural elements.",
     image: "/lovable-uploads/62ac5cbf-e539-400b-aa9b-b5aadd53f2a4.png",
     tools: ["Surreal Art", "Avant-garde Design", "Contemporary Fashion"],
@@ -148,7 +149,7 @@ export const dressMakingProjects: Project[] = [
   {
     id: 117,
     title: "Vintage Madrid Dress Collection",
-    category: "Dress Making",
+    category: "Dress making ( pattern+ draping)",
     description: "Sophisticated black dress design with artistic face paint and contemporary styling. Features classic silhouette with modern surreal art elements.",
     image: "/lovable-uploads/614aee6c-0acb-4e9a-b357-4a1e4f01b66c.png",
     tools: ["Vintage Design", "Artistic Styling", "Contemporary Art"],
@@ -157,7 +158,7 @@ export const dressMakingProjects: Project[] = [
   {
     id: 118,
     title: "Surreal Art Statement Collection",
-    category: "Dress Making",
+    category: "Dress making ( pattern+ draping)",
     description: "Bold artistic statement piece featuring dramatic face paint and contemporary dress design. Combines surreal art aesthetics with modern fashion elements.",
     image: "/lovable-uploads/b8ff6f23-94ba-4536-b8ab-170e25ffd84e.png",
     tools: ["Statement Design", "Artistic Makeup", "Contemporary Fashion"],
@@ -166,7 +167,7 @@ export const dressMakingProjects: Project[] = [
   {
     id: 119,
     title: "Neon Blaze Bash Collection",
-    category: "Dress Making",
+    category: "Dress making ( pattern+ draping)",
     description: "Vibrant orange-red dress design featuring intricate lace detailing and structured corset. Masterful fusion of timeless elegance and contemporary flair.",
     image: "/lovable-uploads/5d74be71-3290-4e93-8742-6f5682553738.png",
     tools: ["Lace Construction", "Corset Design", "Contemporary Elegance"],
@@ -175,7 +176,7 @@ export const dressMakingProjects: Project[] = [
   {
     id: 120,
     title: "Neon Blaze Experience Collection",
-    category: "Dress Making",
+    category: "Dress making ( pattern+ draping)",
     description: "Bold orange dress design described as 'an experience of wearing art.' Features structured silhouette and contemporary styling in vibrant urban setting.",
     image: "/lovable-uploads/8786743d-02b6-4a91-bbbe-e2d2f8e22c3a.png",
     tools: ["Artistic Fashion", "Structured Design", "Urban Photography"],
@@ -184,7 +185,7 @@ export const dressMakingProjects: Project[] = [
   {
     id: 121,
     title: "Street Art Grace Collection",
-    category: "Dress Making",
+    category: "Dress making ( pattern+ draping)",
     description: "Urban-inspired pink dress design featuring dramatic ruffles and contemporary styling. Shot against a brick wall backdrop to emphasize the street art aesthetic with 'For Grace Full People' branding.",
     image: "/lovable-uploads/66d80e03-db62-4890-bf58-b8b569a8bb63.png",
     tools: ["Street Fashion", "Contemporary Design", "Editorial Styling"],
@@ -193,7 +194,7 @@ export const dressMakingProjects: Project[] = [
   {
     id: 122,
     title: "Glistening Street Collection",
-    category: "Dress Making",
+    category: "Dress making ( pattern+ draping)",
     description: "Elegant black evening gown with backless design captured in sophisticated architectural setting. Features flowing silhouette and dramatic styling in monochrome aesthetic.",
     image: "/lovable-uploads/7915bcfb-fa85-48d0-85b3-c331f953b99e.png",
     tools: ["Evening Wear", "Backless Design", "Architectural Photography"],
@@ -202,10 +203,101 @@ export const dressMakingProjects: Project[] = [
   {
     id: 123,
     title: "Glistening Street Elegance",
-    category: "Dress Making",
+    category: "Dress making ( pattern+ draping)",
     description: "Evening gown capturing the breathtaking beauty of glistening sands under moonlit sky. Features flowing silhouette with intricate beadwork and sequins, hand-embroidered for layers of texture and brilliance reminiscent of desert landscapes.",
     image: "/lovable-uploads/2f9c948a-7f8b-445b-a147-f6c89fe3c856.png",
     tools: ["Beadwork", "Hand Embroidery", "Evening Elegance"],
+    year: "2024"
+  },
+  // New Pattern and Draping Work
+  {
+    id: 124,
+    title: "Medium Size Pattern Draft",
+    category: "Dress making ( pattern+ draping)",
+    description: "Technical pattern drafting for medium size garment featuring detailed measurements and construction lines. Shows professional pattern making techniques with precise geometric calculations.",
+    image: "/lovable-uploads/6e233da5-a08f-4c7b-84c1-d37d3a931a10.png",
+    tools: ["Pattern Drafting", "Technical Drawing", "Size Grading"],
+    year: "2024"
+  },
+  {
+    id: 125,
+    title: "Button Down Shirt Pattern",
+    category: "Dress making ( pattern+ draping)",
+    description: "Comprehensive pattern layout for Spring-23 button down shirt design. Features detailed front panel construction with collar and sleeve attachment guidelines for Assignment No 01.",
+    image: "/lovable-uploads/d71bd4b3-e797-40f3-87b9-15670af644ef.png",
+    tools: ["Shirt Pattern", "Button Construction", "Technical Drafting"],
+    year: "2024"
+  },
+  {
+    id: 126,
+    title: "Collar and Sleeve Pattern Layout",
+    category: "Dress making ( pattern+ draping)",
+    description: "Advanced pattern pieces showing collar construction and sleeve attachment details. Features precise measurements and grading techniques for professional garment construction.",
+    image: "/lovable-uploads/a0ba017a-8cba-404e-8b57-74f51ed5a6b9.png",
+    tools: ["Collar Design", "Sleeve Construction", "Pattern Layout"],
+    year: "2024"
+  },
+  {
+    id: 127,
+    title: "Trouser Pattern Front Panel",
+    category: "Dress making ( pattern+ draping)",
+    description: "Detailed front panel pattern for trouser construction showing hip level, waist measurements, and professional pattern making techniques with size specifications.",
+    image: "/lovable-uploads/09f720f5-fa40-4350-9dee-6d0066ca43a3.png",
+    tools: ["Trouser Pattern", "Front Panel", "Hip Construction"],
+    year: "2024"
+  },
+  {
+    id: 128,
+    title: "Block Pattern Sleeve Design",
+    category: "Dress making ( pattern+ draping)",
+    description: "Professional block pattern showing sleeve construction with detailed measurements and construction guidelines. Features technical pattern making for garment industry standards.",
+    image: "/lovable-uploads/d70bdce8-c85a-4187-a42f-d6e9284a079a.png",
+    tools: ["Block Pattern", "Sleeve Design", "Industry Standards"],
+    year: "2024"
+  },
+  {
+    id: 129,
+    title: "Back Panel Jumpsuit Pattern",
+    category: "Dress making ( pattern+ draping)",
+    description: "Technical back panel pattern for jumpsuit construction showing detailed measurements and pattern pieces. Features professional pattern making with size 42 specifications.",
+    image: "/lovable-uploads/999ffb89-e957-46f1-bdcc-348794ae98d8.png",
+    tools: ["Jumpsuit Pattern", "Back Panel", "Size Grading"],
+    year: "2024"
+  },
+  {
+    id: 130,
+    title: "Fabric Pattern Making Guide",
+    category: "Dress making ( pattern+ draping)",
+    description: "Comprehensive fabric pattern layout guide showing underarm level, bust level, and hip level measurements with detailed construction notes and working sheet miniature B.",
+    image: "/lovable-uploads/f2a0bb9e-ecdd-402b-b41d-da2588895f15.png",
+    tools: ["Fabric Layout", "Measurement Guide", "Construction Notes"],
+    year: "2024"
+  },
+  {
+    id: 131,
+    title: "Detailed Working Sheet Pattern",
+    category: "Dress making ( pattern+ draping)",
+    description: "Professional working sheet for Spring-24 Assignment #02 featuring detailed pattern pieces, hip level construction, and fullness distribution for garment fitting.",
+    image: "/lovable-uploads/a8de5142-6c5f-4083-9209-501b1155bc8b.png",
+    tools: ["Working Sheet", "Fullness Distribution", "Professional Pattern"],
+    year: "2024"
+  },
+  {
+    id: 132,
+    title: "Korean Look Skirt Pattern",
+    category: "Dress making ( pattern+ draping)",
+    description: "Specialized pattern for Korean look skirt featuring Faya fabric construction. Shows front and back pattern pieces with detailed measurements and hip level specifications for size 42.",
+    image: "/lovable-uploads/9031e655-9827-4d2d-8912-0d764c29b73c.png",
+    tools: ["Korean Fashion", "Skirt Pattern", "Faya Fabric"],
+    year: "2024"
+  },
+  {
+    id: 133,
+    title: "Advanced Skirt Pattern Layout",
+    category: "Dress making ( pattern+ draping)",
+    description: "Advanced pattern layout for skirt construction featuring piece 1/2 and piece 2/2 with detailed hip level measurements and working sheet specifications for Spring-23 assignment.",
+    image: "/lovable-uploads/cf2a8089-90f9-4ad1-bb4a-bc35b498c54a.png",
+    tools: ["Advanced Pattern", "Skirt Construction", "Working Sheet"],
     year: "2024"
   }
 ];

@@ -16,4 +16,4 @@ export const portfolioProjects: Project[] = [
   ...techpacksProjects
 ];
 
-export const portfolioCategories = ['All Work', 'Work', 'Technical', 'Textile', 'Dress Making', 'Techpacks'];
+export const portfolioCategories = ['All Work', 'Work', 'Technical', 'Textile', 'Dress making ( pattern+ draping)', 'Techpacks'];
