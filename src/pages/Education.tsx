@@ -1,9 +1,19 @@
-
-import { GraduationCap, Award, Calendar, MapPin, ZoomIn } from 'lucide-react';
+import { GraduationCap, Award, Calendar, MapPin, ZoomIn, RotateCw } from 'lucide-react';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { Button } from '@/components/ui/button';
+import { useState } from 'react';
 
 const Education = () => {
+  const [rotations, setRotations] = useState<{ [key: string]: number }>({});
+
+  const handleRotate = (imageKey: string) => {
+    setRotations(prev => ({
+      ...prev,
+      [imageKey]: ((prev[imageKey] || 0) + 90) % 360
+    }));
+  };
+
   const education = [
     {
       degree: "Bachelor's in Fashion Design",
@@ -161,7 +171,7 @@ const Education = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center space-y-8 mb-16">
-          <h1 className="text-5xl md:text-6xl font-playfair font-bold bg-gradient-to-r from-midnight-navy via-dusty-lavender to-peach-accent bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
             Education & Academic Achievements
           </h1>
           <p className="text-xl text-slate-gray font-inter max-w-3xl mx-auto">
@@ -298,46 +308,62 @@ const Education = () => {
                                 Related Certificates:
                               </h4>
                               <div className="flex flex-wrap gap-4">
-                                {edu.certificates.map((cert, certIndex) => (
-                                  <Dialog key={certIndex}>
-                                    <DialogTrigger asChild>
-                                      <div className="relative group cursor-pointer flex-shrink-0">
-                                        <div className="absolute -inset-1 bg-gradient-to-r from-dusty-lavender via-peach-accent to-midnight-navy rounded-lg blur opacity-20 group-hover:opacity-50 transition duration-500"></div>
-                                        <div className="relative bg-gradient-to-br from-white to-lavender-bg rounded-lg shadow-md p-3 border border-dusty-lavender/20 w-64">
-                                          <div className="space-y-3">
-                                            <div className="relative overflow-hidden rounded">
-                                              <img 
-                                                src={cert.image} 
-                                                alt={cert.title} 
-                                                className="w-full h-20 object-cover transition-transform duration-300 group-hover:scale-105"
-                                              />
-                                              <div className="absolute top-1 right-1">
-                                                <ZoomIn className="w-3 h-3 text-white bg-midnight-navy/50 rounded-full p-0.5" />
+                                {edu.certificates.map((cert, certIndex) => {
+                                  const certKey = `edu-${index}-cert-${certIndex}`;
+                                  return (
+                                    <Dialog key={certIndex}>
+                                      <DialogTrigger asChild>
+                                        <div className="relative group cursor-pointer flex-shrink-0">
+                                          <div className="absolute -inset-1 bg-gradient-to-r from-dusty-lavender via-peach-accent to-midnight-navy rounded-lg blur opacity-20 group-hover:opacity-50 transition duration-500"></div>
+                                          <div className="relative bg-gradient-to-br from-white to-lavender-bg rounded-lg shadow-md p-3 border border-dusty-lavender/20 w-64">
+                                            <div className="space-y-3">
+                                              <div className="relative overflow-hidden rounded">
+                                                <img 
+                                                  src={cert.image} 
+                                                  alt={cert.title} 
+                                                  className="w-full h-20 object-cover transition-transform duration-300 group-hover:scale-105"
+                                                />
+                                                <div className="absolute top-1 right-1">
+                                                  <ZoomIn className="w-3 h-3 text-white bg-midnight-navy/50 rounded-full p-0.5" />
+                                                </div>
                                               </div>
-                                            </div>
-                                            <div className="space-y-1">
-                                              <h5 className="text-xs font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent line-clamp-2">
-                                                {cert.title}
-                                              </h5>
-                                              <p className="text-xs text-slate-gray font-inter">
-                                                {cert.description}
-                                              </p>
+                                              <div className="space-y-1">
+                                                <h5 className="text-xs font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent line-clamp-2">
+                                                  {cert.title}
+                                                </h5>
+                                                <p className="text-xs text-slate-gray font-inter">
+                                                  {cert.description}
+                                                </p>
+                                              </div>
                                             </div>
                                           </div>
                                         </div>
-                                      </div>
-                                    </DialogTrigger>
-                                    <DialogContent className="max-w-4xl w-full max-h-[90vh] p-0 overflow-hidden">
-                                      <ScrollArea className="h-[90vh] w-full">
-                                        <img 
-                                          src={cert.image} 
-                                          alt={cert.title} 
-                                          className="w-full h-auto object-contain"
-                                        />
-                                      </ScrollArea>
-                                    </DialogContent>
-                                  </Dialog>
-                                ))}
+                                      </DialogTrigger>
+                                      <DialogContent className="max-w-4xl w-full max-h-[90vh] p-0 overflow-hidden">
+                                        <div className="absolute top-4 right-16 z-10">
+                                          <Button
+                                            variant="secondary"
+                                            size="icon"
+                                            onClick={() => handleRotate(certKey)}
+                                            className="bg-white/90 hover:bg-white shadow-lg"
+                                          >
+                                            <RotateCw className="h-4 w-4" />
+                                          </Button>
+                                        </div>
+                                        <ScrollArea className="h-[90vh] w-full">
+                                          <img 
+                                            src={cert.image} 
+                                            alt={cert.title} 
+                                            className="w-full h-auto object-contain transition-transform duration-300"
+                                            style={{ 
+                                              transform: `rotate(${rotations[certKey] || 0}deg)` 
+                                            }}
+                                          />
+                                        </ScrollArea>
+                                      </DialogContent>
+                                    </Dialog>
+                                  );
+                                })}
                               </div>
                             </div>
                           )}
@@ -414,46 +440,62 @@ const Education = () => {
                           Related Certificates:
                         </h4>
                         <div className="flex flex-wrap gap-3">
-                          {cert.certificates.map((certificate, certIndex) => (
-                            <Dialog key={certIndex}>
-                              <DialogTrigger asChild>
-                                <div className="relative group cursor-pointer flex-shrink-0">
-                                  <div className="absolute -inset-1 bg-gradient-to-r from-dusty-lavender via-peach-accent to-midnight-navy rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
-                                  <div className="relative bg-gradient-to-br from-white to-lavender-bg rounded-xl shadow-lg p-3 border border-dusty-lavender/20 w-48">
-                                    <div className="space-y-2">
-                                      <div className="relative overflow-hidden rounded-lg">
-                                        <img 
-                                          src={certificate.image} 
-                                          alt={certificate.title} 
-                                          className="w-full h-16 object-cover transition-transform duration-300 group-hover:scale-105"
-                                        />
-                                        <div className="absolute top-1 right-1">
-                                          <ZoomIn className="w-3 h-3 text-white bg-midnight-navy/50 rounded-full p-0.5" />
+                          {cert.certificates.map((certificate, certIndex) => {
+                            const certKey = `cert-${index}-${certIndex}`;
+                            return (
+                              <Dialog key={certIndex}>
+                                <DialogTrigger asChild>
+                                  <div className="relative group cursor-pointer flex-shrink-0">
+                                    <div className="absolute -inset-1 bg-gradient-to-r from-dusty-lavender via-peach-accent to-midnight-navy rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                                    <div className="relative bg-gradient-to-br from-white to-lavender-bg rounded-xl shadow-lg p-3 border border-dusty-lavender/20 w-48">
+                                      <div className="space-y-2">
+                                        <div className="relative overflow-hidden rounded-lg">
+                                          <img 
+                                            src={certificate.image} 
+                                            alt={certificate.title} 
+                                            className="w-full h-16 object-cover transition-transform duration-300 group-hover:scale-105"
+                                          />
+                                          <div className="absolute top-1 right-1">
+                                            <ZoomIn className="w-3 h-3 text-white bg-midnight-navy/50 rounded-full p-0.5" />
+                                          </div>
                                         </div>
-                                      </div>
-                                      <div className="space-y-1">
-                                        <h5 className="text-xs font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent line-clamp-2">
-                                          {certificate.title}
-                                        </h5>
-                                        <p className="text-xs text-slate-gray font-inter">
-                                          {certificate.description}
-                                        </p>
+                                        <div className="space-y-1">
+                                          <h5 className="text-xs font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent line-clamp-2">
+                                            {certificate.title}
+                                          </h5>
+                                          <p className="text-xs text-slate-gray font-inter">
+                                            {certificate.description}
+                                          </p>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
-                                </div>
-                              </DialogTrigger>
-                              <DialogContent className="max-w-4xl w-full max-h-[90vh] p-0 overflow-hidden">
-                                <ScrollArea className="h-[90vh] w-full">
-                                  <img 
-                                    src={certificate.image} 
-                                    alt={certificate.title} 
-                                    className="w-full h-auto object-contain"
-                                  />
-                                </ScrollArea>
-                              </DialogContent>
-                            </Dialog>
-                          ))}
+                                </DialogTrigger>
+                                <DialogContent className="max-w-4xl w-full max-h-[90vh] p-0 overflow-hidden">
+                                  <div className="absolute top-4 right-16 z-10">
+                                    <Button
+                                      variant="secondary"
+                                      size="icon"
+                                      onClick={() => handleRotate(certKey)}
+                                      className="bg-white/90 hover:bg-white shadow-lg"
+                                    >
+                                      <RotateCw className="h-4 w-4" />
+                                    </Button>
+                                  </div>
+                                  <ScrollArea className="h-[90vh] w-full">
+                                    <img 
+                                      src={certificate.image} 
+                                      alt={certificate.title} 
+                                      className="w-full h-auto object-contain transition-transform duration-300"
+                                      style={{ 
+                                        transform: `rotate(${rotations[certKey] || 0}deg)` 
+                                      }}
+                                    />
+                                  </ScrollArea>
+                                </DialogContent>
+                              </Dialog>
+                            );
+                          })}
                         </div>
                       </div>
                     )}
