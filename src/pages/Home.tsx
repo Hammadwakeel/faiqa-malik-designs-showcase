@@ -3,8 +3,8 @@ import { ArrowRight, Download, Instagram, Mail } from 'lucide-react';
 import { portfolioProjects } from '../data/portfolioData';
 
 const Home = () => {
-  // Get first 6 projects for featured work
-  const featuredProjects = portfolioProjects.slice(0, 6);
+  // Get Boujee Collection projects for featured work
+  const featuredProjects = portfolioProjects.filter(project => project.category === 'Boujee Collection');
 
   return (
     <div className="min-h-screen">
