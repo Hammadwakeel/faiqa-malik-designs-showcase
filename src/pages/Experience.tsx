@@ -1,3 +1,4 @@
+
 import { Calendar, MapPin, Building, Award, ZoomIn } from 'lucide-react';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 
@@ -111,42 +112,12 @@ const Experience = () => {
 
   const additionalCertificates = [
     {
-      title: "Corporate Social Responsibility Certificate",
-      company: "Iqra University",
-      image: "/lovable-uploads/ae013835-6be6-4736-9c7b-da76d669f62b.png",
-      description: "Certificate of appreciation for CSR project participation"
-    },
-    {
-      title: "Financial Literacy Certificate",
-      company: "National Textile Institute",
-      image: "/lovable-uploads/e92fb9b3-434c-4a04-ba22-a8d3b238e088.png",
-      description: "Completed financial literacy training program"
-    },
-    {
       title: "Youth Development Certificate",
       company: "Helping Hand Organization",
       image: "/lovable-uploads/10ad8a63-3f6f-4179-bf15-b90548ed98f4.png",
       description: "Recognition for youth development and humanitarian efforts"
-    },
-    {
-      title: "Fashion Design Certificate",
-      company: "National Textile Institute",
-      image: "/lovable-uploads/9154ec23-6fd6-4a88-b6e2-33d7f03b04ea.png",
-      description: "Specialized course in textile and fashion designing"
     }
   ];
-
-  const education = {
-    degree: "Corporate Social Responsibility Project",
-    institution: "Iqra University Islamabad Campus",
-    description: "Certificate of Appreciation for Corporate Social Responsibility Project",
-    certificate: {
-      title: "Certificate of Appreciation - CSR Project",
-      company: "Iqra University",
-      image: "/lovable-uploads/fd88f9f4-3111-4dde-b4fa-e842ef0b345d.png",
-      description: "Proudly presented to Faiqa Malik in appreciation for Corporate Social Responsibility Project"
-    }
-  };
 
   const getTypeColor = (type: string) => {
     switch (type) {
@@ -179,7 +150,7 @@ const Experience = () => {
         {/* Header */}
         <div className="text-center space-y-8 mb-16">
           <h1 className="text-5xl md:text-6xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
-            Experience & Education
+            Professional Experience
           </h1>
           <p className="text-xl text-slate-gray font-inter max-w-3xl mx-auto">
             A comprehensive journey through my professional development in fashion design, 
@@ -207,74 +178,11 @@ const Experience = () => {
           </div>
         </div>
 
-        {/* Education Section */}
-        <div className="mb-20">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent mb-4">
-              Academic Achievement
-            </h2>
-            <p className="text-lg text-slate-gray font-inter max-w-2xl mx-auto">
-              Recognition for academic excellence and social responsibility
-            </p>
-          </div>
-
-          <div className="bg-gradient-to-br from-white via-lavender-bg/50 to-dusty-lavender/5 rounded-2xl shadow-lg p-8 border border-dusty-lavender/20 hover:shadow-xl transition-all duration-300">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div className="space-y-4">
-                <div className="flex items-center space-x-2 mb-4">
-                  <Award className="w-6 h-6 text-dusty-lavender" />
-                  <span className="px-3 py-1 rounded-full text-xs font-inter font-medium bg-gradient-to-r from-midnight-navy to-dusty-lavender text-white">
-                    Academic
-                  </span>
-                </div>
-                <h3 className="text-2xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
-                  {education.degree}
-                </h3>
-                <div className="flex items-center space-x-2 text-slate-gray">
-                  <Building size={16} />
-                  <span className="font-inter font-medium">{education.institution}</span>
-                </div>
-                <p className="text-slate-gray font-inter leading-relaxed">
-                  {education.description}
-                </p>
-              </div>
-              
-              <Dialog>
-                <DialogTrigger asChild>
-                  <div className="relative group cursor-pointer">
-                    <div className="absolute -inset-1 bg-gradient-to-r from-dusty-lavender via-peach-accent to-midnight-navy rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
-                    <div className="relative overflow-hidden rounded-lg">
-                      <img 
-                        src={education.certificate.image} 
-                        alt={education.certificate.title} 
-                        className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-midnight-navy/20 to-transparent"></div>
-                      <div className="absolute top-2 right-2">
-                        <ZoomIn className="w-6 h-6 text-white bg-midnight-navy/50 rounded-full p-1" />
-                      </div>
-                    </div>
-                  </div>
-                </DialogTrigger>
-                <DialogContent className="max-w-4xl w-full max-h-[90vh] p-0">
-                  <div className="relative">
-                    <img 
-                      src={education.certificate.image} 
-                      alt={education.certificate.title} 
-                      className="w-full h-auto object-contain"
-                    />
-                  </div>
-                </DialogContent>
-              </Dialog>
-            </div>
-          </div>
-        </div>
-
         {/* Timeline */}
         <div className="relative mb-20">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent mb-4">
-              Professional Experience
+              Work Experience Timeline
             </h2>
           </div>
 
@@ -397,14 +305,14 @@ const Experience = () => {
           </div>
         </div>
 
-        {/* Additional Certificates Section */}
+        {/* Additional Professional Certificates Section */}
         <div className="mb-20">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent mb-4">
               Additional Professional Certificates
             </h2>
             <p className="text-lg text-slate-gray font-inter max-w-2xl mx-auto">
-              Specialized training and development certifications
+              Additional training and development certifications
             </p>
           </div>
 
@@ -480,7 +388,7 @@ const Experience = () => {
               className="inline-flex items-center px-8 py-3 border-2 border-dusty-lavender bg-gradient-to-r from-transparent to-dusty-lavender/5 text-midnight-navy font-inter font-medium rounded-lg hover:bg-gradient-to-r hover:from-dusty-lavender hover:to-peach-accent hover:text-white hover:border-transparent transition-all duration-200"
             >
               Download Resume
-            </button>
+            </a>
           </div>
         </div>
       </div>

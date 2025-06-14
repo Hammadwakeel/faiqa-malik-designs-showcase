@@ -1,3 +1,4 @@
+
 import { GraduationCap, Award, Calendar, MapPin, ZoomIn } from 'lucide-react';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 
@@ -20,6 +21,12 @@ const Education = () => {
           company: "Iqra University",
           image: "/lovable-uploads/fd88f9f4-3111-4dde-b4fa-e842ef0b345d.png",
           description: "Proudly presented to Faiqa Malik in appreciation for Corporate Social Responsibility Project"
+        },
+        {
+          title: "Corporate Social Responsibility Certificate",
+          company: "Iqra University",
+          image: "/lovable-uploads/ae013835-6be6-4736-9c7b-da76d669f62b.png",
+          description: "Certificate of appreciation for CSR project participation"
         }
       ]
     },
@@ -112,33 +119,6 @@ const Education = () => {
     }
   ];
 
-  const internshipCertificates = [
-    {
-      title: "Certificate of Internship",
-      company: "Eleven Clothing",
-      image: "/lovable-uploads/faa6cade-072d-4609-9934-449854d7ab63.png",
-      description: "Completed internship program with distinction"
-    },
-    {
-      title: "Internship Completion Letter",
-      company: "Eleven Clothing",
-      image: "/lovable-uploads/a81f3b03-091d-4cf0-85b2-8ffc54b51513.png",
-      description: "Recognition letter for outstanding performance and creativity"
-    },
-    {
-      title: "Internship Completion Certificate",
-      company: "Sui Dhaga Bridals",
-      image: "/lovable-uploads/574886d3-5057-4952-bca1-83c6ce3875c7.png",
-      description: "Successfully completed bridal wear design internship"
-    },
-    {
-      title: "Youth Development Certificate",
-      company: "Helping Hand Organization",
-      image: "/lovable-uploads/10ad8a63-3f6f-4179-bf15-b90548ed98f4.png",
-      description: "Recognition for youth development and humanitarian efforts"
-    }
-  ];
-
   const achievements = [
     {
       title: "Dean's List",
@@ -181,10 +161,10 @@ const Education = () => {
         {/* Header */}
         <div className="text-center space-y-8 mb-16">
           <h1 className="text-5xl md:text-6xl font-playfair font-bold bg-gradient-to-r from-midnight-navy via-dusty-lavender to-peach-accent bg-clip-text text-transparent">
-            Education & Certifications
+            Education & Academic Achievements
           </h1>
           <p className="text-xl text-slate-gray font-inter max-w-3xl mx-auto">
-            My academic journey and professional development through formal education, 
+            My academic journey and educational development through formal education, 
             specialized training, and continuous learning in fashion design.
           </p>
         </div>
@@ -365,10 +345,10 @@ const Education = () => {
         <div className="mb-20">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent mb-4">
-              Professional Certifications
+              Academic Certifications
             </h2>
             <p className="text-lg text-slate-gray font-inter max-w-2xl mx-auto">
-              Specialized training and certifications that enhance my professional expertise
+              Specialized academic training and certifications that enhance my educational foundation
             </p>
           </div>
 
@@ -468,68 +448,6 @@ const Education = () => {
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Internship Certificates Section */}
-        <div className="mb-20">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent mb-4">
-              Internship & Professional Development Certificates
-            </h2>
-            <p className="text-lg text-slate-gray font-inter max-w-2xl mx-auto">
-              Certificates from internships and professional development programs
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-            {internshipCertificates.map((cert, index) => (
-              <Dialog key={index}>
-                <DialogTrigger asChild>
-                  <div className="relative group cursor-pointer">
-                    <div className="absolute -inset-1 bg-gradient-to-r from-dusty-lavender via-peach-accent to-midnight-navy rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
-                    <div className="relative bg-gradient-to-br from-white to-lavender-bg rounded-xl shadow-lg p-6 border border-dusty-lavender/20 hover:shadow-xl transition-shadow duration-300">
-                      <div className="space-y-4">
-                        <div className="relative overflow-hidden rounded-lg">
-                          <img 
-                            src={cert.image} 
-                            alt={cert.title} 
-                            className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-midnight-navy/20 to-transparent"></div>
-                          <div className="absolute top-2 right-2">
-                            <ZoomIn className="w-5 h-5 text-white bg-midnight-navy/50 rounded-full p-1" />
-                          </div>
-                        </div>
-                        <div className="space-y-2">
-                          <div className="flex items-center space-x-2">
-                            <Award className="w-5 h-5 text-dusty-lavender" />
-                            <h3 className="text-lg font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
-                              {cert.title}
-                            </h3>
-                          </div>
-                          <p className="text-slate-gray font-inter font-medium text-sm">
-                            {cert.company}
-                          </p>
-                          <p className="text-slate-gray font-inter text-sm">
-                            {cert.description}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </DialogTrigger>
-                <DialogContent className="max-w-4xl w-full max-h-[90vh] p-0">
-                  <div className="relative">
-                    <img 
-                      src={cert.image} 
-                      alt={cert.title} 
-                      className="w-full h-auto object-contain"
-                    />
-                  </div>
-                </DialogContent>
-              </Dialog>
             ))}
           </div>
         </div>
