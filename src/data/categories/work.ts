@@ -266,5 +266,51 @@ export const workProjects: Project[] = [
     image: "/lovable-uploads/ee64b0c3-97ea-4c92-bf82-51787f40b2c1.png",
     tools: ["Premium Construction", "Space Graphics", "Stone Color Treatment"],
     year: "2024"
+  },
+  // New Additional Techpack Designs
+  {
+    id: 61,
+    title: "Skate Purple T-Shirt Tech Pack",
+    category: "Work",
+    description: "Technical pack for lavender purple t-shirt featuring skateboard-inspired graphic design with modern streetwear aesthetic and back print details.",
+    image: "/lovable-uploads/15890851-b4f7-444e-8797-0c69cd1a7a3e.png",
+    tools: ["Streetwear Design", "Skate Culture", "Purple Color Scheme"],
+    year: "2024"
+  },
+  {
+    id: 62,
+    title: "Cyberpunk Digital Art T-Shirt Tech Pack",
+    category: "Work",
+    description: "Technical specifications for vibrant blue t-shirt with complex cyberpunk-inspired digital collage artwork. Features intricate graphic layout with futuristic elements.",
+    image: "/lovable-uploads/8bfd9a7a-79c2-4a75-a028-e40936c412ff.png",
+    tools: ["Digital Art", "Cyberpunk Aesthetic", "Complex Graphics"],
+    year: "2024"
+  },
+  {
+    id: 63,
+    title: "Eleven Space Limited Edition Tech Pack",
+    category: "Work",
+    description: "Technical pack for premium stone gray t-shirt featuring 'ELEVEN' branding with space-themed geometric elements and limited edition detailing.",
+    image: "/lovable-uploads/03a25290-58f9-4562-bf94-5858ad44f114.png",
+    tools: ["Space Design", "Limited Edition", "Geometric Elements"],
+    year: "2024"
+  },
+  {
+    id: 64,
+    title: "Eleven Geometric Polo Tech Pack",
+    category: "Work",
+    description: "Technical specifications for black polo shirt with intricate geometric triangle pattern and 'ELEVEN' branding. Professional athletic design with modern aesthetics.",
+    image: "/lovable-uploads/bcf1dea3-0962-4ff4-a706-3e5043c730a7.png",
+    tools: ["Polo Design", "Geometric Pattern", "Athletic Wear"],
+    year: "2024"
+  },
+  {
+    id: 65,
+    title: "All For His Glory T-Shirt Tech Pack",
+    category: "Work",
+    description: "Technical pack for powder blue t-shirt featuring 'ELEVEN' front branding and 'All For His Glory' back print. Clean typography with inspirational messaging.",
+    image: "/lovable-uploads/e1a3c2ce-a63a-4608-91ac-953dc2cb4076.png",
+    tools: ["Typography Design", "Inspirational Messaging", "Front Back Print"],
+    year: "2024"
   }
 ];
