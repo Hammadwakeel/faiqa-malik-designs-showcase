@@ -1,10 +1,11 @@
+
 import { Link } from 'react-router-dom';
 import { ArrowRight, Download, Instagram, Mail } from 'lucide-react';
 import { portfolioProjects } from '../data/portfolioData';
 
 const Home = () => {
-  // Get Boujee Collection projects for featured work
-  const featuredProjects = portfolioProjects.filter(project => project.category === 'Boujee Collection');
+  // Get Dress making projects for featured work
+  const featuredProjects = portfolioProjects.filter(project => project.category === 'Dress making ( pattern+ draping)');
 
   return (
     <div className="min-h-screen">
@@ -113,21 +114,35 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Featured Work Preview */}
+      {/* Featured Dress Making Work */}
       <section className="py-20 bg-gradient-to-br from-dusty-lavender/20 via-lavender-bg to-peach-accent/10 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8 mb-16">
             <h2 className="text-4xl md:text-5xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
-              Featured Work
+              Dress Making Creations
             </h2>
             <p className="text-xl text-slate-gray font-inter max-w-2xl mx-auto">
-              A glimpse into my design journey and creative process
+              Explore my dress making portfolio featuring pattern design and draping techniques
             </p>
           </div>
 
-          {/* Sliding Animation Container */}
-          <div className="relative">
-            <div className="flex space-x-8" style={{ animation: 'slide-left 15s linear infinite' }}>
+          {/* Infinite Sliding Animation Container */}
+          <div className="relative overflow-hidden">
+            <style jsx>{`
+              @keyframes slide-right-to-left {
+                0% {
+                  transform: translateX(100%);
+                }
+                100% {
+                  transform: translateX(-100%);
+                }
+              }
+              .slide-infinite {
+                animation: slide-right-to-left 30s linear infinite;
+              }
+            `}</style>
+            
+            <div className="flex space-x-8 slide-infinite">
               {/* First set of projects */}
               {featuredProjects.map((project) => (
                 <div key={project.id} className="flex-shrink-0 w-80 group cursor-pointer">
@@ -135,7 +150,7 @@ const Home = () => {
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-contain rounded group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-cover rounded group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-midnight-navy/10 via-transparent to-dusty-lavender/5 rounded-lg"></div>
                   </div>
@@ -147,14 +162,33 @@ const Home = () => {
                   </p>
                 </div>
               ))}
-              {/* Duplicate set for infinite scroll */}
+              {/* Duplicate set for seamless infinite scroll */}
               {featuredProjects.map((project) => (
                 <div key={`duplicate-${project.id}`} className="flex-shrink-0 w-80 group cursor-pointer">
                   <div className="relative h-64 rounded-lg overflow-hidden mb-4 bg-gradient-to-br from-white via-lavender-bg to-dusty-lavender/10 p-2">
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-contain rounded group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-cover rounded group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-midnight-navy/10 via-transparent to-dusty-lavender/5 rounded-lg"></div>
+                  </div>
+                  <h3 className="text-xl font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent mb-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-slate-gray font-inter text-sm">
+                    {project.description.substring(0, 80)}...
+                  </p>
+                </div>
+              ))}
+              {/* Third set for smooth transition */}
+              {featuredProjects.map((project) => (
+                <div key={`triple-${project.id}`} className="flex-shrink-0 w-80 group cursor-pointer">
+                  <div className="relative h-64 rounded-lg overflow-hidden mb-4 bg-gradient-to-br from-white via-lavender-bg to-dusty-lavender/10 p-2">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover rounded group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-midnight-navy/10 via-transparent to-dusty-lavender/5 rounded-lg"></div>
                   </div>
