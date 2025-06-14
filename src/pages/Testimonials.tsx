@@ -32,11 +32,11 @@ const Testimonials = () => {
       location: "Fiverr Platform", 
       rating: 5,
       date: "Recent",
-      testimonial: "Great experience. Faiqa delivered exceptional quality work with perfect communication and timely delivery. Highly professional service.",
+      testimonial: "She is so awesome and I am happy with her work. Great experience with excellent communication and timely delivery.",
       project: "Custom Design Work",
       amount: "$70",
       image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=150&h=150&fit=crop&crop=face",
-      reviewImage: "/lovable-uploads/9917c394-2121-4b2f-bf62-6d782aae849d.png"
+      reviewImage: "/lovable-uploads/ce23d7df-7866-49c9-98b5-d900a6d0e0c7.png"
     },
     {
       name: "Alexfimain",
@@ -121,6 +121,42 @@ const Testimonials = () => {
       amount: "$15",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=150&h=150&fit=crop&crop=face",
       reviewImage: "/lovable-uploads/002121ff-ce8b-4166-acea-9240bde09f16.png"
+    },
+    {
+      name: "Rebeccataylo368",
+      role: "Client",
+      location: "Fiverr Platform",
+      rating: 5,
+      date: "Recent",
+      testimonial: "Great job Designer Faiqa! The order was completed successfully and I earned $4 for this order. Excellent communication throughout.",
+      project: "Design Illustrations & Drawings",
+      amount: "$5",
+      image: "https://images.unsplash.com/photo-1494790108755-2616b612b76c?w=150&h=150&fit=crop&crop=face",
+      reviewImage: "/lovable-uploads/df38bf94-e61a-4394-b237-a15790228517.png"
+    },
+    {
+      name: "Samira G (smgree17)",
+      role: "Client",
+      location: "Fiverr Platform",
+      rating: 5,
+      date: "Recent",
+      testimonial: "Easy to work and communicate with, was able to draw exactly what I wanted and perfected it seamlessly!",
+      project: "Design Illustrations & Drawings",
+      amount: "$5",
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+      reviewImage: "/lovable-uploads/4a46fa75-edaa-4a86-982c-7d4fed4a262f.png"
+    },
+    {
+      name: "Rrose",
+      role: "Client",
+      location: "Fiverr Platform",
+      rating: 5,
+      date: "Recent",
+      testimonial: "Am excited! Already sent images but let me know if I need anything else. Her name is Majesty Pink X and favorite color Pink and Black. Perfect dress design work!",
+      project: "Custom Dress Design",
+      amount: "$5",
+      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face",
+      reviewImage: "/lovable-uploads/2f501c02-8833-475b-b682-570114c57e92.png"
     }
   ];
 
