@@ -244,26 +244,26 @@ const Experience = () => {
                             <Award size={16} />
                             Related Certificates:
                           </h4>
-                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          <div className="flex flex-wrap gap-4 overflow-x-auto">
                             {exp.certificates.map((cert, certIndex) => (
                               <Dialog key={certIndex}>
                                 <DialogTrigger asChild>
-                                  <div className="relative group cursor-pointer">
+                                  <div className="relative group cursor-pointer flex-shrink-0">
                                     <div className="absolute -inset-1 bg-gradient-to-r from-dusty-lavender via-peach-accent to-midnight-navy rounded-lg blur opacity-20 group-hover:opacity-50 transition duration-500"></div>
-                                    <div className="relative bg-gradient-to-br from-white to-lavender-bg rounded-lg shadow-md p-4 border border-dusty-lavender/20">
+                                    <div className="relative bg-gradient-to-br from-white to-lavender-bg rounded-lg shadow-md p-3 border border-dusty-lavender/20 w-64">
                                       <div className="space-y-3">
                                         <div className="relative overflow-hidden rounded">
                                           <img 
                                             src={cert.image} 
                                             alt={cert.title} 
-                                            className="w-full h-32 object-cover transition-transform duration-300 group-hover:scale-105"
+                                            className="w-full h-20 object-cover transition-transform duration-300 group-hover:scale-105"
                                           />
-                                          <div className="absolute top-2 right-2">
-                                            <ZoomIn className="w-4 h-4 text-white bg-midnight-navy/50 rounded-full p-0.5" />
+                                          <div className="absolute top-1 right-1">
+                                            <ZoomIn className="w-3 h-3 text-white bg-midnight-navy/50 rounded-full p-0.5" />
                                           </div>
                                         </div>
                                         <div className="space-y-1">
-                                          <h5 className="text-sm font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
+                                          <h5 className="text-xs font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent line-clamp-2">
                                             {cert.title}
                                           </h5>
                                           <p className="text-xs text-slate-gray font-inter">
