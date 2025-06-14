@@ -67,7 +67,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-lavender-bg text-slate-gray font-inter;
+    @apply bg-gradient-to-br from-lavender-bg via-white to-dusty-lavender/5 text-slate-gray font-inter;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-playfair;
@@ -75,6 +75,38 @@
 }
 
 @layer utilities {
+  /* Gradient text utilities */
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-midnight-navy via-dusty-lavender to-midnight-navy bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-secondary {
+    @apply bg-gradient-to-r from-dusty-lavender to-peach-accent bg-clip-text text-transparent;
+  }
+
+  /* Gradient background utilities */
+  .bg-gradient-primary {
+    @apply bg-gradient-to-r from-dusty-lavender to-midnight-navy;
+  }
+  
+  .bg-gradient-secondary {
+    @apply bg-gradient-to-r from-peach-accent to-dusty-lavender;
+  }
+  
+  .bg-gradient-tertiary {
+    @apply bg-gradient-to-br from-lavender-bg via-white to-dusty-lavender/10;
+  }
+
+  /* Hover gradient utilities */
+  .hover-gradient-primary {
+    @apply hover:bg-gradient-to-r hover:from-dusty-lavender hover:to-midnight-navy;
+  }
+  
+  .hover-gradient-secondary {
+    @apply hover:bg-gradient-to-r hover:from-midnight-navy hover:to-dusty-lavender;
+  }
+
+  /* Original color utilities */
   .text-dusty-lavender {
     color: #D8B4DD;
   }
