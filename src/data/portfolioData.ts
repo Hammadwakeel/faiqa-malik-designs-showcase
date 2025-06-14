@@ -395,6 +395,87 @@ export const portfolioProjects: Project[] = [
     image: "/lovable-uploads/fe25186d-39ef-4da8-b54a-ef0a4bcfa04e.png",
     tools: ["Mixed Media", "Textile Collage", "Decorative Stitching"],
     year: "2024"
+  },
+  {
+    id: 44,
+    title: "Contemporary Mixed Media Patchwork",
+    category: "Textile",
+    description: "Modern patchwork design featuring geometric shapes, organic forms, and mixed textile techniques. Combines traditional quilting with contemporary artistic expression.",
+    image: "/lovable-uploads/46c9d666-0534-44f8-8a30-c919c380c427.png",
+    tools: ["Mixed Media Patchwork", "Contemporary Quilting", "Geometric Design"],
+    year: "2024"
+  },
+  {
+    id: 45,
+    title: "Traditional Ornamental Dress - Brown",
+    category: "Textile",
+    description: "Elegant traditional dress design in brown tones with intricate ornamental patterns. Features detailed sleeve, front, and back construction with matching dupatta pattern.",
+    image: "/lovable-uploads/0dc9849f-33e6-4324-9f69-760d5bdd6ecc.png",
+    tools: ["Traditional Pattern Design", "Ornamental Work", "Pattern Development"],
+    year: "2024"
+  },
+  {
+    id: 46,
+    title: "Teal Traditional Dress with Dupatta",
+    category: "Textile",
+    description: "Beautiful teal traditional outfit featuring geometric patterns and ornamental borders. Complete with matching dupatta and styled presentation with model.",
+    image: "/lovable-uploads/86e9d617-436f-409b-9685-a569735da30a.png",
+    tools: ["Traditional Design", "Geometric Patterns", "Complete Styling"],
+    year: "2024"
+  },
+  {
+    id: 47,
+    title: "Black Floral Traditional Dress",
+    category: "Textile",
+    description: "Sophisticated black traditional dress with delicate floral patterns and ornamental borders. Features elegant sleeve design and matching trouser pattern.",
+    image: "/lovable-uploads/5b795ed5-fd16-4158-9014-4724574a7178.png",
+    tools: ["Floral Pattern Design", "Traditional Construction", "Color Coordination"],
+    year: "2024"
+  },
+  {
+    id: 48,
+    title: "Watercolor Floral Composition",
+    category: "Textile",
+    description: "Artistic watercolor composition featuring flowing floral elements in soft, muted tones. Contemporary textile art with organic shapes and layered textures.",
+    image: "/lovable-uploads/9ae463c2-c17f-4630-b246-74f063de633f.png",
+    tools: ["Watercolor Technique", "Floral Art", "Organic Design"],
+    year: "2024"
+  },
+  {
+    id: 49,
+    title: "Ornate Black Pillow Design",
+    category: "Textile",
+    description: "Luxurious black pillow featuring intricate golden ornamental patterns. Traditional motifs with contemporary styling perfect for interior design applications.",
+    image: "/lovable-uploads/4de095c6-b23b-4859-ba4d-599fb78f8dee.png",
+    tools: ["Ornamental Design", "Interior Textiles", "Traditional Motifs"],
+    year: "2024"
+  },
+  {
+    id: 50,
+    title: "Faiqa Malik Brand Portfolio",
+    category: "Textile",
+    description: "Professional brand portfolio presentation featuring textile samples in elegant packaging. Showcases floral patterns and brand identity with sophisticated presentation.",
+    image: "/lovable-uploads/171deb15-0a42-4e5e-b10f-592e5f4bb303.png",
+    tools: ["Brand Development", "Portfolio Design", "Professional Presentation"],
+    year: "2024"
+  },
+  {
+    id: 51,
+    title: "Mood Swings Fabric Collection",
+    category: "Textile",
+    description: "Contemporary fabric collection titled 'Mood Swings' by Faiqa Malik. Features flowing purple and pink floral patterns perfect for modern fashion applications.",
+    image: "/lovable-uploads/7363d230-c65a-4670-b21b-536cab9d864e.png",
+    tools: ["Fabric Design", "Pattern Development", "Modern Textiles"],
+    year: "2024"
+  },
+  {
+    id: 52,
+    title: "Textile Craft Materials Collection",
+    category: "Textile",
+    description: "Comprehensive collection of textile crafting materials including threads, fabrics, beads, and embellishments. Showcases the raw materials behind textile artistry.",
+    image: "/lovable-uploads/ad0a2c90-713a-4f47-b547-346e48f38592.png",
+    tools: ["Material Sourcing", "Craft Supplies", "Textile Foundation"],
+    year: "2024"
   }
 ];
 
