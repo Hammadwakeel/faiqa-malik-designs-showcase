@@ -296,29 +296,38 @@ const Education = () => {
                                 <Award size={16} />
                                 Related Certificates:
                               </h4>
-                              <div className="grid grid-cols-1 gap-4">
+                              <div className="flex flex-wrap gap-4 overflow-x-auto">
                                 {edu.certificates.map((cert, certIndex) => (
                                   <Dialog key={certIndex}>
                                     <DialogTrigger asChild>
-                                      <div className="relative group cursor-pointer">
+                                      <div className="relative group cursor-pointer flex-shrink-0">
                                         <div className="absolute -inset-1 bg-gradient-to-r from-dusty-lavender via-peach-accent to-midnight-navy rounded-lg blur opacity-20 group-hover:opacity-50 transition duration-500"></div>
-                                        <div className="relative bg-gradient-to-br from-white to-lavender-bg rounded-lg shadow-md p-4 border border-dusty-lavender/20 hover:shadow-lg transition-shadow duration-300">
-                                          <div className="flex items-center justify-between">
-                                            <div className="space-y-1 flex-1">
-                                              <h5 className="text-sm font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
+                                        <div className="relative bg-gradient-to-br from-white to-lavender-bg rounded-lg shadow-md p-3 border border-dusty-lavender/20 w-64">
+                                          <div className="space-y-3">
+                                            <div className="relative overflow-hidden rounded">
+                                              <img 
+                                                src={cert.image} 
+                                                alt={cert.title} 
+                                                className="w-full h-20 object-cover transition-transform duration-300 group-hover:scale-105"
+                                              />
+                                              <div className="absolute top-1 right-1">
+                                                <ZoomIn className="w-3 h-3 text-white bg-midnight-navy/50 rounded-full p-0.5" />
+                                              </div>
+                                            </div>
+                                            <div className="space-y-1">
+                                              <h5 className="text-xs font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent line-clamp-2">
                                                 {cert.title}
                                               </h5>
                                               <p className="text-xs text-slate-gray font-inter">
                                                 {cert.description}
                                               </p>
                                             </div>
-                                            <ZoomIn className="w-4 h-4 text-dusty-lavender ml-2" />
                                           </div>
                                         </div>
                                       </div>
                                     </DialogTrigger>
-                                    <DialogContent className="max-w-4xl w-full max-h-[90vh] p-0">
-                                      <div className="relative">
+                                    <DialogContent className="max-w-4xl w-full max-h-[90vh] p-0 overflow-hidden">
+                                      <div className="relative overflow-auto max-h-[90vh]">
                                         <img 
                                           src={cert.image} 
                                           alt={cert.title} 
@@ -403,36 +412,38 @@ const Education = () => {
                         <h4 className="font-inter font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
                           Related Certificates:
                         </h4>
-                        <div className="space-y-3">
+                        <div className="flex flex-wrap gap-3">
                           {cert.certificates.map((certificate, certIndex) => (
                             <Dialog key={certIndex}>
                               <DialogTrigger asChild>
-                                <div className="relative group cursor-pointer">
+                                <div className="relative group cursor-pointer flex-shrink-0">
                                   <div className="absolute -inset-1 bg-gradient-to-r from-dusty-lavender via-peach-accent to-midnight-navy rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
-                                  <div className="relative bg-gradient-to-br from-white to-lavender-bg rounded-xl shadow-lg p-4 border border-dusty-lavender/20 hover:shadow-xl transition-shadow duration-300">
-                                    <div className="flex items-center space-x-3">
-                                      <div className="relative overflow-hidden rounded-lg flex-shrink-0">
+                                  <div className="relative bg-gradient-to-br from-white to-lavender-bg rounded-xl shadow-lg p-3 border border-dusty-lavender/20 w-48">
+                                    <div className="space-y-2">
+                                      <div className="relative overflow-hidden rounded-lg">
                                         <img 
                                           src={certificate.image} 
                                           alt={certificate.title} 
-                                          className="w-16 h-16 object-cover"
+                                          className="w-full h-16 object-cover transition-transform duration-300 group-hover:scale-105"
                                         />
+                                        <div className="absolute top-1 right-1">
+                                          <ZoomIn className="w-3 h-3 text-white bg-midnight-navy/50 rounded-full p-0.5" />
+                                        </div>
                                       </div>
-                                      <div className="flex-1 space-y-1">
-                                        <h5 className="text-sm font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
+                                      <div className="space-y-1">
+                                        <h5 className="text-xs font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent line-clamp-2">
                                           {certificate.title}
                                         </h5>
                                         <p className="text-xs text-slate-gray font-inter">
                                           {certificate.description}
                                         </p>
                                       </div>
-                                      <ZoomIn className="w-4 h-4 text-dusty-lavender" />
                                     </div>
                                   </div>
                                 </div>
                               </DialogTrigger>
-                              <DialogContent className="max-w-4xl w-full max-h-[90vh] p-0">
-                                <div className="relative">
+                              <DialogContent className="max-w-4xl w-full max-h-[90vh] p-0 overflow-hidden">
+                                <div className="relative overflow-auto max-h-[90vh]">
                                   <img 
                                     src={certificate.image} 
                                     alt={certificate.title} 

@@ -274,8 +274,8 @@ const Experience = () => {
                                     </div>
                                   </div>
                                 </DialogTrigger>
-                                <DialogContent className="max-w-4xl w-full max-h-[90vh] p-0">
-                                  <div className="relative">
+                                <DialogContent className="max-w-4xl w-full max-h-[90vh] p-0 overflow-hidden">
+                                  <div className="relative overflow-auto max-h-[90vh]">
                                     <img 
                                       src={cert.image} 
                                       alt={cert.title} 
