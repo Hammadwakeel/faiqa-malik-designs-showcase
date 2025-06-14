@@ -1,6 +1,7 @@
-
 import { useState } from 'react';
 import { Mail, Instagram, MapPin, Send, Phone, Clock } from 'lucide-react';
+import { useContactMessages } from '@/hooks/useContactMessages';
+import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +10,9 @@ const Contact = () => {
     subject: '',
     message: ''
   });
+  const [submitting, setSubmitting] = useState(false);
+  const { submitMessage } = useContactMessages();
+  const { toast } = useToast();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -18,17 +22,42 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // Reset form after submission
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
+    setSubmitting(true);
+
+    try {
+      const result = await submitMessage(formData);
+      
+      if (result.success) {
+        toast({
+          title: "Message sent successfully!",
+          description: "Thank you for your message. I'll get back to you soon.",
+        });
+        
+        // Reset form after successful submission
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+      } else {
+        toast({
+          title: "Failed to send message",
+          description: result.error || "Something went wrong. Please try again.",
+          variant: "destructive"
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive"
+      });
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -113,7 +142,8 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gradient-to-r from-dusty-lavender/30 to-peach-accent/30 rounded-lg focus:ring-2 focus:ring-dusty-lavender focus:border-transparent font-inter bg-gradient-to-r from-white to-lavender-bg/50"
+                      disabled={submitting}
+                      className="w-full px-4 py-3 border border-gradient-to-r from-dusty-lavender/30 to-peach-accent/30 rounded-lg focus:ring-2 focus:ring-dusty-lavender focus:border-transparent font-inter bg-gradient-to-r from-white to-lavender-bg/50 disabled:opacity-50"
                       placeholder="Enter your full name"
                     />
                   </div>
@@ -128,7 +158,8 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gradient-to-r from-dusty-lavender/30 to-peach-accent/30 rounded-lg focus:ring-2 focus:ring-dusty-lavender focus:border-transparent font-inter bg-gradient-to-r from-white to-lavender-bg/50"
+                      disabled={submitting}
+                      className="w-full px-4 py-3 border border-gradient-to-r from-dusty-lavender/30 to-peach-accent/30 rounded-lg focus:ring-2 focus:ring-dusty-lavender focus:border-transparent font-inter bg-gradient-to-r from-white to-lavender-bg/50 disabled:opacity-50"
                       placeholder="your.email@example.com"
                     />
                   </div>
@@ -145,7 +176,8 @@ const Contact = () => {
                     value={formData.subject}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gradient-to-r from-dusty-lavender/30 to-peach-accent/30 rounded-lg focus:ring-2 focus:ring-dusty-lavender focus:border-transparent font-inter bg-gradient-to-r from-white to-lavender-bg/50"
+                    disabled={submitting}
+                    className="w-full px-4 py-3 border border-gradient-to-r from-dusty-lavender/30 to-peach-accent/30 rounded-lg focus:ring-2 focus:ring-dusty-lavender focus:border-transparent font-inter bg-gradient-to-r from-white to-lavender-bg/50 disabled:opacity-50"
                     placeholder="What's this about?"
                   />
                 </div>
@@ -160,18 +192,20 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     required
+                    disabled={submitting}
                     rows={6}
-                    className="w-full px-4 py-3 border border-gradient-to-r from-dusty-lavender/30 to-peach-accent/30 rounded-lg focus:ring-2 focus:ring-dusty-lavender focus:border-transparent font-inter resize-none bg-gradient-to-br from-white to-lavender-bg/30"
+                    className="w-full px-4 py-3 border border-gradient-to-r from-dusty-lavender/30 to-peach-accent/30 rounded-lg focus:ring-2 focus:ring-dusty-lavender focus:border-transparent font-inter resize-none bg-gradient-to-br from-white to-lavender-bg/30 disabled:opacity-50"
                     placeholder="Tell me about your project, timeline, and any specific requirements..."
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-midnight-navy to-dusty-lavender text-white font-inter font-medium py-4 px-6 rounded-lg hover:from-dusty-lavender hover:to-midnight-navy transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg"
+                  disabled={submitting}
+                  className="w-full bg-gradient-to-r from-midnight-navy to-dusty-lavender text-white font-inter font-medium py-4 px-6 rounded-lg hover:from-dusty-lavender hover:to-midnight-navy transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <Send size={20} />
-                  <span>Send Message</span>
+                  <span>{submitting ? 'Sending...' : 'Send Message'}</span>
                 </button>
               </form>
             </div>
