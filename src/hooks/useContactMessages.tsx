@@ -21,7 +21,7 @@ export const useContactMessages = () => {
     try {
       setLoading(true);
       const { data, error } = await supabase
-        .from('contact_messages')
+        .from<any>('contact_messages')
         .select('*')
         .order('created_at', { ascending: false });
 
@@ -37,7 +37,7 @@ export const useContactMessages = () => {
   const markAsRead = async (id: string) => {
     try {
       const { error } = await supabase
-        .from('contact_messages')
+        .from<any>('contact_messages')
         .update({ is_read: true })
         .eq('id', id);
 
@@ -62,7 +62,7 @@ export const useContactMessages = () => {
   }) => {
     try {
       const { error } = await supabase
-        .from('contact_messages')
+        .from<any>('contact_messages')
         .insert([formData]);
 
       if (error) throw error;
