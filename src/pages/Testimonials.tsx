@@ -12,7 +12,8 @@ const Testimonials = () => {
       testimonial: "It was great success. Faiqa designed my dress, illustrations, drawings perfectly! The quality of work and professional approach exceeded expectations.",
       project: "Custom Design Work",
       amount: "$125",
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=150&h=150&fit=crop&crop=face"
+      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=150&h=150&fit=crop&crop=face",
+      reviewImage: "/lovable-uploads/1d478f13-7cd4-44a0-8700-3a93779fdc25.png"
     },
     {
       name: "Salsadrum",
@@ -23,7 +24,8 @@ const Testimonials = () => {
       testimonial: "Great work I recommend. Faiqa's attention to detail and understanding of my vision was incredible. The entire process was smooth and professional.",
       project: "Custom Design Work",
       amount: "$125",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=150&h=150&fit=crop&crop=face"
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=150&h=150&fit=crop&crop=face",
+      reviewImage: "/lovable-uploads/2c9c2418-8c05-4f49-a27b-fab124efc173.png"
     },
     {
       name: "Abdul Samad (asammad)",
@@ -34,7 +36,8 @@ const Testimonials = () => {
       testimonial: "Great experience. Faiqa delivered exceptional quality work with perfect communication and timely delivery. Highly professional service.",
       project: "Custom Design Work",
       amount: "$70",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=150&h=150&fit=crop&crop=face"
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=150&h=150&fit=crop&crop=face",
+      reviewImage: "/lovable-uploads/3750e28c-6a75-4a7d-acac-8c14127feb13.png"
     },
     {
       name: "Alexfimain",
@@ -45,7 +48,8 @@ const Testimonials = () => {
       testimonial: "I really liked the Dress design. Faiqa's creativity and professionalism is outstanding. The results exceeded my expectations completely.",
       project: "Dress Design",
       amount: "$57",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=150&h=150&fit=crop&crop=face"
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=150&h=150&fit=crop&crop=face",
+      reviewImage: "/lovable-uploads/4917c91c-ac7a-4d6d-b9f2-07ca3fe4e1b0.png"
     },
     {
       name: "Swilloo",
@@ -56,7 +60,8 @@ const Testimonials = () => {
       testimonial: "Excellent work and communication. Faiqa delivered quality designs on time and was very professional throughout the process.",
       project: "Custom Design Work", 
       amount: "$45",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=150&h=150&fit=crop&crop=face"
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=150&h=150&fit=crop&crop=face",
+      reviewImage: "/lovable-uploads/5704c48d-e227-489b-b339-315996b3924c.png"
     },
     {
       name: "Ellacooke541",
@@ -67,7 +72,8 @@ const Testimonials = () => {
       testimonial: "Outstanding service and quality. Faiqa's designs are creative and perfectly executed. Great job on the project deliverables.",
       project: "Custom Design Work",
       amount: "$40",
-      image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=150&h=150&fit=crop&crop=face"
+      image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=150&h=150&fit=crop&crop=face",
+      reviewImage: "/lovable-uploads/574886d3-5057-4952-bca1-83c6ce3875c7.png"
     },
     {
       name: "Omowaleaduayi",
@@ -78,7 +84,8 @@ const Testimonials = () => {
       testimonial: "Professional and reliable service. Faiqa delivered exactly what was requested with excellent attention to detail and quality.",
       project: "Custom Design Work",
       amount: "$30",
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=150&h=150&fit=crop&crop=face"
+      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=150&h=150&fit=crop&crop=face",
+      reviewImage: "/lovable-uploads/68d555f0-027d-47d8-ab39-ed770c31a3df.png"
     },
     {
       name: "Skye Fox (skyeeyks)",
@@ -89,7 +96,8 @@ const Testimonials = () => {
       testimonial: "Faiqamalik533 did an outstanding job! I love the designs I got back and I would highly recommend them as a dress designer/illustrator!",
       project: "Dress Design & Illustration",
       amount: "$27",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=150&h=150&fit=crop&crop=face"
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=150&h=150&fit=crop&crop=face",
+      reviewImage: "/lovable-uploads/7ca5ea3c-8107-452a-b12b-dc64459c5214.png"
     },
     {
       name: "Nessrinnawara40",
@@ -100,7 +108,8 @@ const Testimonials = () => {
       testimonial: "Great work! Thanks a lot. Faiqa delivered quality designs with excellent communication and professional service throughout.",
       project: "Custom Design Work",
       amount: "$20",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=150&h=150&fit=crop&crop=face"
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=150&h=150&fit=crop&crop=face",
+      reviewImage: "/lovable-uploads/8fe0c802-1915-4dfc-9895-441325e4fffc.png"
     },
     {
       name: "Fardowsauxui",
@@ -111,7 +120,8 @@ const Testimonials = () => {
       testimonial: "Amazing designer! Kind, patient and professional. Faiqa's work quality and attention to detail is exceptional.",
       project: "Custom Design Work", 
       amount: "$15",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=150&h=150&fit=crop&crop=face"
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=150&h=150&fit=crop&crop=face",
+      reviewImage: "/lovable-uploads/9154ec23-6fd6-4a88-b6e2-33d7f03b04ea.png"
     }
   ];
 
@@ -185,6 +195,17 @@ const Testimonials = () => {
                 <div className="inline-flex items-center px-3 py-1 bg-gradient-to-r from-dusty-lavender to-peach-accent rounded-full text-white text-sm font-semibold shadow-lg">
                   {testimonial.amount}
                 </div>
+
+                {/* Review Screenshot */}
+                {testimonial.reviewImage && (
+                  <div className="bg-gradient-to-br from-lavender-bg to-dusty-lavender/5 rounded-lg p-3 border border-dusty-lavender/20">
+                    <img
+                      src={testimonial.reviewImage}
+                      alt={`Review from ${testimonial.name}`}
+                      className="w-full h-auto rounded-lg shadow-md"
+                    />
+                  </div>
+                )}
 
                 {/* Testimonial Text */}
                 <p className="text-slate-gray font-inter leading-relaxed text-sm">
