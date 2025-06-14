@@ -1,4 +1,3 @@
-
 import { Project } from '../types';
 
 export const dressMakingProjects: Project[] = [
@@ -180,6 +179,33 @@ export const dressMakingProjects: Project[] = [
     description: "Bold orange dress design described as 'an experience of wearing art.' Features structured silhouette and contemporary styling in vibrant urban setting.",
     image: "/lovable-uploads/8786743d-02b6-4a91-bbbe-e2d2f8e22c3a.png",
     tools: ["Artistic Fashion", "Structured Design", "Urban Photography"],
+    year: "2024"
+  },
+  {
+    id: 121,
+    title: "Street Art Grace Collection",
+    category: "Dress Making",
+    description: "Urban-inspired pink dress design featuring dramatic ruffles and contemporary styling. Shot against a brick wall backdrop to emphasize the street art aesthetic with 'For Grace Full People' branding.",
+    image: "/lovable-uploads/66d80e03-db62-4890-bf58-b8b569a8bb63.png",
+    tools: ["Street Fashion", "Contemporary Design", "Editorial Styling"],
+    year: "2024"
+  },
+  {
+    id: 122,
+    title: "Glistening Street Collection",
+    category: "Dress Making",
+    description: "Elegant black evening gown with backless design captured in sophisticated architectural setting. Features flowing silhouette and dramatic styling in monochrome aesthetic.",
+    image: "/lovable-uploads/7915bcfb-fa85-48d0-85b3-c331f953b99e.png",
+    tools: ["Evening Wear", "Backless Design", "Architectural Photography"],
+    year: "2024"
+  },
+  {
+    id: 123,
+    title: "Glistening Street Elegance",
+    category: "Dress Making",
+    description: "Evening gown capturing the breathtaking beauty of glistening sands under moonlit sky. Features flowing silhouette with intricate beadwork and sequins, hand-embroidered for layers of texture and brilliance reminiscent of desert landscapes.",
+    image: "/lovable-uploads/2f9c948a-7f8b-445b-a147-f6c89fe3c856.png",
+    tools: ["Beadwork", "Hand Embroidery", "Evening Elegance"],
     year: "2024"
   }
 ];
