@@ -47,6 +47,65 @@ const Education = () => {
       period: "2018–2020",
       description: "Intensive certification program covering advanced textile knowledge, pattern making, and commercial fashion design practices.",
       skills: ["Advanced Pattern Making", "Textile Science", "Fashion Illustration", "Garment Construction"]
+    },
+    {
+      title: "Financial Literacy Training Program",
+      issuer: "National Textile Institute",
+      period: "2020",
+      description: "Comprehensive program focusing on financial management and business planning for fashion entrepreneurs.",
+      skills: ["Business Planning", "Financial Management", "Cost Analysis", "Market Research"]
+    },
+    {
+      title: "Corporate Social Responsibility Project",
+      issuer: "Iqra University",
+      period: "2022",
+      description: "Certificate of appreciation for participation in university CSR initiatives and community development projects.",
+      skills: ["Community Engagement", "Project Management", "Social Impact", "Leadership"]
+    }
+  ];
+
+  const professionalCertificates = [
+    {
+      title: "Certificate of Internship",
+      company: "Eleven Clothing",
+      image: "/lovable-uploads/faa6cade-072d-4609-9934-449854d7ab63.png",
+      description: "Completed internship program with distinction"
+    },
+    {
+      title: "Internship Completion Letter",
+      company: "Eleven Clothing",
+      image: "/lovable-uploads/a81f3b03-091d-4cf0-85b2-8ffc54b51513.png",
+      description: "Recognition letter for outstanding performance and creativity"
+    },
+    {
+      title: "Corporate Social Responsibility Certificate",
+      company: "Iqra University",
+      image: "/lovable-uploads/ae013835-6be6-4736-9c7b-da76d669f62b.png",
+      description: "Certificate of appreciation for CSR project participation"
+    },
+    {
+      title: "Internship Completion Certificate",
+      company: "Sui Dhaga Bridals",
+      image: "/lovable-uploads/574886d3-5057-4952-bca1-83c6ce3875c7.png",
+      description: "Successfully completed bridal wear design internship"
+    },
+    {
+      title: "Financial Literacy Certificate",
+      company: "National Textile Institute",
+      image: "/lovable-uploads/e92fb9b3-434c-4a04-ba22-a8d3b238e088.png",
+      description: "Completed financial literacy training program"
+    },
+    {
+      title: "Youth Development Certificate",
+      company: "Helping Hand Organization",
+      image: "/lovable-uploads/10ad8a63-3f6f-4179-bf15-b90548ed98f4.png",
+      description: "Recognition for youth development and humanitarian efforts"
+    },
+    {
+      title: "Fashion Design Certificate",
+      company: "National Textile Institute",
+      image: "/lovable-uploads/9154ec23-6fd6-4a88-b6e2-33d7f03b04ea.png",
+      description: "Specialized course in textile and fashion designing"
     }
   ];
 
@@ -283,6 +342,52 @@ const Education = () => {
                           </div>
                         ))}
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Professional Certificates Gallery */}
+        <div className="mb-20">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent mb-4">
+              Professional Certificates Gallery
+            </h2>
+            <p className="text-lg text-slate-gray font-inter max-w-2xl mx-auto">
+              Official certificates and recognition documents from my educational and professional journey
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {professionalCertificates.map((cert, index) => (
+              <div key={index} className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-dusty-lavender via-peach-accent to-midnight-navy rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                <div className="relative bg-gradient-to-br from-white to-lavender-bg rounded-xl shadow-lg p-6 border border-dusty-lavender/20 hover:shadow-xl transition-shadow duration-300">
+                  <div className="space-y-4">
+                    <div className="relative overflow-hidden rounded-lg">
+                      <img 
+                        src={cert.image} 
+                        alt={cert.title} 
+                        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-midnight-navy/20 to-transparent"></div>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="flex items-center space-x-2">
+                        <Award className="w-5 h-5 text-dusty-lavender" />
+                        <h3 className="text-lg font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
+                          {cert.title}
+                        </h3>
+                      </div>
+                      <p className="text-slate-gray font-inter font-medium text-sm">
+                        {cert.company}
+                      </p>
+                      <p className="text-slate-gray font-inter text-sm">
+                        {cert.description}
+                      </p>
                     </div>
                   </div>
                 </div>
