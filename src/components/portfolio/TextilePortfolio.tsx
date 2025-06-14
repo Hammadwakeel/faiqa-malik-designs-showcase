@@ -1,5 +1,5 @@
 
-import { Download, FileText } from 'lucide-react';
+import { Download, FileText, Trophy } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
@@ -15,6 +15,16 @@ const TextilePortfolio = () => {
     document.body.removeChild(link);
   };
 
+  const handleFootballKitDownload = () => {
+    // Create a link to download the football kit collection
+    const link = document.createElement('a');
+    link.href = '/lovable-uploads/5704c48d-e227-489b-b339-315996b3924c.png';
+    link.download = 'professional-football-kit-collection.png';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   // Create multiple sections of the long image for sliding
   const imageSections = [
     { id: 1, title: "Pattern Designs", description: "Intricate textile patterns and motifs" },
@@ -23,7 +33,7 @@ const TextilePortfolio = () => {
   ];
 
   return (
-    <div className="mt-16 mb-8">
+    <div className="mt-16 mb-8 space-y-8">
       <Card className="bg-gradient-to-br from-white/90 to-dusty-lavender/10 backdrop-blur-sm border border-dusty-lavender/20 shadow-xl">
         <CardHeader className="text-center">
           <CardTitle className="text-3xl font-playfair font-bold text-gradient-primary flex items-center justify-center gap-2">
@@ -87,6 +97,62 @@ const TextilePortfolio = () => {
             </Button>
             <p className="text-xs text-slate-gray font-inter mt-2">
               High-resolution PNG format • Professional quality
+            </p>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Professional Football Kit Collection */}
+      <Card className="bg-gradient-to-br from-white/90 to-dusty-lavender/10 backdrop-blur-sm border border-dusty-lavender/20 shadow-xl">
+        <CardHeader className="text-center">
+          <CardTitle className="text-3xl font-playfair font-bold text-gradient-primary flex items-center justify-center gap-2">
+            <Trophy size={32} />
+            Professional Football Kit Collection
+          </CardTitle>
+          <CardDescription className="text-lg text-slate-gray font-inter">
+            Complete home and away football kit designs with university branding and professional specifications
+          </CardDescription>
+        </CardHeader>
+        
+        <CardContent className="space-y-6">
+          <div className="relative h-80 overflow-hidden rounded-xl border border-dusty-lavender/20">
+            <img
+              src="/lovable-uploads/5704c48d-e227-489b-b339-315996b3924c.png"
+              alt="Professional Football Kit Collection"
+              className="w-full h-full object-contain bg-gradient-to-br from-gray-50 to-white hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-midnight-navy/20 via-transparent to-transparent"></div>
+            <div className="absolute bottom-4 left-4 text-white">
+              <h4 className="font-playfair font-semibold text-lg">Complete Kit Design</h4>
+              <p className="text-sm opacity-90">Home & Away variations with professional branding</p>
+            </div>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-4 text-center">
+            <div className="space-y-2">
+              <h4 className="font-playfair font-semibold text-gradient-primary">Home Kit</h4>
+              <p className="text-sm text-slate-gray font-inter">Classic white design with university branding</p>
+            </div>
+            <div className="space-y-2">
+              <h4 className="font-playfair font-semibold text-gradient-primary">Away Kit</h4>
+              <p className="text-sm text-slate-gray font-inter">Navy blue alternate with consistent styling</p>
+            </div>
+            <div className="space-y-2">
+              <h4 className="font-playfair font-semibold text-gradient-primary">Professional Grade</h4>
+              <p className="text-sm text-slate-gray font-inter">Official specifications and player numbering</p>
+            </div>
+          </div>
+          
+          <div className="text-center">
+            <Button
+              onClick={handleFootballKitDownload}
+              className="bg-gradient-primary hover:bg-gradient-secondary text-white px-8 py-3 rounded-full font-inter font-medium transition-all duration-300 transform hover:scale-105 shadow-lg"
+            >
+              <Download size={20} className="mr-2" />
+              Download Football Kit Collection
+            </Button>
+            <p className="text-xs text-slate-gray font-inter mt-2">
+              High-resolution PNG format • Professional sports design
             </p>
           </div>
         </CardContent>
