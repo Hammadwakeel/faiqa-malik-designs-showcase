@@ -1,4 +1,5 @@
-import { GraduationCap, Award, Calendar, MapPin } from 'lucide-react';
+import { GraduationCap, Award, Calendar, MapPin, ZoomIn } from 'lucide-react';
+import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 
 const Education = () => {
   const education = [
@@ -12,7 +13,15 @@ const Education = () => {
         "Led student fashion show committee",
         "Completed thesis on 'Traditional Pakistani Textiles in Contemporary Fashion'"
       ],
-      type: "Degree"
+      type: "Degree",
+      certificates: [
+        {
+          title: "Certificate of Appreciation - CSR Project",
+          company: "Iqra University",
+          image: "/lovable-uploads/fd88f9f4-3111-4dde-b4fa-e842ef0b345d.png",
+          description: "Proudly presented to Faiqa Malik in appreciation for Corporate Social Responsibility Project"
+        }
+      ]
     },
     {
       degree: "Intermediate in Arts",
@@ -24,7 +33,21 @@ const Education = () => {
         "Participated in inter-collegiate design competitions",
         "Completed internship at local fashion house"
       ],
-      type: "Diploma"
+      type: "Diploma",
+      certificates: [
+        {
+          title: "Fashion Design Certificate",
+          company: "National Textile Institute",
+          image: "/lovable-uploads/9154ec23-6fd6-4a88-b6e2-33d7f03b04ea.png",
+          description: "Specialized course in textile and fashion designing"
+        },
+        {
+          title: "Financial Literacy Certificate",
+          company: "National Textile Institute",
+          image: "/lovable-uploads/e92fb9b3-434c-4a04-ba22-a8d3b238e088.png",
+          description: "Completed financial literacy training program"
+        }
+      ]
     },
     {
       degree: "Matriculation in Computer Science",
@@ -36,7 +59,8 @@ const Education = () => {
         "Participated in school design and arts activities",
         "Maintained academic excellence throughout"
       ],
-      type: "Secondary"
+      type: "Secondary",
+      certificates: []
     }
   ];
 
@@ -46,25 +70,49 @@ const Education = () => {
       issuer: "National Textile Institute, Islamabad",
       period: "2018–2020",
       description: "Intensive certification program covering advanced textile knowledge, pattern making, and commercial fashion design practices.",
-      skills: ["Advanced Pattern Making", "Textile Science", "Fashion Illustration", "Garment Construction"]
+      skills: ["Advanced Pattern Making", "Textile Science", "Fashion Illustration", "Garment Construction"],
+      certificates: [
+        {
+          title: "Fashion Design Certificate",
+          company: "National Textile Institute",
+          image: "/lovable-uploads/9154ec23-6fd6-4a88-b6e2-33d7f03b04ea.png",
+          description: "Specialized course in textile and fashion designing"
+        }
+      ]
     },
     {
       title: "Financial Literacy Training Program",
       issuer: "National Textile Institute",
       period: "2020",
       description: "Comprehensive program focusing on financial management and business planning for fashion entrepreneurs.",
-      skills: ["Business Planning", "Financial Management", "Cost Analysis", "Market Research"]
+      skills: ["Business Planning", "Financial Management", "Cost Analysis", "Market Research"],
+      certificates: [
+        {
+          title: "Financial Literacy Certificate",
+          company: "National Textile Institute",
+          image: "/lovable-uploads/e92fb9b3-434c-4a04-ba22-a8d3b238e088.png",
+          description: "Completed financial literacy training program"
+        }
+      ]
     },
     {
       title: "Corporate Social Responsibility Project",
       issuer: "Iqra University",
       period: "2022",
       description: "Certificate of appreciation for participation in university CSR initiatives and community development projects.",
-      skills: ["Community Engagement", "Project Management", "Social Impact", "Leadership"]
+      skills: ["Community Engagement", "Project Management", "Social Impact", "Leadership"],
+      certificates: [
+        {
+          title: "Corporate Social Responsibility Certificate",
+          company: "Iqra University",
+          image: "/lovable-uploads/ae013835-6be6-4736-9c7b-da76d669f62b.png",
+          description: "Certificate of appreciation for CSR project participation"
+        }
+      ]
     }
   ];
 
-  const professionalCertificates = [
+  const internshipCertificates = [
     {
       title: "Certificate of Internship",
       company: "Eleven Clothing",
@@ -78,34 +126,16 @@ const Education = () => {
       description: "Recognition letter for outstanding performance and creativity"
     },
     {
-      title: "Corporate Social Responsibility Certificate",
-      company: "Iqra University",
-      image: "/lovable-uploads/ae013835-6be6-4736-9c7b-da76d669f62b.png",
-      description: "Certificate of appreciation for CSR project participation"
-    },
-    {
       title: "Internship Completion Certificate",
       company: "Sui Dhaga Bridals",
       image: "/lovable-uploads/574886d3-5057-4952-bca1-83c6ce3875c7.png",
       description: "Successfully completed bridal wear design internship"
     },
     {
-      title: "Financial Literacy Certificate",
-      company: "National Textile Institute",
-      image: "/lovable-uploads/e92fb9b3-434c-4a04-ba22-a8d3b238e088.png",
-      description: "Completed financial literacy training program"
-    },
-    {
       title: "Youth Development Certificate",
       company: "Helping Hand Organization",
       image: "/lovable-uploads/10ad8a63-3f6f-4179-bf15-b90548ed98f4.png",
       description: "Recognition for youth development and humanitarian efforts"
-    },
-    {
-      title: "Fashion Design Certificate",
-      company: "National Textile Institute",
-      image: "/lovable-uploads/9154ec23-6fd6-4a88-b6e2-33d7f03b04ea.png",
-      description: "Specialized course in textile and fashion designing"
     }
   ];
 
@@ -278,6 +308,49 @@ const Education = () => {
                               ))}
                             </ul>
                           </div>
+
+                          {/* Related Certificates */}
+                          {edu.certificates && edu.certificates.length > 0 && (
+                            <div className="space-y-4 pt-4 border-t border-dusty-lavender/20">
+                              <h4 className="font-inter font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent flex items-center gap-2">
+                                <Award size={16} />
+                                Related Certificates:
+                              </h4>
+                              <div className="grid grid-cols-1 gap-4">
+                                {edu.certificates.map((cert, certIndex) => (
+                                  <Dialog key={certIndex}>
+                                    <DialogTrigger asChild>
+                                      <div className="relative group cursor-pointer">
+                                        <div className="absolute -inset-1 bg-gradient-to-r from-dusty-lavender via-peach-accent to-midnight-navy rounded-lg blur opacity-20 group-hover:opacity-50 transition duration-500"></div>
+                                        <div className="relative bg-gradient-to-br from-white to-lavender-bg rounded-lg shadow-md p-4 border border-dusty-lavender/20 hover:shadow-lg transition-shadow duration-300">
+                                          <div className="flex items-center justify-between">
+                                            <div className="space-y-1 flex-1">
+                                              <h5 className="text-sm font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
+                                                {cert.title}
+                                              </h5>
+                                              <p className="text-xs text-slate-gray font-inter">
+                                                {cert.description}
+                                              </p>
+                                            </div>
+                                            <ZoomIn className="w-4 h-4 text-dusty-lavender ml-2" />
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </DialogTrigger>
+                                    <DialogContent className="max-w-4xl w-full max-h-[90vh] p-0">
+                                      <div className="relative">
+                                        <img 
+                                          src={cert.image} 
+                                          alt={cert.title} 
+                                          className="w-full h-auto object-contain"
+                                        />
+                                      </div>
+                                    </DialogContent>
+                                  </Dialog>
+                                ))}
+                              </div>
+                            </div>
+                          )}
                         </div>
                       </div>
                     </div>
@@ -324,25 +397,74 @@ const Education = () => {
                       <p className="text-slate-gray font-inter leading-relaxed">
                         {cert.description}
                       </p>
-                    </div>
 
-                    <div className="space-y-4">
-                      <h4 className="font-inter font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
-                        Skills Acquired:
-                      </h4>
-                      <div className="space-y-2">
-                        {cert.skills.map((skill, sIndex) => (
-                          <div key={sIndex} className="relative group">
-                            <div className="absolute -inset-0.5 bg-gradient-to-r from-dusty-lavender to-peach-accent rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-300"></div>
-                            <div className="relative bg-white px-3 py-2 rounded-lg border border-dusty-lavender/20">
-                              <span className="text-sm font-inter text-slate-gray">
-                                {skill}
-                              </span>
+                      <div className="space-y-4">
+                        <h4 className="font-inter font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
+                          Skills Acquired:
+                        </h4>
+                        <div className="grid grid-cols-2 gap-2">
+                          {cert.skills.map((skill, sIndex) => (
+                            <div key={sIndex} className="relative group">
+                              <div className="absolute -inset-0.5 bg-gradient-to-r from-dusty-lavender to-peach-accent rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-300"></div>
+                              <div className="relative bg-white px-3 py-2 rounded-lg border border-dusty-lavender/20">
+                                <span className="text-sm font-inter text-slate-gray">
+                                  {skill}
+                                </span>
+                              </div>
                             </div>
-                          </div>
-                        ))}
+                          ))}
+                        </div>
                       </div>
                     </div>
+
+                    {/* Related Certificates */}
+                    {cert.certificates && cert.certificates.length > 0 && (
+                      <div className="space-y-4">
+                        <h4 className="font-inter font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
+                          Related Certificates:
+                        </h4>
+                        <div className="space-y-3">
+                          {cert.certificates.map((certificate, certIndex) => (
+                            <Dialog key={certIndex}>
+                              <DialogTrigger asChild>
+                                <div className="relative group cursor-pointer">
+                                  <div className="absolute -inset-1 bg-gradient-to-r from-dusty-lavender via-peach-accent to-midnight-navy rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                                  <div className="relative bg-gradient-to-br from-white to-lavender-bg rounded-xl shadow-lg p-4 border border-dusty-lavender/20 hover:shadow-xl transition-shadow duration-300">
+                                    <div className="flex items-center space-x-3">
+                                      <div className="relative overflow-hidden rounded-lg flex-shrink-0">
+                                        <img 
+                                          src={certificate.image} 
+                                          alt={certificate.title} 
+                                          className="w-16 h-16 object-cover"
+                                        />
+                                      </div>
+                                      <div className="flex-1 space-y-1">
+                                        <h5 className="text-sm font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
+                                          {certificate.title}
+                                        </h5>
+                                        <p className="text-xs text-slate-gray font-inter">
+                                          {certificate.description}
+                                        </p>
+                                      </div>
+                                      <ZoomIn className="w-4 h-4 text-dusty-lavender" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </DialogTrigger>
+                              <DialogContent className="max-w-4xl w-full max-h-[90vh] p-0">
+                                <div className="relative">
+                                  <img 
+                                    src={certificate.image} 
+                                    alt={certificate.title} 
+                                    className="w-full h-auto object-contain"
+                                  />
+                                </div>
+                              </DialogContent>
+                            </Dialog>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
@@ -350,48 +472,64 @@ const Education = () => {
           </div>
         </div>
 
-        {/* Professional Certificates Gallery */}
+        {/* Internship Certificates Section */}
         <div className="mb-20">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent mb-4">
-              Professional Certificates Gallery
+              Internship & Professional Development Certificates
             </h2>
             <p className="text-lg text-slate-gray font-inter max-w-2xl mx-auto">
-              Official certificates and recognition documents from my educational and professional journey
+              Certificates from internships and professional development programs
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {professionalCertificates.map((cert, index) => (
-              <div key={index} className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-dusty-lavender via-peach-accent to-midnight-navy rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
-                <div className="relative bg-gradient-to-br from-white to-lavender-bg rounded-xl shadow-lg p-6 border border-dusty-lavender/20 hover:shadow-xl transition-shadow duration-300">
-                  <div className="space-y-4">
-                    <div className="relative overflow-hidden rounded-lg">
-                      <img 
-                        src={cert.image} 
-                        alt={cert.title} 
-                        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-midnight-navy/20 to-transparent"></div>
-                    </div>
-                    <div className="space-y-2">
-                      <div className="flex items-center space-x-2">
-                        <Award className="w-5 h-5 text-dusty-lavender" />
-                        <h3 className="text-lg font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
-                          {cert.title}
-                        </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+            {internshipCertificates.map((cert, index) => (
+              <Dialog key={index}>
+                <DialogTrigger asChild>
+                  <div className="relative group cursor-pointer">
+                    <div className="absolute -inset-1 bg-gradient-to-r from-dusty-lavender via-peach-accent to-midnight-navy rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                    <div className="relative bg-gradient-to-br from-white to-lavender-bg rounded-xl shadow-lg p-6 border border-dusty-lavender/20 hover:shadow-xl transition-shadow duration-300">
+                      <div className="space-y-4">
+                        <div className="relative overflow-hidden rounded-lg">
+                          <img 
+                            src={cert.image} 
+                            alt={cert.title} 
+                            className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-midnight-navy/20 to-transparent"></div>
+                          <div className="absolute top-2 right-2">
+                            <ZoomIn className="w-5 h-5 text-white bg-midnight-navy/50 rounded-full p-1" />
+                          </div>
+                        </div>
+                        <div className="space-y-2">
+                          <div className="flex items-center space-x-2">
+                            <Award className="w-5 h-5 text-dusty-lavender" />
+                            <h3 className="text-lg font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
+                              {cert.title}
+                            </h3>
+                          </div>
+                          <p className="text-slate-gray font-inter font-medium text-sm">
+                            {cert.company}
+                          </p>
+                          <p className="text-slate-gray font-inter text-sm">
+                            {cert.description}
+                          </p>
+                        </div>
                       </div>
-                      <p className="text-slate-gray font-inter font-medium text-sm">
-                        {cert.company}
-                      </p>
-                      <p className="text-slate-gray font-inter text-sm">
-                        {cert.description}
-                      </p>
                     </div>
                   </div>
-                </div>
-              </div>
+                </DialogTrigger>
+                <DialogContent className="max-w-4xl w-full max-h-[90vh] p-0">
+                  <div className="relative">
+                    <img 
+                      src={cert.image} 
+                      alt={cert.title} 
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                </DialogContent>
+              </Dialog>
             ))}
           </div>
         </div>
