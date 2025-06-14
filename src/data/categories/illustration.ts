@@ -145,5 +145,95 @@ export const illustrationProjects: Project[] = [
     image: "/lovable-uploads/75c5aa57-2673-45fd-9b41-07a788fcd20a.png",
     tools: ["Ruffle Design", "Drama Fashion", "Technical Development"],
     year: "2024"
+  },
+  {
+    id: 2017,
+    title: "Gothic Romance Fashion Illustration",
+    category: "Illustration",
+    description: "Dramatic fashion illustration featuring a flowing pink Victorian-inspired gown with camera head detail against brick wall backdrop. Combines gothic romance aesthetics with contemporary illustration techniques and surreal artistic elements.",
+    image: "/lovable-uploads/85b86edd-15b6-4e81-9cb5-19fa20031246.png",
+    tools: ["Gothic Fashion", "Victorian Romance", "Surreal Elements"],
+    year: "2024"
+  },
+  {
+    id: 2018,
+    title: "Avant-Garde Mask Collection",
+    category: "Illustration",
+    description: "Fashion illustration featuring avant-garde designs with artistic mask elements and technical flat sketches. Showcases experimental fashion with dramatic red and black color palette and structured silhouettes.",
+    image: "/lovable-uploads/148a54bb-aea8-440c-b798-2b0d5892eda1.png",
+    tools: ["Avant-garde Design", "Mask Elements", "Technical Sketches"],
+    year: "2024"
+  },
+  {
+    id: 2019,
+    title: "Experimental Fashion with Technical Flats",
+    category: "Illustration",
+    description: "Fashion illustration combining experimental design with technical development sketches. Features avant-garde styling with mask details and comprehensive flat drawings showing construction details.",
+    image: "/lovable-uploads/29fcea12-1bd3-46f9-ac79-6f0cd844d414.png",
+    tools: ["Experimental Design", "Technical Flats", "Construction Details"],
+    year: "2024"
+  },
+  {
+    id: 2020,
+    title: "Dramatic Red and Black Ensemble",
+    category: "Illustration",
+    description: "Fashion illustration showcasing dramatic red and black ensemble with flowing silhouettes and artistic details. Features contemporary fashion styling with bold color contrasts and dynamic movement.",
+    image: "/lovable-uploads/b18a1b4d-9567-42dd-a76c-71eb72ca9cc7.png",
+    tools: ["Drama Fashion", "Color Contrast", "Dynamic Movement"],
+    year: "2024"
+  },
+  {
+    id: 2021,
+    title: "Contemporary Street Style Illustration",
+    category: "Illustration",
+    description: "Fashion illustration featuring contemporary street style with orange and black color palette. Showcases modern urban fashion with flowing elements and artistic composition techniques.",
+    image: "/lovable-uploads/77f74462-866c-47a7-b75d-da17b6e2cff2.png",
+    tools: ["Street Style", "Urban Fashion", "Contemporary Design"],
+    year: "2024"
+  },
+  {
+    id: 2022,
+    title: "Artistic Fashion Development Study",
+    category: "Illustration",
+    description: "Fashion illustration combining artistic styling with technical development elements. Features avant-garde mask details, flowing garments, and technical flat sketches for comprehensive design development.",
+    image: "/lovable-uploads/4dac6335-c437-4539-8cb3-6e6f4c2672b7.png",
+    tools: ["Development Study", "Artistic Styling", "Technical Elements"],
+    year: "2024"
+  },
+  {
+    id: 2023,
+    title: "Wide-Leg Pants Fashion Illustration",
+    category: "Illustration",
+    description: "Fashion illustration showcasing contemporary wide-leg pants design with artistic top and flowing silhouette. Features modern fashion styling with bold color choices and dynamic pose illustration.",
+    image: "/lovable-uploads/88b76127-810f-444c-8e0f-4f1487a51354.png",
+    tools: ["Wide-Leg Pants", "Contemporary Style", "Dynamic Pose"],
+    year: "2024"
+  },
+  {
+    id: 2024,
+    title: "Technical Fashion Development Portfolio",
+    category: "Illustration",
+    description: "Comprehensive fashion illustration portfolio featuring technical development sketches and artistic styling. Combines experimental design elements with detailed flat drawings and construction details.",
+    image: "/lovable-uploads/db323994-4f15-4c5a-978e-08e7b89165f8.png",
+    tools: ["Technical Development", "Portfolio Design", "Construction Details"],
+    year: "2024"
+  },
+  {
+    id: 2025,
+    title: "Contemporary Fashion Trio Collection",
+    category: "Illustration",
+    description: "Fashion illustration featuring three contemporary looks with vibrant color palette and geometric backgrounds. Showcases diverse fashion styles with bold patterns, flowing silhouettes, and modern aesthetic.",
+    image: "/lovable-uploads/43c25d64-b3a8-45c6-b43e-84c293e79ce8.png",
+    tools: ["Contemporary Fashion", "Color Illustration", "Geometric Design"],
+    year: "2024"
+  },
+  {
+    id: 2026,
+    title: "Fashion Mood Board Illustration",
+    category: "Illustration",
+    description: "Artistic fashion mood board featuring elegant evening wear and lifestyle elements. Combines fashion illustration with mood board techniques, showcasing luxury fashion styling and artistic composition.",
+    image: "/lovable-uploads/1ad1188c-2f24-4b18-9d13-8e62388d24da.png",
+    tools: ["Mood Board", "Evening Wear", "Luxury Fashion"],
+    year: "2024"
   }
 ];
