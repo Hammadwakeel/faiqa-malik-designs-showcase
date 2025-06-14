@@ -4,6 +4,7 @@ import { workProjects } from './categories/work';
 import { technicalProjects } from './categories/technical';
 import { textileProjects } from './categories/textile';
 import { dressMakingProjects } from './categories/dressMaking';
+import { patternMakingProjects } from './categories/patternMaking';
 import { techpacksProjects } from './categories/techpacks';
 import { fashionDevelopmentProjects } from './categories/fashionDevelopment';
 import { illustrationProjects } from './categories/illustration';
@@ -17,6 +18,7 @@ export const portfolioProjects: Project[] = [
   ...technicalProjects,
   ...textileProjects,
   ...dressMakingProjects,
+  ...patternMakingProjects,
   ...techpacksProjects,
   ...fashionDevelopmentProjects,
   ...illustrationProjects,
@@ -24,4 +26,4 @@ export const portfolioProjects: Project[] = [
   ...sportsProjects
 ];
 
-export const portfolioCategories = ['All Work', 'Work', 'Technical', 'Textile', 'Dress making ( pattern+ draping)', 'Techpacks', 'Fashion Development', 'Illustration', 'Boards', 'Sports'];
+export const portfolioCategories = ['All Work', 'Work', 'Technical', 'Textile', 'Dress making ( pattern+ draping)', 'Pattern Making', 'Techpacks', 'Fashion Development', 'Illustration', 'Boards', 'Sports'];
