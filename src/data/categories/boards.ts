@@ -1,4 +1,3 @@
-
 import { Project } from '../types';
 
 export const boardsProjects: Project[] = [
@@ -252,6 +251,60 @@ export const boardsProjects: Project[] = [
     description: "A nature-focused design celebrating the European Roller bird as a symbol of good luck and fortune. Features vibrant blue-green feathers, artistic bird illustrations, and natural elements showcasing this beautiful bird's acrobatic flights and graceful movements.",
     image: "/lovable-uploads/359317a8-b00b-4f8b-b5d6-4815b701f5bf.png",
     tools: ["Nature Photography", "Bird Illustration", "Wildlife Art"],
+    year: "2024"
+  },
+  {
+    id: 3029,
+    title: "Personality Disorders - Psychological Art",
+    category: "Boards",
+    description: "A powerful artistic exploration of personality disorders and their complex psychological impacts. Combines mixed media art with conceptual illustration to visualize how these conditions shape perceptions, emotions, and interactions, creating an intricate tapestry of human experience.",
+    image: "/lovable-uploads/c2db99cb-36a5-40b6-8f6f-380d837bdde9.png",
+    tools: ["Psychological Art", "Mixed Media", "Conceptual Illustration"],
+    year: "2024"
+  },
+  {
+    id: 3030,
+    title: "Isolation - Solitude and Reflection",
+    category: "Boards",
+    description: "An introspective design board exploring themes of isolation as both burden and sanctuary. Features artistic elements and conceptual imagery to convey how solitude can offer moments of self-reflection, introspection, and self-discovery in its tranquility.",
+    image: "/lovable-uploads/3ddb1c53-df2e-4b8b-b09f-000299287bb1.png",
+    tools: ["Introspective Art", "Conceptual Design", "Emotional Expression"],
+    year: "2024"
+  },
+  {
+    id: 3031,
+    title: "Anxiety - Mental Health Awareness",
+    category: "Boards",
+    description: "A compelling visual representation of anxiety and its overwhelming effects on emotional well-being. Combines artistic illustration with psychological imagery to explore how anxiety influences thoughts, behaviors, and physical sensations, creating persistent apprehension and fear.",
+    image: "/lovable-uploads/7739d141-a145-4fd5-aeb9-9303e3a742f1.png",
+    tools: ["Mental Health Art", "Psychological Illustration", "Awareness Design"],
+    year: "2024"
+  },
+  {
+    id: 3032,
+    title: "Abuse Remorse - Healing and Recovery",
+    category: "Boards",
+    description: "A profound artistic examination of abuse remorse and the journey toward healing. Features mixed media art and conceptual elements to explore how true remorse involves acknowledging damage caused and addressing the persistent psychological impact on survivors.",
+    image: "/lovable-uploads/96741d60-9a97-499e-a056-20643872e24b.png",
+    tools: ["Healing Art", "Recovery Design", "Psychological Awareness"],
+    year: "2024"
+  },
+  {
+    id: 3033,
+    title: "Toxic Relationships - Emotional Awareness",
+    category: "Boards",
+    description: "A powerful visual commentary on toxic relationship dynamics and their harmful effects. Combines artistic illustration with symbolic imagery to explore controlling behavior, manipulation, and disrespect in relationships, emphasizing the importance of recognizing these patterns.",
+    image: "/lovable-uploads/3ff50099-24d5-4458-8e0b-a5c9af743345.png",
+    tools: ["Relationship Art", "Emotional Awareness", "Social Commentary"],
+    year: "2024"
+  },
+  {
+    id: 3034,
+    title: "Nightmares - Psychological Horror",
+    category: "Boards",
+    description: "A dark artistic exploration of nightmares and their psychological impact. Features surreal imagery and conceptual art to visualize how nightmares thrive in darkness, creating twisted realms where fears manifest and terror finds no safe space in sleep's embrace.",
+    image: "/lovable-uploads/f4ffeb7d-52fa-40d2-8223-a8b24916685b.png",
+    tools: ["Dark Art", "Surreal Imagery", "Psychological Horror"],
     year: "2024"
   }
 ];
