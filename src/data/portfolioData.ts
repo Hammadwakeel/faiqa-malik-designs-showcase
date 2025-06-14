@@ -566,6 +566,96 @@ export const portfolioProjects: Project[] = [
     image: "/lovable-uploads/8bf456ff-fb12-4fff-81c3-2dffd2f27514.png",
     tools: ["Floral Collage", "Contemporary Art", "Botanical Illustration"],
     year: "2024"
+  },
+  {
+    id: 63,
+    title: "Flowing Dress Technical Flat",
+    category: "Technical",
+    description: "Technical flat drawing of flowing dress design with ruffle sleeves and full skirt. Shows front and back construction details for pattern making.",
+    image: "/lovable-uploads/1918d3ca-9505-4276-808b-37eeba92a3f0.png",
+    tools: ["Technical Drawing", "Fashion Illustration", "Pattern Making"],
+    year: "2024"
+  },
+  {
+    id: 64,
+    title: "Ruffle Sleeve Dress Technical",
+    category: "Technical",
+    description: "Detailed technical specification for dress with dramatic ruffle sleeves and fitted bodice. Includes front and back construction views.",
+    image: "/lovable-uploads/0ba47cd3-e8e9-418e-b844-1c1ab40003b9.png",
+    tools: ["Technical Specification", "Dress Construction", "Sleeve Design"],
+    year: "2024"
+  },
+  {
+    id: 65,
+    title: "Balloon Sleeve Dress with Belt",
+    category: "Technical",
+    description: "Technical flat featuring balloon sleeves, pocket details, and belted waist construction. Shows pleated skirt and back construction details.",
+    image: "/lovable-uploads/46c70df8-a821-490e-8eb3-fb682ab0660d.png",
+    tools: ["Technical Drawing", "Balloon Sleeve Construction", "Belt Detail"],
+    year: "2024"
+  },
+  {
+    id: 66,
+    title: "Pleated Dress Technical Drawing",
+    category: "Technical",
+    description: "Comprehensive technical flat of pleated dress with puff sleeves and belt detail. Front and back construction specifications included.",
+    image: "/lovable-uploads/9d9cab76-f6e7-4a5d-b836-3bb8c52641f4.png",
+    tools: ["Pleating Technique", "Technical Drawing", "Construction Details"],
+    year: "2024"
+  },
+  {
+    id: 67,
+    title: "Ruffle Top Technical Specification",
+    category: "Technical",
+    description: "Technical flat of dramatic ruffle top with bow details and sleeve construction. Shows front and back pattern specifications.",
+    image: "/lovable-uploads/956efc4a-175a-4c7b-8aa0-b5e12b5b0620.png",
+    tools: ["Ruffle Construction", "Technical Specification", "Bow Details"],
+    year: "2024"
+  },
+  {
+    id: 68,
+    title: "Cargo Dress Technical Drawing",
+    category: "Technical",
+    description: "Technical flat featuring cargo-style dress with pocket details and fitted construction. Includes front and back technical specifications.",
+    image: "/lovable-uploads/1fa40fe5-f3ba-497d-a63c-1e0eabd716e6.png",
+    tools: ["Cargo Design", "Technical Drawing", "Pocket Construction"],
+    year: "2024"
+  },
+  {
+    id: 69,
+    title: "Utility Dress Technical Flat",
+    category: "Technical",
+    description: "Detailed technical drawing of utility-inspired dress with functional pockets and streamlined construction details.",
+    image: "/lovable-uploads/602eb18c-bb49-434b-b8f2-3e246ad9b01f.png",
+    tools: ["Utility Design", "Technical Specification", "Functional Details"],
+    year: "2024"
+  },
+  {
+    id: 70,
+    title: "Modern Utility Dress Technical",
+    category: "Technical",
+    description: "Contemporary utility dress technical flat with cargo elements and modern construction details. Front and back specifications included.",
+    image: "/lovable-uploads/fbbbdff7-94aa-498a-b4f7-e5bc3b9a7325.png",
+    tools: ["Modern Design", "Technical Drawing", "Utility Construction"],
+    year: "2024"
+  },
+  {
+    id: 71,
+    title: "Structured Cargo Dress Technical",
+    category: "Technical",
+    description: "Technical flat of structured cargo dress with detailed pocket construction and fitted silhouette specifications.",
+    image: "/lovable-uploads/6187b221-21cb-4593-b364-dd61a9933c92.png",
+    tools: ["Structured Design", "Cargo Construction", "Technical Specification"],
+    year: "2024"
+  },
+  {
+    id: 72,
+    title: "Off-Shoulder Maxi Dress Technical",
+    category: "Technical",
+    description: "Technical flat drawing of off-shoulder maxi dress with flowing construction and detailed neckline specifications. Front and back views included.",
+    image: "/lovable-uploads/7c498271-ed3d-49ec-a6b4-110d58f507f9.png",
+    tools: ["Off-shoulder Construction", "Maxi Dress Design", "Technical Drawing"],
+    year: "2024"
   }
 ];
 
