@@ -55,12 +55,12 @@ const Navigation = () => {
               </Link>
             ))}
 
-            {/* Show admin email at far right */}
-            <div className="ml-8 flex items-center space-x-4 border-l border-dusty-lavender/20 pl-6">
+            {/* REMOVE: Show admin email at far right */}
+            {/* <div className="ml-8 flex items-center space-x-4 border-l border-dusty-lavender/20 pl-6">
               <span className="text-xs text-dusty-lavender font-bold">
                 {ADMIN_EMAIL}
               </span>
-            </div>
+            </div> */}
 
             {/* Social Icons */}
             <div className="flex items-center space-x-4 ml-6 pl-6 border-l border-dusty-lavender/30">
@@ -111,10 +111,10 @@ const Navigation = () => {
                 </Link>
               ))}
 
-              {/* Admin email mobile */}
-              <div className="flex items-center space-x-2 px-3 py-2 mt-2 border-t border-dusty-lavender/20">
+              {/* REMOVE: Admin email mobile */}
+              {/* <div className="flex items-center space-x-2 px-3 py-2 mt-2 border-t border-dusty-lavender/20">
                 <span className="text-xs text-dusty-lavender font-bold">{ADMIN_EMAIL}</span>
-              </div>
+              </div> */}
 
               {/* Mobile Social Icons */}
               <div className="flex items-center space-x-4 px-3 py-2 border-t border-dusty-lavender/20 mt-4">
