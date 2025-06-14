@@ -656,6 +656,96 @@ export const portfolioProjects: Project[] = [
     image: "/lovable-uploads/7c498271-ed3d-49ec-a6b4-110d58f507f9.png",
     tools: ["Off-shoulder Construction", "Maxi Dress Design", "Technical Drawing"],
     year: "2024"
+  },
+  {
+    id: 73,
+    title: "Ruffle Asymmetrical Dress Technical",
+    category: "Technical",
+    description: "Technical flat drawing of ruffle dress with asymmetrical hemline and dramatic sleeve construction. Features front and back construction details.",
+    image: "/lovable-uploads/fde2dcfd-33af-4bb6-8bef-cb6e53c7d5d5.png",
+    tools: ["Ruffle Construction", "Asymmetrical Design", "Technical Drawing"],
+    year: "2024"
+  },
+  {
+    id: 74,
+    title: "Three-Piece Suit Technical Drawing",
+    category: "Technical",
+    description: "Complete technical flat of three-piece suit including blazer, vest, and trousers. Shows front and back construction details for each piece.",
+    image: "/lovable-uploads/4c35a793-eb1b-4b4c-8c8f-607d209ca100.png",
+    tools: ["Tailoring Technique", "Suit Construction", "Technical Specification"],
+    year: "2024"
+  },
+  {
+    id: 75,
+    title: "Mixed Separates Technical Collection",
+    category: "Technical",
+    description: "Technical flat collection featuring turtleneck, vest, and skirt separates. Shows construction details for versatile wardrobe pieces.",
+    image: "/lovable-uploads/6eb4e8cc-27f1-4ba5-8af9-698de82e1760.png",
+    tools: ["Separates Design", "Technical Drawing", "Versatile Construction"],
+    year: "2024"
+  },
+  {
+    id: 76,
+    title: "Asymmetrical Vest and Skirt Set",
+    category: "Technical",
+    description: "Technical specification for asymmetrical vest with matching skirt featuring pleated details. Modern construction with contemporary silhouettes.",
+    image: "/lovable-uploads/cefb6455-dc0c-49e5-955f-38a59f63bd6d.png",
+    tools: ["Asymmetrical Design", "Technical Drawing", "Contemporary Construction"],
+    year: "2024"
+  },
+  {
+    id: 77,
+    title: "Classic Trench Coat Technical",
+    category: "Technical",
+    description: "Detailed technical flat of classic trench coat with belt, collar, and button details. Professional construction specifications for outerwear.",
+    image: "/lovable-uploads/a44b4b29-dcf4-499d-bcfa-d64629c81553.png",
+    tools: ["Outerwear Construction", "Classic Design", "Technical Specification"],
+    year: "2024"
+  },
+  {
+    id: 78,
+    title: "Puff Sleeve Dress Technical",
+    category: "Technical",
+    description: "Technical drawing of dress with dramatic puff sleeves and fitted bodice construction. Shows front and back pattern specifications.",
+    image: "/lovable-uploads/dfa14ff1-d0d3-4942-9a85-35230068aea4.png",
+    tools: ["Puff Sleeve Construction", "Technical Drawing", "Fitted Bodice"],
+    year: "2024"
+  },
+  {
+    id: 79,
+    title: "Coordinated Separates Technical",
+    category: "Technical",
+    description: "Technical flat collection of coordinated separates including turtleneck, vest, and various bottom options. Shows construction details for mix-and-match pieces.",
+    image: "/lovable-uploads/546a9c95-151e-4a8a-add4-2b668279d60c.png",
+    tools: ["Coordinated Design", "Technical Drawing", "Mix-and-Match Construction"],
+    year: "2024"
+  },
+  {
+    id: 80,
+    title: "Casual Tracksuit Technical",
+    category: "Technical",
+    description: "Technical flat of casual tracksuit with ribbed details and coordinated construction. Shows front and back views with comfort-focused design.",
+    image: "/lovable-uploads/0620209a-99fc-4436-bb1d-4fb9762c6ed3.png",
+    tools: ["Casual Wear Design", "Technical Drawing", "Comfort Construction"],
+    year: "2024"
+  },
+  {
+    id: 81,
+    title: "Layered Set Technical Drawing",
+    category: "Technical",
+    description: "Technical specification for layered outfit featuring turtleneck, vest, and skirt with side lacing details. Modern construction with styling versatility.",
+    image: "/lovable-uploads/ecaae8c3-f5cf-48cf-8f81-4b0b2c37f3b9.png",
+    tools: ["Layered Design", "Technical Drawing", "Lacing Details"],
+    year: "2024"
+  },
+  {
+    id: 82,
+    title: "Multi-Piece Ensemble Technical",
+    category: "Technical",
+    description: "Comprehensive technical flat of multi-piece ensemble including jacket, vest, top, and various skirt options. Shows construction details for complete wardrobe system.",
+    image: "/lovable-uploads/0f79e264-d9c3-42be-8d8c-3df8a2292fad.png",
+    tools: ["Multi-piece Design", "Technical Drawing", "System Construction"],
+    year: "2024"
   }
 ];
 
