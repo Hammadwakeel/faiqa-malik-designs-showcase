@@ -1,4 +1,3 @@
-
 import { Star, Quote, User, Calendar } from 'lucide-react';
 
 const Testimonials = () => {
@@ -13,7 +12,7 @@ const Testimonials = () => {
       project: "Custom Design Work",
       amount: "$125",
       image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=150&h=150&fit=crop&crop=face",
-      reviewImage: "/lovable-uploads/1d478f13-7cd4-44a0-8700-3a93779fdc25.png"
+      reviewImage: "/lovable-uploads/0f4fd1b4-ffaf-4a2d-9a0a-487a60a2521c.png"
     },
     {
       name: "Salsadrum",
@@ -25,7 +24,7 @@ const Testimonials = () => {
       project: "Custom Design Work",
       amount: "$125",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=150&h=150&fit=crop&crop=face",
-      reviewImage: "/lovable-uploads/2c9c2418-8c05-4f49-a27b-fab124efc173.png"
+      reviewImage: "/lovable-uploads/2ce62d01-d32e-439f-9340-6c87ad510d67.png"
     },
     {
       name: "Abdul Samad (asammad)",
@@ -37,7 +36,7 @@ const Testimonials = () => {
       project: "Custom Design Work",
       amount: "$70",
       image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=150&h=150&fit=crop&crop=face",
-      reviewImage: "/lovable-uploads/3750e28c-6a75-4a7d-acac-8c14127feb13.png"
+      reviewImage: "/lovable-uploads/9917c394-2121-4b2f-bf62-6d782aae849d.png"
     },
     {
       name: "Alexfimain",
@@ -49,7 +48,7 @@ const Testimonials = () => {
       project: "Dress Design",
       amount: "$57",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=150&h=150&fit=crop&crop=face",
-      reviewImage: "/lovable-uploads/4917c91c-ac7a-4d6d-b9f2-07ca3fe4e1b0.png"
+      reviewImage: "/lovable-uploads/39d8dfbb-81c8-4d94-9541-6bda8e724a46.png"
     },
     {
       name: "Swilloo",
@@ -61,7 +60,7 @@ const Testimonials = () => {
       project: "Custom Design Work", 
       amount: "$45",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=150&h=150&fit=crop&crop=face",
-      reviewImage: "/lovable-uploads/5704c48d-e227-489b-b339-315996b3924c.png"
+      reviewImage: "/lovable-uploads/26da17a4-849f-482a-8a06-edf53bcc7a31.png"
     },
     {
       name: "Ellacooke541",
@@ -73,7 +72,7 @@ const Testimonials = () => {
       project: "Custom Design Work",
       amount: "$40",
       image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=150&h=150&fit=crop&crop=face",
-      reviewImage: "/lovable-uploads/574886d3-5057-4952-bca1-83c6ce3875c7.png"
+      reviewImage: "/lovable-uploads/c321bf63-d867-40d5-a2d4-2beaa05e323d.png"
     },
     {
       name: "Omowaleaduayi",
@@ -85,7 +84,7 @@ const Testimonials = () => {
       project: "Custom Design Work",
       amount: "$30",
       image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=150&h=150&fit=crop&crop=face",
-      reviewImage: "/lovable-uploads/68d555f0-027d-47d8-ab39-ed770c31a3df.png"
+      reviewImage: "/lovable-uploads/6e37874a-d8ba-4d28-b372-32e0e269f2b8.png"
     },
     {
       name: "Skye Fox (skyeeyks)",
@@ -97,7 +96,7 @@ const Testimonials = () => {
       project: "Dress Design & Illustration",
       amount: "$27",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=150&h=150&fit=crop&crop=face",
-      reviewImage: "/lovable-uploads/7ca5ea3c-8107-452a-b12b-dc64459c5214.png"
+      reviewImage: "/lovable-uploads/0438a1a3-8384-4072-ac1d-4b4f6981ae73.png"
     },
     {
       name: "Nessrinnawara40",
@@ -109,7 +108,7 @@ const Testimonials = () => {
       project: "Custom Design Work",
       amount: "$20",
       image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=150&h=150&fit=crop&crop=face",
-      reviewImage: "/lovable-uploads/8fe0c802-1915-4dfc-9895-441325e4fffc.png"
+      reviewImage: "/lovable-uploads/039691f5-61d1-4743-b26c-43796110d2d4.png"
     },
     {
       name: "Fardowsauxui",
@@ -121,7 +120,7 @@ const Testimonials = () => {
       project: "Custom Design Work", 
       amount: "$15",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=150&h=150&fit=crop&crop=face",
-      reviewImage: "/lovable-uploads/9154ec23-6fd6-4a88-b6e2-33d7f03b04ea.png"
+      reviewImage: "/lovable-uploads/002121ff-ce8b-4166-acea-9240bde09f16.png"
     }
   ];
 
