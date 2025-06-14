@@ -1,8 +1,17 @@
-
 import { Download, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const About = () => {
+  const handleDownloadCV = () => {
+    // Create a link to download the CV
+    const link = document.createElement('a');
+    link.href = '/lovable-uploads/75abe4c7-264f-45c8-84c7-5a12b91cad5a.png';
+    link.download = 'Faiqa-Malik-CV.png';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="min-h-screen py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -33,7 +42,10 @@ const About = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="inline-flex items-center px-6 py-3 bg-midnight-navy text-white font-inter font-medium rounded-lg hover:bg-midnight-navy/90 transition-colors duration-200">
+              <button 
+                onClick={handleDownloadCV}
+                className="inline-flex items-center px-6 py-3 bg-midnight-navy text-white font-inter font-medium rounded-lg hover:bg-midnight-navy/90 transition-colors duration-200"
+              >
                 <Download className="mr-2 h-4 w-4" />
                 Download CV
               </button>
