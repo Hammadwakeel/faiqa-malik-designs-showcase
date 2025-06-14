@@ -91,5 +91,50 @@ export const techpacksProjects: Project[] = [
     image: "/lovable-uploads/9f0e39c3-17b6-4be2-8d53-20ae16621c36.png",
     tools: ["Kimono Sleeves", "V-Neckline Construction", "Side Slit Details"],
     year: "2024"
+  },
+  {
+    id: 211,
+    title: "Vibe Vortex Crop Jacket Technical Pack",
+    category: "Techpacks",
+    description: "Technical specification for crop jacket with pointed collar, bishop sleeves, and flower embellishments. Features metallic zipper, long patch sleeves, and asymmetric back panels with detailed construction methods.",
+    image: "/lovable-uploads/0892c7e9-239b-4300-a2c0-9e9ccb1e35f2.png",
+    tools: ["Bishop Sleeves", "Crop Jacket Construction", "Asymmetric Design"],
+    year: "2024"
+  },
+  {
+    id: 212,
+    title: "Emotive Edge Balloon Sleeve Dress Pack",
+    category: "Techpacks",
+    description: "Comprehensive techpack for dress with ban collar, balloon sleeves, and trouser integration. Features flap pockets, design flare, waist belt, and specialized patch construction with detailed finishing techniques.",
+    image: "/lovable-uploads/3f0a1fdf-a8e8-4927-b641-3c781ec07f01.png",
+    tools: ["Balloon Sleeves", "Belt Construction", "Flap Pocket Details"],
+    year: "2024"
+  },
+  {
+    id: 213,
+    title: "Dynamic Drape Multi-Layer Technical Pack",
+    category: "Techpacks",
+    description: "Technical documentation for multi-layer garment with off-shoulder design, bishop sleeves, and bellow cargo pockets. Features exaggerated sleeves, mock neckline, constructed pockets, and diagonal hem with center back detailing.",
+    image: "/lovable-uploads/0843d3a1-2997-4591-9ae7-d6008d2d3a41.png",
+    tools: ["Off-Shoulder Construction", "Cargo Pockets", "Multi-Layer Design"],
+    year: "2024"
+  },
+  {
+    id: 214,
+    title: "Vintage Madrid Sequin Dress Technical Pack",
+    category: "Techpacks",
+    description: "Technical specification for Blair sequin dress with back slit, featuring circle neckline front and V-neckline back. Includes shirred detailing, zipper construction, and metallic gold finishing with black fabric base.",
+    image: "/lovable-uploads/bc3bc034-efbd-42fd-be6c-a4d713e3ff19.png",
+    tools: ["Sequin Application", "Circle Neckline", "Back Slit Construction"],
+    year: "2024"
+  },
+  {
+    id: 215,
+    title: "Vintage Madrid Notched Collar Coat Pack",
+    category: "Techpacks",
+    description: "Professional technical pack for 2-piece notched collar coat with upper collar, lapel details, and shank buttons. Features two-piece sleeves, slit construction, and specialized white fusing with off-white thread detailing.",
+    image: "/lovable-uploads/748cc677-f54b-4102-9646-e0d62dd73088.png",
+    tools: ["Notched Collar", "Two-Piece Sleeves", "Button Construction"],
+    year: "2024"
   }
 ];
