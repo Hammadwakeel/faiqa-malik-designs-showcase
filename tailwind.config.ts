@@ -53,12 +53,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Custom fashion portfolio colors
-				'dusty-lavender': 'hsl(var(--dusty-lavender))',
-				'midnight-navy': 'hsl(var(--midnight-navy))',
-				'peach-accent': 'hsl(var(--peach-accent))',
-				'lavender-bg': 'hsl(var(--lavender-bg))',
-				'slate-gray': 'hsl(var(--slate-gray))',
+				// Updated Fashion Portfolio Colors
+				'dusty-lavender': '#D8B4DD',
+				'midnight-navy': '#1A1F3A',
+				'peach-accent': '#FBC6A4',
+				'lavender-bg': '#F9F6FB',
+				'slate-gray': '#4A4A4A',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

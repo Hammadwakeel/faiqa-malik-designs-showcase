@@ -6,61 +6,61 @@ import { ExternalLink, Eye } from 'lucide-react';
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   
-  const categories = ['All', 'Bridal', 'Commercial', 'Illustrations', 'Ready-to-Wear'];
+  const categories = ['All', 'Streetwear', 'Racing', 'Formal', 'Illustrations'];
   
   const projects = [
     {
       id: 1,
-      title: "Elegance Bridal Collection",
-      category: "Bridal",
-      description: "A sophisticated bridal collection featuring intricate embroidery and modern silhouettes. Each piece tells a story of timeless elegance.",
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=800&h=1000&fit=crop",
-      tools: ["Adobe Illustrator", "Pattern Making", "Hand Embroidery"],
+      title: "Motorsport Racing Jacket Collection",
+      category: "Racing",
+      description: "High-performance racing jackets featuring bold graphics and technical details. Designed for motorsport enthusiasts with attention to aerodynamics and style.",
+      image: "/lovable-uploads/7ca5ea3c-8107-452a-b12b-dc64459c5214.png",
+      tools: ["Adobe Illustrator", "Pattern Making", "Technical Drawing"],
       year: "2024"
     },
     {
       id: 2,
-      title: "Urban Fusion Collection",
-      category: "Commercial",
-      description: "Contemporary streetwear that blends traditional Pakistani elements with modern urban aesthetics.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=1000&fit=crop",
-      tools: ["CAD Design", "Textile Sourcing", "Technical Drawing"],
+      title: "Tokyo Racing Street Edition",
+      category: "Racing",
+      description: "Street-inspired racing jacket with Japanese motorsport influences. Features custom patches and racing-inspired graphics.",
+      image: "/lovable-uploads/2c9c2418-8c05-4f49-a27b-fab124efc173.png",
+      tools: ["CAD Design", "Textile Sourcing", "Graphic Design"],
       year: "2024"
     },
     {
       id: 3,
-      title: "Fashion Illustration Series",
-      category: "Illustrations",
-      description: "A collection of fashion illustrations showcasing various design concepts and seasonal trends.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=1000&fit=crop",
-      tools: ["Adobe Photoshop", "Adobe Illustrator", "Hand Drawing"],
-      year: "2023"
+      title: "New York Streetwear Collection",
+      category: "Streetwear",
+      description: "Urban-inspired jacket design featuring NYC boroughs and street culture elements. Modern fit with classic street style.",
+      image: "/lovable-uploads/f3073f5b-bab4-4f01-b0ca-d2ae1d1a2c04.png",
+      tools: ["Adobe Photoshop", "Pattern Making", "Urban Design"],
+      year: "2024"
     },
     {
       id: 4,
-      title: "Minimalist Ready-to-Wear",
-      category: "Ready-to-Wear",
-      description: "Clean lines and sustainable fabrics come together in this minimalist ready-to-wear collection.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=1000&fit=crop",
-      tools: ["Pattern Making", "Sustainable Fabrics", "Draping"],
+      title: "Military-Inspired General Jacket",
+      category: "Formal",
+      description: "Formal jacket with military-inspired details and ranking elements. Professional design with tactical aesthetics.",
+      image: "/lovable-uploads/1ec00232-19d4-47ae-9b45-eb4031a2ceb4.png",
+      tools: ["Pattern Making", "Formal Construction", "Detail Work"],
       year: "2023"
     },
     {
       id: 5,
-      title: "Avant-Garde Showcase",
-      category: "Commercial",
-      description: "Experimental designs pushing the boundaries of conventional fashion with bold shapes and innovative materials.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=1000&fit=crop",
-      tools: ["3D Modeling", "Experimental Fabrics", "Innovative Construction"],
+      title: "Motorsport Leather Jacket",
+      category: "Racing",
+      description: "Premium leather jacket design with racing heritage. Features custom racing graphics and performance-oriented construction.",
+      image: "/lovable-uploads/bf5fd6a0-435b-4d0c-90be-fec47fd12d4f.png",
+      tools: ["Leather Work", "Pattern Making", "Racing Design"],
       year: "2024"
     },
     {
       id: 6,
-      title: "Traditional Reimagined",
-      category: "Bridal",
-      description: "Classic Pakistani bridal wear reimagined with contemporary cuts and modern embellishments.",
-      image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=800&h=1000&fit=crop",
-      tools: ["Traditional Embroidery", "Modern Draping", "Beadwork"],
+      title: "Urban Gasoline Collection",
+      category: "Streetwear",
+      description: "Contemporary streetwear design with motorsport influences. Clean lines and bold branding for urban fashion.",
+      image: "/lovable-uploads/c33e2291-1d31-4155-b79d-2117be6fb5cf.png",
+      tools: ["Modern Design", "Streetwear Construction", "Brand Development"],
       year: "2023"
     }
   ];
@@ -108,7 +108,7 @@ const Portfolio = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-contain bg-gray-50 group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-midnight-navy/0 group-hover:bg-midnight-navy/20 transition-colors duration-300"></div>
                 <div className="absolute top-4 right-4 bg-dusty-lavender text-white px-3 py-1 rounded-full text-sm font-inter font-medium">
