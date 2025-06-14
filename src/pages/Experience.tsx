@@ -47,7 +47,7 @@ const Experience = () => {
         {
           title: "Certificate of Internship",
           company: "Elevenstore",
-          image: "/lovable-uploads/669f9703-acb4-4ba3-8593-99f3277ddc61.png",
+          image: "/lovable-uploads/4198a40c-ac4e-446a-acdc-38b9cc71a1dc.png",
           description: "Completed internship program with distinction"
         }
       ]
@@ -65,12 +65,6 @@ const Experience = () => {
         "Developed understanding of retail fashion business operations"
       ],
       certificates: [
-        {
-          title: "Certificate of Internship",
-          company: "Eleven Clothing",
-          image: "/lovable-uploads/faa6cade-072d-4609-9934-449854d7ab63.png",
-          description: "Completed internship program with distinction"
-        },
         {
           title: "Internship Completion Letter",
           company: "Eleven Clothing",
