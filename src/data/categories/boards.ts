@@ -163,5 +163,95 @@ export const boardsProjects: Project[] = [
     image: "/lovable-uploads/94830851-a5e3-4102-a588-268ba066364f.png",
     tools: ["National Pride", "Cultural Diversity", "Inspirational Design"],
     year: "2024"
+  },
+  {
+    id: 3019,
+    title: "Time and Friendship",
+    category: "Boards",
+    description: "A philosophical design exploring the value of time and friendship. Features Arabic typography with documentary photography and artistic illustrations, conveying the message that richness, poverty, old age, and youth have no meaning when dear friends gather together.",
+    image: "/lovable-uploads/fd4bae03-b648-4720-bf5f-d3ebcfbd6829.png",
+    tools: ["Philosophical Design", "Friendship Themes", "Documentary Style"],
+    year: "2024"
+  },
+  {
+    id: 3020,
+    title: "Grenade - Pomegranate Heritage",
+    category: "Boards",
+    description: "A cultural celebration of the pomegranate as Azerbaijan's national symbol. Features artistic compositions with traditional elements, watercolor illustrations, and cultural significance, showcasing this bright and juicy fruit's importance in Azerbaijani culture.",
+    image: "/lovable-uploads/d5d1bd9e-dc10-44cc-995a-8c824fe3fd82.png",
+    tools: ["Cultural Symbols", "Watercolor Art", "Heritage Celebration"],
+    year: "2024"
+  },
+  {
+    id: 3021,
+    title: "Golden Horse - National Symbol",
+    category: "Boards",
+    description: "A powerful design celebrating the Karabakh horse as Azerbaijan's national animal. Features equestrian art, national flag elements, and documentary photography showcasing this majestic racing and riding horse of the Eurasian mountain-steppe areas.",
+    image: "/lovable-uploads/d8b3897c-df06-43aa-9220-14d784ca5ec5.png",
+    tools: ["National Symbols", "Equestrian Art", "Cultural Pride"],
+    year: "2024"
+  },
+  {
+    id: 3022,
+    title: "Hunger and Humanity",
+    category: "Boards",
+    description: "A social commentary board addressing hunger and food insecurity. Features artistic sketches, Arabic typography, and documentary photography to convey the message that forks and spoons are the solution to hunger, not weapons or conflict.",
+    image: "/lovable-uploads/07ce69f9-b6c1-49ae-920c-8d76adbfca16.png",
+    tools: ["Social Commentary", "Documentary Photography", "Humanitarian Design"],
+    year: "2024"
+  },
+  {
+    id: 3023,
+    title: "Flag and National Pride",
+    category: "Boards",
+    description: "A patriotic design celebrating Azerbaijan's flag and national identity. Features flag symbolism, architectural elements, and cultural imagery to explain the meaning of the bright blue (Turkic heritage), red (progress), and green (Islam) colors.",
+    image: "/lovable-uploads/e5c8d53a-ef89-4332-a56e-f32516c28be7.png",
+    tools: ["National Pride", "Flag Symbolism", "Cultural Identity"],
+    year: "2024"
+  },
+  {
+    id: 3024,
+    title: "Famous Cities of Azerbaijan",
+    category: "Boards",
+    description: "An architectural and cultural tour of Azerbaijan's famous cities. Features iconic landmarks, historical illustrations, and modern cityscapes showcasing Baku, Sheki, Ganja, Nakhchivan, Quba, Shamakhi, Lankaran, Gebele, and Naftalan.",
+    image: "/lovable-uploads/a1fdc830-75d8-49f7-a6cc-71999d21fa06.png",
+    tools: ["Architectural Documentation", "City Portraits", "Cultural Tourism"],
+    year: "2024"
+  },
+  {
+    id: 3025,
+    title: "Azerbaijani Eye - Cultural Vision",
+    category: "Boards",
+    description: "A symbolic design featuring the eye as a representation of Azerbaijani cultural vision. Combines traditional carpet patterns, flag colors, and architectural elements to create a powerful visual metaphor for cultural identity and perspective.",
+    image: "/lovable-uploads/cec0a82c-53b4-464d-aa6d-4a7d78f7046d.png",
+    tools: ["Symbolic Design", "Cultural Metaphor", "Traditional Patterns"],
+    year: "2024"
+  },
+  {
+    id: 3026,
+    title: "Chokha - Traditional Dress",
+    category: "Boards",
+    description: "A fashion and cultural board showcasing the traditional Azerbaijani chokha dress. Features costume illustrations, traditional embroidery patterns, and cultural photography to highlight this long, loose-fitting coat with intricate designs representing regional symbols.",
+    image: "/lovable-uploads/92011b65-47fc-4956-a346-dbcaeb895b22.png",
+    tools: ["Traditional Fashion", "Cultural Costume", "Heritage Design"],
+    year: "2024"
+  },
+  {
+    id: 3027,
+    title: "Azerbaijani Carpets Heritage",
+    category: "Boards",
+    description: "A comprehensive exploration of Azerbaijan's renowned carpet-making tradition. Features intricate patterns, vibrant colors, and traditional motifs handwoven by skilled artisans, showcasing this significant part of the country's cultural heritage.",
+    image: "/lovable-uploads/4e1e5973-cf03-46bc-8015-66c8412907ff.png",
+    tools: ["Carpet Design", "Traditional Crafts", "Cultural Heritage"],
+    year: "2024"
+  },
+  {
+    id: 3028,
+    title: "Nature in Its Flow - European Roller",
+    category: "Boards",
+    description: "A nature-focused design celebrating the European Roller bird as a symbol of good luck and fortune. Features vibrant blue-green feathers, artistic bird illustrations, and natural elements showcasing this beautiful bird's acrobatic flights and graceful movements.",
+    image: "/lovable-uploads/359317a8-b00b-4f8b-b5d6-4815b701f5bf.png",
+    tools: ["Nature Photography", "Bird Illustration", "Wildlife Art"],
+    year: "2024"
   }
 ];
