@@ -71,7 +71,7 @@ const Home = () => {
             <div className="relative">
               <div className="relative w-full h-96 lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=800&h=1200&fit=crop"
+                  src="/lovable-uploads/218e00ae-c7b7-4686-a2a5-0c50e18b3da1.png"
                   alt="Faiqa Malik - Fashion Designer"
                   className="w-full h-full object-cover"
                 />
