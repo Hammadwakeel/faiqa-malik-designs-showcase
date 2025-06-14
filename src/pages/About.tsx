@@ -63,7 +63,7 @@ const About = () => {
           <div className="relative">
             <div className="w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=1000&fit=crop"
+                src="/lovable-uploads/b071b479-d6d6-42da-9588-715edf5cb50d.png"
                 alt="Faiqa Malik at work"
                 className="w-full h-full object-cover"
               />
