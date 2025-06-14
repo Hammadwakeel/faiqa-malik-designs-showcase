@@ -1,3 +1,4 @@
+
 import { Calendar, MapPin, Building, Award } from 'lucide-react';
 
 const Experience = () => {
@@ -13,7 +14,8 @@ const Experience = () => {
         "Completed 50+ custom design projects",
         "Maintained 5-star rating with 100% client satisfaction",
         "Expanded service offerings to include branding and styling consultation"
-      ]
+      ],
+      certificates: []
     },
     {
       role: "Designer Assistant",
@@ -26,7 +28,8 @@ const Experience = () => {
         "Assisted in developing 2 complete seasonal collections",
         "Improved pattern accuracy by 15% through meticulous attention to detail",
         "Collaborated with team of 8 designers on major fashion shows"
-      ]
+      ],
+      certificates: []
     },
     {
       role: "Designer Assistant",
@@ -39,7 +42,8 @@ const Experience = () => {
         "Created technical drawings for 25+ garment designs",
         "Assisted in fabric sourcing and vendor negotiations",
         "Participated in fashion show preparation and styling"
-      ]
+      ],
+      certificates: []
     },
     {
       role: "Internship",
@@ -52,6 +56,20 @@ const Experience = () => {
         "Learned industrial sewing techniques and quality standards",
         "Assisted in production planning for bulk orders",
         "Developed understanding of retail fashion business operations"
+      ],
+      certificates: [
+        {
+          title: "Certificate of Internship",
+          company: "Eleven Clothing",
+          image: "/lovable-uploads/faa6cade-072d-4609-9934-449854d7ab63.png",
+          description: "Completed internship program with distinction"
+        },
+        {
+          title: "Internship Completion Letter",
+          company: "Eleven Clothing",
+          image: "/lovable-uploads/a81f3b03-091d-4cf0-85b2-8ffc54b51513.png",
+          description: "Recognition letter for outstanding performance and creativity"
+        }
       ]
     },
     {
@@ -65,6 +83,14 @@ const Experience = () => {
         "Mastered traditional Pakistani bridal embroidery techniques",
         "Designed 5 complete bridal outfits under supervision",
         "Learned luxury fabric handling and finishing techniques"
+      ],
+      certificates: [
+        {
+          title: "Internship Completion Certificate",
+          company: "Sui Dhaga Bridals",
+          image: "/lovable-uploads/574886d3-5057-4952-bca1-83c6ce3875c7.png",
+          description: "Successfully completed bridal wear design internship"
+        }
       ]
     },
     {
@@ -78,34 +104,17 @@ const Experience = () => {
         "Designed functional apparel for motorcycle enthusiasts",
         "Learned about technical fabrics and performance wear",
         "Created brand identity elements and promotional materials"
-      ]
+      ],
+      certificates: []
     }
   ];
 
-  const certificates = [
-    {
-      title: "Certificate of Internship",
-      company: "Eleven Clothing",
-      image: "/lovable-uploads/faa6cade-072d-4609-9934-449854d7ab63.png",
-      description: "Completed internship program with distinction"
-    },
-    {
-      title: "Internship Completion Letter",
-      company: "Eleven Clothing",
-      image: "/lovable-uploads/a81f3b03-091d-4cf0-85b2-8ffc54b51513.png",
-      description: "Recognition letter for outstanding performance and creativity"
-    },
+  const additionalCertificates = [
     {
       title: "Corporate Social Responsibility Certificate",
       company: "Iqra University",
       image: "/lovable-uploads/ae013835-6be6-4736-9c7b-da76d669f62b.png",
       description: "Certificate of appreciation for CSR project participation"
-    },
-    {
-      title: "Internship Completion Certificate",
-      company: "Sui Dhaga Bridals",
-      image: "/lovable-uploads/574886d3-5057-4952-bca1-83c6ce3875c7.png",
-      description: "Successfully completed bridal wear design internship"
     },
     {
       title: "Financial Literacy Certificate",
@@ -126,6 +135,18 @@ const Experience = () => {
       description: "Specialized course in textile and fashion designing"
     }
   ];
+
+  const education = {
+    degree: "Corporate Social Responsibility Project",
+    institution: "Iqra University Islamabad Campus",
+    description: "Certificate of Appreciation for Corporate Social Responsibility Project",
+    certificate: {
+      title: "Certificate of Appreciation - CSR Project",
+      company: "Iqra University",
+      image: "/lovable-uploads/fd88f9f4-3111-4dde-b4fa-e842ef0b345d.png",
+      description: "Proudly presented to Faiqa Malik in appreciation for Corporate Social Responsibility Project"
+    }
+  };
 
   const getTypeColor = (type: string) => {
     switch (type) {
@@ -158,7 +179,7 @@ const Experience = () => {
         {/* Header */}
         <div className="text-center space-y-8 mb-16">
           <h1 className="text-5xl md:text-6xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
-            Experience
+            Experience & Education
           </h1>
           <p className="text-xl text-slate-gray font-inter max-w-3xl mx-auto">
             A comprehensive journey through my professional development in fashion design, 
@@ -186,8 +207,61 @@ const Experience = () => {
           </div>
         </div>
 
+        {/* Education Section */}
+        <div className="mb-20">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent mb-4">
+              Academic Achievement
+            </h2>
+            <p className="text-lg text-slate-gray font-inter max-w-2xl mx-auto">
+              Recognition for academic excellence and social responsibility
+            </p>
+          </div>
+
+          <div className="bg-gradient-to-br from-white via-lavender-bg/50 to-dusty-lavender/5 rounded-2xl shadow-lg p-8 border border-dusty-lavender/20 hover:shadow-xl transition-all duration-300">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div className="space-y-4">
+                <div className="flex items-center space-x-2 mb-4">
+                  <Award className="w-6 h-6 text-dusty-lavender" />
+                  <span className="px-3 py-1 rounded-full text-xs font-inter font-medium bg-gradient-to-r from-midnight-navy to-dusty-lavender text-white">
+                    Academic
+                  </span>
+                </div>
+                <h3 className="text-2xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
+                  {education.degree}
+                </h3>
+                <div className="flex items-center space-x-2 text-slate-gray">
+                  <Building size={16} />
+                  <span className="font-inter font-medium">{education.institution}</span>
+                </div>
+                <p className="text-slate-gray font-inter leading-relaxed">
+                  {education.description}
+                </p>
+              </div>
+              
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-dusty-lavender via-peach-accent to-midnight-navy rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                <div className="relative overflow-hidden rounded-lg">
+                  <img 
+                    src={education.certificate.image} 
+                    alt={education.certificate.title} 
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-midnight-navy/20 to-transparent"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Timeline */}
         <div className="relative mb-20">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent mb-4">
+              Professional Experience
+            </h2>
+          </div>
+
           {/* Timeline line */}
           <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-dusty-lavender via-peach-accent to-dusty-lavender"></div>
 
@@ -247,6 +321,42 @@ const Experience = () => {
                           ))}
                         </ul>
                       </div>
+
+                      {/* Certificates for this experience */}
+                      {exp.certificates && exp.certificates.length > 0 && (
+                        <div className="space-y-4 pt-4 border-t border-dusty-lavender/20">
+                          <h4 className="font-inter font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent flex items-center gap-2">
+                            <Award size={16} />
+                            Related Certificates:
+                          </h4>
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            {exp.certificates.map((cert, certIndex) => (
+                              <div key={certIndex} className="relative group">
+                                <div className="absolute -inset-1 bg-gradient-to-r from-dusty-lavender via-peach-accent to-midnight-navy rounded-lg blur opacity-20 group-hover:opacity-50 transition duration-500"></div>
+                                <div className="relative bg-gradient-to-br from-white to-lavender-bg rounded-lg shadow-md p-4 border border-dusty-lavender/20">
+                                  <div className="space-y-3">
+                                    <div className="relative overflow-hidden rounded">
+                                      <img 
+                                        src={cert.image} 
+                                        alt={cert.title} 
+                                        className="w-full h-32 object-cover transition-transform duration-300 group-hover:scale-105"
+                                      />
+                                    </div>
+                                    <div className="space-y-1">
+                                      <h5 className="text-sm font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
+                                        {cert.title}
+                                      </h5>
+                                      <p className="text-xs text-slate-gray font-inter">
+                                        {cert.description}
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -255,19 +365,19 @@ const Experience = () => {
           </div>
         </div>
 
-        {/* Certificates Section */}
+        {/* Additional Certificates Section */}
         <div className="mb-20">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-playfair font-bold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent mb-4">
-              Professional Certificates
+              Additional Professional Certificates
             </h2>
             <p className="text-lg text-slate-gray font-inter max-w-2xl mx-auto">
-              Recognition of achievements and completed programs throughout my professional journey
+              Specialized training and development certifications
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {certificates.map((cert, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {additionalCertificates.map((cert, index) => (
               <div key={index} className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-dusty-lavender via-peach-accent to-midnight-navy rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
                 <div className="relative bg-gradient-to-br from-white to-lavender-bg rounded-xl shadow-lg p-6 border border-dusty-lavender/20 hover:shadow-xl transition-shadow duration-300">
@@ -276,21 +386,21 @@ const Experience = () => {
                       <img 
                         src={cert.image} 
                         alt={cert.title} 
-                        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                        className="w-full h-40 object-cover transition-transform duration-300 group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-midnight-navy/20 to-transparent"></div>
                     </div>
                     <div className="space-y-2">
                       <div className="flex items-center space-x-2">
-                        <Award className="w-5 h-5 text-dusty-lavender" />
-                        <h3 className="text-lg font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
+                        <Award className="w-4 h-4 text-dusty-lavender" />
+                        <h3 className="text-sm font-playfair font-semibold bg-gradient-to-r from-midnight-navy to-dusty-lavender bg-clip-text text-transparent">
                           {cert.title}
                         </h3>
                       </div>
-                      <p className="text-slate-gray font-inter font-medium text-sm">
+                      <p className="text-slate-gray font-inter font-medium text-xs">
                         {cert.company}
                       </p>
-                      <p className="text-slate-gray font-inter text-sm">
+                      <p className="text-slate-gray font-inter text-xs">
                         {cert.description}
                       </p>
                     </div>
