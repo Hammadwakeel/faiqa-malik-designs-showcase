@@ -175,5 +175,96 @@ export const workProjects: Project[] = [
     image: "/lovable-uploads/9efe8ed5-edf8-47e9-ab91-c9b3c45a5bd3.png",
     tools: ["Kit Design", "Team Branding", "Athletic Uniform"],
     year: "2024"
+  },
+  // New Techpack Designs
+  {
+    id: 51,
+    title: "IQRA IU University T-Shirt Technical Pack",
+    category: "Work",
+    description: "Technical pack for university branded t-shirt with blue and white color blocking design. Features front and back construction details with university logo placement.",
+    image: "/lovable-uploads/ebf9f1f1-17fe-4bbd-a1e1-2b4b8761d776.png",
+    tools: ["Technical Pack Design", "University Branding", "Color Blocking"],
+    year: "2024"
+  },
+  {
+    id: 52,
+    title: "Geometric Pattern Polo Shirt Tech Pack",
+    category: "Work",
+    description: "Technical specification for polo shirt featuring intricate geometric pattern. Black base with gold accent detailing and precise construction measurements.",
+    image: "/lovable-uploads/06b9482a-536a-403c-b3f0-05b0a9095f14.png",
+    tools: ["Pattern Design", "Polo Construction", "Geometric Graphics"],
+    year: "2024"
+  },
+  {
+    id: 53,
+    title: "Eleven Illusive Branding T-Shirt Pack",
+    category: "Work",
+    description: "Technical pack for branded t-shirt with bold typography and color blocking. Features yellow, black, and white color scheme with modern branding elements.",
+    image: "/lovable-uploads/ec688c2a-825a-4777-9508-5633c76283d8.png",
+    tools: ["Brand Design", "Typography", "Color Blocking"],
+    year: "2024"
+  },
+  {
+    id: 54,
+    title: "Eleven Limited Edition T-Shirt Tech Pack",
+    category: "Work",
+    description: "Technical specifications for limited edition t-shirt in stone gray featuring complex graphic layout with geometric elements and typography.",
+    image: "/lovable-uploads/a7e1d0e2-d0ee-4ec7-a3f8-0e7d79e523d6.png",
+    tools: ["Limited Edition Design", "Complex Graphics", "Stone Wash Treatment"],
+    year: "2024"
+  },
+  {
+    id: 55,
+    title: "Eleven Brand Statement T-Shirt Pack",
+    category: "Work",
+    description: "Technical pack for statement t-shirt in powder blue with bold number 11 graphic and 'All For His Glory' back print design.",
+    image: "/lovable-uploads/6d9fc0ad-abf1-48ca-85fd-6aa3a8efde24.png",
+    tools: ["Statement Design", "Number Graphics", "Back Print Layout"],
+    year: "2024"
+  },
+  {
+    id: 56,
+    title: "Eleven Space Edition T-Shirt Tech Pack",
+    category: "Work",
+    description: "Technical specifications for space-themed t-shirt in jet black featuring repeated 'ELEVEN' branding and futuristic graphic elements.",
+    image: "/lovable-uploads/bfb2ef1f-b998-4776-877b-bfacae60e36e.png",
+    tools: ["Space Theme", "Futuristic Graphics", "Repeat Branding"],
+    year: "2024"
+  },
+  {
+    id: 57,
+    title: "Cyberpunk Collage T-Shirt Tech Pack",
+    category: "Work",
+    description: "Technical pack for vibrant t-shirt design featuring cyberpunk-inspired collage artwork with neon colors and digital elements on bright blue base.",
+    image: "/lovable-uploads/0c3bbdfc-944e-4492-b2e9-1cd2f3cf0d97.png",
+    tools: ["Cyberpunk Design", "Digital Collage", "Neon Color Scheme"],
+    year: "2024"
+  },
+  {
+    id: 58,
+    title: "Eleven Colorblock T-Shirt Tech Pack",
+    category: "Work",
+    description: "Technical specifications for colorblock t-shirt design with black, white, and burgundy sections featuring 'ELEVEN' branding across the chest.",
+    image: "/lovable-uploads/b5d77f48-3da0-43cd-9f4b-e5de4662792f.png",
+    tools: ["Colorblock Design", "Brand Integration", "Sectional Construction"],
+    year: "2024"
+  },
+  {
+    id: 59,
+    title: "Eleven Illusive Branding Repeat Tech Pack",
+    category: "Work",
+    description: "Technical pack for clean white t-shirt with bold 'ELEVEN ILLUSIVE BRAINIAC' typography featuring yellow accent band and black text elements.",
+    image: "/lovable-uploads/4f67b75d-2e8f-419f-9fff-8481b8fcf6f9.png",
+    tools: ["Clean Typography", "Accent Banding", "Minimalist Branding"],
+    year: "2024"
+  },
+  {
+    id: 60,
+    title: "Eleven Limited Space Edition Tech Pack",
+    category: "Work",
+    description: "Technical specifications for premium stone-colored t-shirt featuring complex graphic layout with 'ELEVEN' branding and space-inspired geometric elements.",
+    image: "/lovable-uploads/ee64b0c3-97ea-4c92-bf82-51787f40b2c1.png",
+    tools: ["Premium Construction", "Space Graphics", "Stone Color Treatment"],
+    year: "2024"
   }
 ];
