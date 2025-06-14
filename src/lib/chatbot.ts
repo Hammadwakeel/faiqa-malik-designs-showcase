@@ -68,13 +68,16 @@ export async function askFaiqa(question: string, apiKey: string): Promise<string
     const prompt = ChatPromptTemplate.fromMessages([
       [
         "system",
-        "You are Faiqa Malik's personal fashion‑design assistant. Use ONLY the following data to answer questions about Faiqa's background, skills, education, experience, and contact details:\n\n" + dataString + "\n\nIf the user's question is outside the scope of this data, respond exactly with: \"I don't know\"."
+        "You are Faiqa Malik's personal fashion‑design assistant. Use ONLY the following data to answer questions about Faiqa's background, skills, education, experience, and contact details:\n\n{faiqa_data}\n\nIf the user's question is outside the scope of this data, respond exactly with: \"I don't know\"."
       ],
       ["user", "{user_question}"]
     ]);
 
     const chain = prompt.pipe(llm);
-    const response = await chain.invoke({ user_question: question });
+    const response = await chain.invoke({ 
+      user_question: question,
+      faiqa_data: dataString
+    });
     
     return response.content as string;
   } catch (error) {
