@@ -18,11 +18,11 @@ export const portfolioProjects: Project[] = [
   ...textileProjects,
   ...technicalProjects,
   ...patternMakingProjects,
-  ...techpacksProjects,
   ...fashionDevelopmentProjects,
   ...thesisProjects,
   ...illustrationProjects,
   ...boardsProjects,
+  ...techpacksProjects,
   ...workProjects
 ];
 
