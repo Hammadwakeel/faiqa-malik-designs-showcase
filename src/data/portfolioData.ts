@@ -9,10 +9,12 @@ import { techpacksProjects } from './categories/techpacks';
 import { fashionDevelopmentProjects } from './categories/fashionDevelopment';
 import { illustrationProjects } from './categories/illustration';
 import { boardsProjects } from './categories/boards';
+import { thesisProjects } from './categories/thesis';
 
 export type { Project };
 
 export const portfolioProjects: Project[] = [
+  ...thesisProjects,
   ...dressMakingProjects,
   ...textileProjects,
   ...technicalProjects,
@@ -24,4 +26,4 @@ export const portfolioProjects: Project[] = [
   ...workProjects
 ];
 
-export const portfolioCategories = ['All Work', 'Dress making ( pattern+ draping)', 'Textile', 'Technical', 'Pattern Making', 'Techpacks', 'Fashion Development', 'Illustration', 'Boards', 'Work'];
+export const portfolioCategories = ['All Work', 'Thesis', 'Dress making ( pattern+ draping)', 'Textile', 'Technical', 'Pattern Making', 'Techpacks', 'Fashion Development', 'Illustration', 'Boards', 'Work'];
