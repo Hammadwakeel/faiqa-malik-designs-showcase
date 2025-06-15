@@ -14,10 +14,10 @@ import { thesisProjects } from './categories/thesis';
 export type { Project };
 
 export const portfolioProjects: Project[] = [
-  ...thesisProjects,
   ...dressMakingProjects,
   ...textileProjects,
   ...technicalProjects,
+  ...thesisProjects,
   ...patternMakingProjects,
   ...techpacksProjects,
   ...fashionDevelopmentProjects,
@@ -26,4 +26,4 @@ export const portfolioProjects: Project[] = [
   ...workProjects
 ];
 
-export const portfolioCategories = ['All Work', 'Thesis', 'Dress making ( pattern+ draping)', 'Textile', 'Technical', 'Pattern Making', 'Techpacks', 'Fashion Development', 'Illustration', 'Boards', 'Work'];
+export const portfolioCategories = ['All Work', 'Dress making ( pattern+ draping)', 'Textile', 'Technical', 'Thesis', 'Pattern Making', 'Techpacks', 'Fashion Development', 'Illustration', 'Boards', 'Work'];
