@@ -22,7 +22,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       <div className="relative h-64 overflow-hidden">
         <Dialog>
           <DialogTrigger asChild>
-            <div className="cursor-pointer">
+            <div className="cursor-pointer w-full h-full">
               <img
                 src={project.image}
                 alt={project.title}
@@ -39,20 +39,30 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
               </div>
             </div>
           </DialogTrigger>
-          <DialogContent className="max-w-4xl max-h-[90vh] p-0 bg-transparent border-none">
-            <div className="relative">
+          <DialogContent className="max-w-6xl w-[95vw] max-h-[95vh] p-2 bg-black/90 border-none">
+            <div className="relative flex items-center justify-center h-full">
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-auto max-h-[85vh] object-contain rounded-lg"
+                className="max-w-full max-h-[85vh] object-contain rounded-lg"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 rounded-b-lg">
-                <h3 className="text-white text-xl font-playfair font-semibold mb-2">
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-lg">
+                <h3 className="text-white text-2xl font-playfair font-semibold mb-2">
                   {project.title}
                 </h3>
-                <p className="text-white/90 text-sm font-inter">
+                <p className="text-white/90 text-base font-inter mb-3">
                   {project.description}
                 </p>
+                <div className="flex flex-wrap gap-2">
+                  {project.tools.map((tool, index) => (
+                    <span
+                      key={index}
+                      className="text-xs bg-white/20 text-white px-2 py-1 rounded font-inter backdrop-blur-sm"
+                    >
+                      {tool}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </DialogContent>

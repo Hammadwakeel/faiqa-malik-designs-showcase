@@ -17,13 +17,13 @@ export const portfolioProjects: Project[] = [
   ...dressMakingProjects,
   ...textileProjects,
   ...technicalProjects,
-  ...thesisProjects,
   ...patternMakingProjects,
   ...techpacksProjects,
   ...fashionDevelopmentProjects,
+  ...thesisProjects,
   ...illustrationProjects,
   ...boardsProjects,
   ...workProjects
 ];
 
-export const portfolioCategories = ['All Work', 'Dress making ( pattern+ draping)', 'Textile', 'Technical', 'Thesis', 'Pattern Making', 'Techpacks', 'Fashion Development', 'Illustration', 'Boards', 'Work'];
+export const portfolioCategories = ['All Work', 'Dress making ( pattern+ draping)', 'Textile', 'Technical', 'Pattern Making', 'Techpacks', 'Fashion Development', 'Thesis', 'Illustration', 'Boards', 'Work'];
