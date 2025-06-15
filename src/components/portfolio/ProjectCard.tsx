@@ -17,6 +17,8 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
+  console.log('ProjectCard rendered for:', project.title, 'Category:', project.category);
+  
   return (
     <div className="group bg-gradient-to-br from-white/80 to-dusty-lavender/10 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:transform hover:scale-105 border border-dusty-lavender/20">
       <div className="relative h-64 overflow-hidden">
@@ -27,6 +29,13 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                 src={project.image}
                 alt={project.title}
                 className="w-full h-full object-contain bg-gradient-to-br from-gray-50 to-white group-hover:scale-110 transition-transform duration-500"
+                onError={(e) => {
+                  console.error('Image failed to load:', project.image);
+                  console.log('Project details:', project);
+                }}
+                onLoad={() => {
+                  console.log('Image loaded successfully:', project.image);
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-midnight-navy/0 via-transparent to-transparent group-hover:from-midnight-navy/30 transition-all duration-300"></div>
               <div className="absolute top-4 right-4 bg-gradient-secondary text-white px-3 py-1 rounded-full text-sm font-inter font-medium shadow-lg">
@@ -45,6 +54,12 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                 src={project.image}
                 alt={project.title}
                 className="max-w-full max-h-[85vh] object-contain rounded-lg"
+                onError={(e) => {
+                  console.error('Dialog image failed to load:', project.image);
+                }}
+                onLoad={() => {
+                  console.log('Dialog image loaded successfully:', project.image);
+                }}
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-lg">
                 <h3 className="text-white text-2xl font-playfair font-semibold mb-2">
