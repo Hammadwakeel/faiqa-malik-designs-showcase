@@ -1,7 +1,3 @@
-Here's your updated README file with all references to **Lovable** removed and rewritten in a clean, professional tone:
-
----
-
 # Faiqa Malik Designs Showcase
 
 ## Project Info
